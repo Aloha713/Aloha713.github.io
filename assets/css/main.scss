@@ -88,47 +88,32 @@ html[data-theme="dark"] .section-block::before {
   object-fit: cover;
 }
 
-/* =========================
-   Conference presentation layout
-   (Fix spacing INSIDE each list item)
-   ========================= */
-
-/* 핵심: 리스트 첫 줄(굵은 제목) 아래 간격을 직접 줄이기 */
 .page__content li > strong {
   display: block;
-  margin-bottom: 0.05rem;  /* 여기 값 줄이면 두 줄 더 붙음 */
+  margin-bottom: 0.02rem;
   line-height: 1.15;
 }
 
-/* meta/title/action 기본 간격 조절 */
+.page__content ul li > p {
+  margin: 0.05rem 0;   /* ← 🔥 이 줄이 핵심 */
+}
+
 .talk-meta {
-  display: block;
-  font-size: 0.85rem;
-  color: #777;
-  margin-top: 0 !important;        /* strong 밑 간격은 strong에서 잡음 */
-  margin-bottom: 0.06rem !important;
-  line-height: 1.2;
+  margin-top: 0 !important;
+  margin-bottom: 0.05rem !important;
+  line-height: 1.15;
 }
 
 .talk-title {
-  display: block;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0 0 0.08rem 0;
+  margin-bottom: 0.08rem;
   line-height: 1.25;
 }
 
 .talk-action {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.85rem;
-  color: #1158b5;
-  margin: 0.02rem 0 0 0;   /* 아래로 벌어지는 거 최소화 */
-  cursor: pointer;
+  margin-top: 0.04rem;
 }
 
-/* 섹터(리스트 항목) 사이 간격은 유지하면서 너무 과하지만 않게 */
+/* 섹터 간 간격 유지 */
 .page__content ul li {
   margin-bottom: 0.6rem !important;
 }
