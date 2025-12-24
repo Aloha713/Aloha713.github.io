@@ -42,11 +42,10 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Vertical line for section content */
 .section-block {
   position: relative;
-  padding-left: 1.5rem;        // 텍스트와 선 사이 간격
-  margin-top: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 1.0rem;
 }
 
 .section-block::before {
@@ -55,6 +54,12 @@
   left: 0;
   top: 0.3rem;
   bottom: 0.3rem;
-  width: 2px;
-  background-color: rgba(255, 255, 255, 0.15);  // 다크모드용 은은한 선
+
+  width: 3px; /* ← 두께: 2px → 3px */
+  background-color: rgba(0, 0, 0, 0.22); /* ← 라이트 모드에서 더 잘 보이게 */
+}
+
+/* Dark mode */
+html[data-theme="dark"] .section-block::before {
+  background-color: rgba(255, 255, 255, 0.18);
 }
