@@ -22,7 +22,7 @@ repository: "Aloha713/.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "조민성.JPG"
   name             : "Minseong"
   bio              : "Graduate researcher in soft matter and fluid–structure interactions"
   location         : "South Korea"
