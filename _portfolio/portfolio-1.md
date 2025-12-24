@@ -37,17 +37,35 @@ Recognized for outstanding academic performance (top 5% of the department).
 ## 🎤 Conference Presentations
 
 - **APS Division of Fluid Dynamics Meeting 2025**  
-  <span class="talk-meta">Houston, TX, USA · Nov 2025</span><br/>
-  <span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>  
-  <span class="talk-action">▶ 📷 View presentation photos</span>
+  <span class="talk-meta">Houston, TX, USA · Nov 2025</span>
+  <span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>
+  <details class="talk-toggle">
+    <summary class="talk-action">▶ 📷 View presentation photos</summary>
+    <div class="portfolio-row">
+      <img src="/images/APSDFD2025.jpg" class="portfolio-img slide">
+      <img src="/images/APSDFD2025.jpeg" class="portfolio-img photo">
+    </div>
+  </details>
 
 - **Asian Congress of Fluid Mechanics 2025**  
-  <span class="talk-meta">Seoul, South Korea · Sep 2025</span><br/>
-  <span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>  
-  <span class="talk-action">▶ 📷 View presentation photos</span>
+  <span class="talk-meta">Seoul, South Korea · Sep 2025</span>
+  <span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>
+  <details class="talk-toggle">
+    <summary class="talk-action">▶ 📷 View presentation photos</summary>
+    <div class="portfolio-row">
+      <img src="/images/18ACFM2025.jpg" class="portfolio-img slide">
+      <img src="/images/18ACFM2025.jpeg" class="portfolio-img photo">
+    </div>
+  </details>
 
 - **KSME Annual Conference 2024**  
-  <span class="talk-meta">Jeju, South Korea · Nov 2024</span><br/>
-  <span class="talk-title">Explosive motion of spherical hydrogel via Leidenfrost effect</span>  
-  <span class="talk-action">▶ 📷 View presentation photos</span>
+  <span class="talk-meta">Jeju, South Korea · Nov 2024</span>
+  <span class="talk-title">Explosive motion of spherical hydrogel via Leidenfrost effect</span>
+  <details class="talk-toggle">
+    <summary class="talk-action">▶ 📷 View presentation photos</summary>
+    <div class="portfolio-row">
+      <img src="/images/KSME2024.jpg" class="portfolio-img slide">
+      <img src="/images/KSME2024.jpeg" class="portfolio-img photo">
+    </div>
+  </details>
 ---
