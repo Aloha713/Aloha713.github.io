@@ -24,13 +24,12 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "Minseong"
+  bio              : "Graduate researcher in soft matter and fluid–structure interactions"
+  location         : "South Korea"
+  employer         : "Ajou University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "mscho713@ajou.ac.kr" 
 
   # Academic websites
   academia         : # URL
