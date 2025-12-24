@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "Minseong Cho"
 description              : &description "Minseong Cho's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
 url: "https://aloha713.github.io"
-baseurl: "/academicpages.github.io"
+baseurl: ""
 repository: "Aloha713/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
