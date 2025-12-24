@@ -110,3 +110,7 @@ html[data-theme="dark"] .section-block::before {
 .page__content ul li {
   margin-bottom: 0.6rem !important;
 }
+
+.page__content ul li > p {
+  margin: 0.05rem 0;
+}
