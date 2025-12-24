@@ -9,8 +9,7 @@ redirect_from:
 
 <div class="section-block" markdown="1">
 
-I am an M.S. student at the Softlab, Ajou University.
-
+I am an M.S. student at the Softlab, Ajou University.<br/>
 My research interests include active matter dynamics, the Leidenfrost effect, and hair dynamics.
 
 </div>
