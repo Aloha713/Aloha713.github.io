@@ -5,7 +5,7 @@ var addressPoints = [
     126.9782914
   ],
   [
-    "Explosive motion of spherical hydrogel via Leidenfrost effect<br />The Korean Society of Mechanical Engineers (KSME) Annual Conference 2024; Jeju, South Korea",
+    "Explosive motion of spherical hydrogel via the Leidenfrost effect<br />The Korean Society of Mechanical Engineers (KSME) Annual Conference 2024; Jeju, South Korea",
     33.4887737,
     126.4987083
   ],
