@@ -5,7 +5,7 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -42,6 +42,9 @@
     "vendor/font-awesome/brands"
 ;
 
+/* =========================
+   Left vertical line blocks
+   ========================= */
 .section-block {
   position: relative;
   padding-left: 1.5rem;
@@ -55,14 +58,18 @@
   top: 0.3rem;
   bottom: 0.3rem;
 
-  width: 3px; /* ← 두께: 2px → 3px */
-  background-color: rgba(0, 0, 0, 0.22); /* ← 라이트 모드에서 더 잘 보이게 */
+  width: 3px; /* thicker */
+  background-color: rgba(0, 0, 0, 0.22); /* light mode visibility */
 }
 
 /* Dark mode */
 html[data-theme="dark"] .section-block::before {
   background-color: rgba(255, 255, 255, 0.18);
 }
+
+/* =========================
+   Portfolio images
+   ========================= */
 .portfolio-row {
   margin-left: 1.5rem;
   display: flex;
@@ -81,21 +88,34 @@ html[data-theme="dark"] .section-block::before {
   object-fit: cover;
 }
 
-/* Conference presentation layout */
+/* =========================
+   Conference presentation layout
+   (Fix spacing INSIDE each list item)
+   ========================= */
+
+/* 핵심: 리스트 첫 줄(굵은 제목) 아래 간격을 직접 줄이기 */
+.page__content li > strong {
+  display: block;
+  margin-bottom: 0.10rem;  /* 여기 값 줄이면 두 줄 더 붙음 */
+  line-height: 1.15;
+}
+
+/* meta/title/action 기본 간격 조절 */
 .talk-meta {
   display: block;
   font-size: 0.85rem;
   color: #777;
-  margin-top: -0.15rem; 
-  margin-bottom: 0.1rem;   /* ← 기존보다 줄임 */
+  margin-top: 0 !important;        /* strong 밑 간격은 strong에서 잡음 */
+  margin-bottom: 0.06rem !important;
+  line-height: 1.2;
 }
 
 .talk-title {
   display: block;
   font-size: 1rem;
   font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0.1rem; /* ← 핵심 */
+  margin: 0 0 0.08rem 0;
+  line-height: 1.25;
 }
 
 .talk-action {
@@ -104,12 +124,11 @@ html[data-theme="dark"] .section-block::before {
   gap: 0.3rem;
   font-size: 0.85rem;
   color: #1158b5;
-  margin-top: 0.05rem;    /* ← 거의 붙이기 */
-  margin-bottom: 0;      /* ← 섹터 간격에 영향 X */
+  margin: 0.02rem 0 0 0;   /* 아래로 벌어지는 거 최소화 */
   cursor: pointer;
 }
 
-/* 핵심: 리스트 간격 줄이기 */
+/* 섹터(리스트 항목) 사이 간격은 유지하면서 너무 과하지만 않게 */
 .page__content ul li {
   margin-bottom: 0.6rem !important;
 }
