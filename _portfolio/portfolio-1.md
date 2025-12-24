@@ -10,7 +10,7 @@ author_profile: true
 - **Spring 2024, Spring 2025** <br/>
 Recognized for outstanding academic performance (top 5% of the department).
 
----
+
 
 **Capstone Design Award - Ajou University**    
 
@@ -20,7 +20,7 @@ Recognized for outstanding academic performance (top 5% of the department).
 - [Project Poster](https://linc.ajou.ac.kr/acot/?m=30002&mode=view&idx=2557)
 - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
 
----
+
 
 **Gyeonggi-do Assistive Device Idea Competition (2025)**  
 
