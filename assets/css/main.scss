@@ -81,6 +81,14 @@ html[data-theme="dark"] .section-block::before {
   object-fit: cover;
 }
 
+.portfolio-img.auto {
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
 /* Conference presentation layout */
 .talk-meta {
   display: block;
@@ -109,4 +117,15 @@ html[data-theme="dark"] .section-block::before {
 /* 핵심: 리스트 간격 줄이기 */
 .page__content ul li {
   margin-bottom: 0.6rem !important;
+}
+
+
+.link-list {
+  margin-top: 0.2rem;
+  margin-left: 0.1rem; /* bullet 빠진 느낌 보정 */
+}
+
+.link-list a {
+  display: inline-block;
+  margin: 0.15rem 0;
 }

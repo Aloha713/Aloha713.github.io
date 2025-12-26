@@ -16,7 +16,7 @@ Recognized for outstanding academic performance (top 5% of the department).
 **Capstone Design Award (2025) - Ajou University**   
 
 <div class="section-block" markdown="1">
-- **Project**: Compliant-mechanism-based knee assistive device for osteoarthritis prevention  
+- **Project**: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention  
 - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
 - [Project Poster](https://linc.ajou.ac.kr/acot/?m=30002&mode=view&idx=2557)
 - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
@@ -25,45 +25,63 @@ Recognized for outstanding academic performance (top 5% of the department).
 **Gyeonggi-do Assistive Device Idea Competition (2025)**  
 
 <div class="section-block" markdown="1">
+
 - **Organized by**: Gyeonggi Province Rehabilitation Engineering Service Support Center  
-- **Focus**: Development of practical and user-centered assistive technologies
-- [Project Poster](/images/gyeonggi-assistive-device-competition-2025-poster.pdf)
-- [ Award Ceremony Photo](https://at3d.or.kr/board/notice/view?idx=761)
+- **Focus**: Development of practical and user-centered assistive technologies  
+<div class="link-list">
+  <a href="/images/ass_devi/gyeonggi-assistive-device-competition-2025-poster.pdf">Project Poster</a><br/>
+  <a href="https://at3d.or.kr/board/notice/view?idx=761">Award Ceremony Photo</a><br/>
+  <a href="https://www.youtube.com/watch?v=9nMlDRh-M7E">Project Overview Video</a>
+</div>
+<details class="talk-toggle">
+  <summary class="talk-action">▶ View project photos</summary>
+  <div class="portfolio-row">
+    <img src="/images/ass_devi/ass_devi2.PNG" class="portfolio-img auto">
+    <img src="/images/ass_devi/ass_devi.PNG" class="portfolio-img photo">
+  </div>
+</details>
+
 </div>
 
 ---
 ## 🎤 Conference Presentations
 
-- **APS Division of Fluid Dynamics Meeting 2025**  
-  <span class="talk-meta">Houston, TX, USA · Nov 2025</span>
+<div class="section-block" markdown="1">
+- **APS Division of Fluid Dynamics Meeting 2025
+  <span class="talk-meta"> Houston, TX, USA · Nov 2025</span>**
   **<span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>**
   <details class="talk-toggle">
     <summary class="talk-action">▶ View presentation photos</summary>
     <div class="portfolio-row">
-      <img src="/images/APSDFD2025.jpg" class="portfolio-img slide">
-      <img src="/images/APSDFD2025.jpeg" class="portfolio-img photo">
+      <img src="/images/APSDFD2025/APSDFD2025.jpg" class="portfolio-img slide">
+      <img src="/images/APSDFD2025/APSDFD2025.jpeg" class="portfolio-img photo">
     </div>
   </details>
+</div>
 
-- **Asian Congress of Fluid Mechanics 2025**  
-  <span class="talk-meta">Seoul, South Korea · Sep 2025</span>
+<div class="section-block" markdown="1">
+- **Asian Congress of Fluid Mechanics 2025  
+  <span class="talk-meta">Seoul, South Korea · Sep 2025</span>**
   **<span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>**
   <details class="talk-toggle">
     <summary class="talk-action">▶ View presentation photos</summary>
     <div class="portfolio-row">
-      <img src="/images/18ACFM2025.jpg" class="portfolio-img slide">
-      <img src="/images/18ACFM2025.jpeg" class="portfolio-img photo">
+      <img src="/images/18ACFM/18ACFM2025.jpg" class="portfolio-img slide">
+      <img src="/images/18ACFM/18ACFM2025.jpeg" class="portfolio-img photo">
     </div>
   </details>
+</div>
 
-- **KSME Annual Conference 2024**  
-  <span class="talk-meta">Jeju, South Korea · Nov 2024</span>
+<div class="section-block" markdown="1">
+- **KSME Annual Conference 2024 
+  <span class="talk-meta">Jeju, South Korea · Nov 2024</span>** 
   **<span class="talk-title">Explosive motion of spherical hydrogel via Leidenfrost effect</span>**
   <details class="talk-toggle">
     <summary class="talk-action">▶ View presentation photos</summary>
     <div class="portfolio-row">
-      <img src="/images/KSME2024.jpg" class="portfolio-img slide">
-      <img src="/images/KSME2024.jpeg" class="portfolio-img photo">
+      <img src="/images/KSME2024/KSME2024.jpg" class="portfolio-img slide">
+      <img src="/images/KSME2024/KSME2024.jpeg" class="portfolio-img photo">
     </div>
   </details>
+</div>
 ---
