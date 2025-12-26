@@ -86,7 +86,7 @@ html[data-theme="dark"] .section-block::before {
 
 .portfolio-img.auto {
   border-radius: 8px;
-  height: 260px;
+  height: 400px;
   width: auto;
   object-fit: contain;
 }
@@ -121,8 +121,4 @@ html[data-theme="dark"] .section-block::before {
 /* 핵심: 리스트 간격 줄이기 */
 .page__content ul li {
   margin-bottom: 0.6rem !important;
-}
-
-.talk-heading {
-  display: inline;
 }

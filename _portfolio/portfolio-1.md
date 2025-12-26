@@ -27,7 +27,7 @@ Recognized for outstanding academic performance (top 5% of the department).
   - [Award Ceremony Photo](https://at3d.or.kr/board/notice/view?idx=761)
   - [Project Overview Video](https://www.youtube.com/watch?v=9nMlDRh-M7E)
   - <details class="talk-toggle">
-      <summary class="talk-action">▶ View project photos</summary>
+      <summary class="talk-action">View project photos</summary>
       <div class="portfolio-row">
         <img src="/images/ass_devi/ass_devi2.png" class="portfolio-img auto">
         <img src="/images/ass_devi/ass_devi.png" class="portfolio-img photo">
@@ -41,7 +41,7 @@ Recognized for outstanding academic performance (top 5% of the department).
 - **APS Division of Fluid Dynamics Meeting 2025** <span class="talk-meta">(Houston, TX, USA · Nov 2025)</span>
   **<span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>**
   <details class="talk-toggle">
-    <summary class="talk-action">▶ View presentation photos</summary>
+    <summary class="talk-action">View presentation photos</summary>
     <div class="portfolio-row">
       <img src="/images/APSDFD2025/APSDFD2025.jpg" class="portfolio-img slide">
       <img src="/images/APSDFD2025/APSDFD2025.jpeg" class="portfolio-img photo">
@@ -49,15 +49,10 @@ Recognized for outstanding academic performance (top 5% of the department).
   </details>
 <br/>
 
-- <span class="talk-heading">
-    <strong>Asian Congress of Fluid Mechanics 2025</strong>
-    <span class="talk-meta">(Seoul, South Korea · Sep 2025)</span>
-  </span>
-
-  <span class="talk-title"><strong>Leidenfrost-induced active matter dynamics of spherical hydrogels</strong></span>
-
+- **Asian Congress of Fluid Mechanics 2025** <span class="talk-meta">(Seoul, South Korea · Sep 2025)</span>
+  **<span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>**
   <details class="talk-toggle">
-    <summary class="talk-action">▶ View presentation photos</summary>
+    <summary class="talk-action">View presentation photos</summary>
     <div class="portfolio-row">
       <img src="/images/18ACFM2025/18ACFM2025.jpg" class="portfolio-img slide">
       <img src="/images/18ACFM2025/18ACFM2025.jpeg" class="portfolio-img photo">
@@ -68,10 +63,11 @@ Recognized for outstanding academic performance (top 5% of the department).
 - **KSME Annual Conference 2024**  <span class="talk-meta">(Jeju, South Korea · Nov 2024)</span>
   **<span class="talk-title">Explosive motion of spherical hydrogel via Leidenfrost effect</span>**
   <details class="talk-toggle">
-    <summary class="talk-action">▶ View presentation photos</summary>
+    <summary class="talk-action">View presentation photos</summary>
     <div class="portfolio-row">
       <img src="/images/KSME2024/KSME2024.jpg" class="portfolio-img slide">
       <img src="/images/KSME2024/KSME2024.jpeg" class="portfolio-img photo">
     </div>
   </details>
+
 ---
