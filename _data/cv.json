@@ -18,16 +18,6 @@
         "username": "",
         "url": "https://scholar.google.com/citations?user=j9RODW0AAAAJ&hl=ko&oi=sra"
       }
-      // {
-      //   "network": "ORCID",
-      //   "username": "",
-      //   "url": "https://orcid.org/yourorcidurl"
-      // },
-      // {
-      //   "network": "GitHub",
-      //   "username": "academicpages",
-      //   "url": "https://github.com/academicpages"
-      // }
     ]
   },
   "work experience": [
@@ -72,13 +62,49 @@
   "interests": [],
   "references": [],
   "publications": [
-    // {
-    //   "name": "Paper Title Number 1",
-    //   "publisher": "Journal 1",
-    //   "releaseDate": "2009-10-01",
-    //   "website": "https://academicpages.github.io/files/paper1.pdf",
-    //   "summary": "This paper is about the number 1. The number 2 is left for future work."
-    // }
+  ],
+  "presentations": [
+    {
+      "name": "Leidenfrost-induced active matter dynamics of spherical hydrogels",
+      "event": "APS Division of Fluid Dynamics Meeting 2025",
+      "location": "Houston, TX, USA",
+      "date": "2025-11",
+      "description": ""
+    },
+    {
+      "name": "Leidenfrost-induced active matter dynamics of spherical hydrogels",
+      "event": "Asian Congress of Fluid Mechanics 2025",
+      "location": "Seoul, South Korea",
+      "date": "2025-09",
+      "description": ""
+    },
+    {
+      "name": "Explosive motion of spherical hydrogel via Leidenfrost effect",
+      "event": "KSME Annual Conference 2024",
+      "location": "Jeju, South Korea",
+      "date": "2024-11",
+      "description": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "Dean’s List",
+      "date": "Spring 2024, Spring 2025",
+      "awarder": "Ajou University",
+      "summary": "Recognized for outstanding academic performance (top 5% of the department)."
+    },
+    {
+      "title": "Capstone Design Award",
+      "date": "2025",
+      "awarder": "Ajou University",
+      "summary": "Awarded for a capstone project on a compliant-mechanism-based knee assistive device."
+    },
+    {
+      "title": "Gyeonggi-do Assistive Device Idea Competition",
+      "date": "2025",
+      "awarder": "Gyeonggi Province, South Korea",
+      "summary": "Awarded for developing a practical and user-centered assistive device concept."
+    }
   ],
   "teaching": [],
   "portfolio": []
