@@ -129,3 +129,15 @@ html[data-theme="dark"] .section-block::before {
   display: inline-block;
   margin: 0.15rem 0;
 }
+
+.talk-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.talk-meta-inline {
+  font-size: 0.85rem;
+  color: #777;
+  white-space: nowrap;
+}
