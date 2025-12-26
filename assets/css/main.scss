@@ -128,7 +128,11 @@ html[data-theme="dark"] .section-block::before {
 .cv-section { margin-bottom: 2.2rem; }
 .cv-section h2 { margin-bottom: 1.0rem; }
 
+/* ❗ cv-item에 콤마(,) 제거 + margin-left는 item 말고 content에 주는게 안전 */
 .cv-item { margin-bottom: 1.25rem; }
+
+/* ✅ 내용만 살짝 들여쓰기 (Education/Research/Presentations 전부 동일 적용됨) */
+.cv-item-content { margin-left: 0.6rem; }
 
 .cv-item-header {
   display: flex;
@@ -174,13 +178,22 @@ html[data-theme="dark"] .cv-item-subtitle { color: #cfcfcf; }
 html[data-theme="dark"] .cv-item-detail { color: #bdbdbd; }
 html[data-theme="dark"] .cv-item-sep { color: #888; }
 
+/* Presentations */
 .cv-present-meta{
   font-size: 0.9rem;
   font-weight: 400;
   color: #888;
   margin-left: 0.25rem;
 }
+
 .cv-present-title{
-  font-weight: 600;     /* Topics, Keywords랑 동일한 느낌 */
-  color: #666;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.45;
+}
+
+/* 다크모드 */
+html[data-theme="dark"] .cv-present-title{
+  color: #cfcfcf;
 }
