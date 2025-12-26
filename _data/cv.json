@@ -9,7 +9,7 @@
       "address": "",
       "postalCode": "",
       "city": "Suwon",
-      "countryCode": "",
+      "countryCode": "KR",
       "region": "South Korea"
     },
     "profiles": [
@@ -20,31 +20,33 @@
       }
     ]
   },
+
   "work": [
     {
-    "company": "Softlab, Ajou University",
-    "location": "Suwon, South Korea",
-    "position": "M.S.student Researcher",
-    "startDate": "2023-03",
-    "endDate": "2025-08",
-    "advisor": "Prof. Jonghyun Ha",
-    "summary": ""
+      "company": "Softlab, Ajou University",
+      "location": "Suwon, South Korea",
+      "position": "Graduate Research Student",
+      "startDate": "2025-09",
+      "endDate": "Present",
+      "advisor": "Prof. Jonghyun Ha",
+      "summary": ""
     },
     {
-    "company": "Softlab, Ajou University",
-    "location": "Suwon, South Korea",
-    "position": "Undergraduate rsearch student",
-    "startDate": "2023-03",
-    "endDate": "2025-08",
-    "advisor": "Prof. Jonghyun Ha",
-    "summary": ""
+      "company": "Softlab, Ajou University",
+      "location": "Suwon, South Korea",
+      "position": "Undergraduate Research Student",
+      "startDate": "2023-03",
+      "endDate": "2025-08",
+      "advisor": "Prof. Jonghyun Ha",
+      "summary": ""
     }
   ],
+
   "research": [
     {
       "institution": "Softlab, Ajou University",
-      "role": "Undergraduate research student",
-      "startDate": "2023-03",
+      "role": "Graduate Research Student",
+      "startDate": "2025-09",
       "endDate": "Present",
       "topics": [
         "Boundary-driven active matter in soft hydrogels",
@@ -58,7 +60,7 @@
     },
     {
       "institution": "Softlab, Ajou University",
-      "role": "Undergraduate research student",
+      "role": "Undergraduate Research Student",
       "startDate": "2023-03",
       "endDate": "2025-08",
       "topics": [
@@ -70,6 +72,7 @@
       ]
     }
   ],
+
   "education": [
     {
       "institution": "Ajou University",
@@ -90,12 +93,13 @@
       "courses": []
     }
   ],
+
   "skills": [],
   "languages": [],
   "interests": [],
   "references": [],
-  "publications": [
-  ],
+  "publications": [],
+
   "presentations": [
     {
       "name": "Leidenfrost-induced active matter dynamics of spherical hydrogels",
@@ -112,13 +116,14 @@
       "description": ""
     },
     {
-      "name": "Explosive motion of spherical hydrogel via Leidenfrost effect",
+      "name": "Explosive motion of spherical hydrogel via the Leidenfrost effect",
       "event": "KSME Annual Conference 2024",
       "location": "Jeju, South Korea",
       "date": "2024-11",
       "description": ""
     }
   ],
+
   "awards": [
     {
       "title": "Dean’s List",
@@ -135,10 +140,11 @@
     {
       "title": "Gyeonggi-do Assistive Device Idea Competition",
       "date": "2025",
-      "awarder": "Gyeonggi province rehabilitation engineering service support center, South Korea",
-        "summary": "Awarded for a compliant-mechanism-based knee assistive device designed for older adults."
+      "awarder": "Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)",
+      "summary": "Awarded for a user-centered assistive device concept for older adults."
     }
   ],
+
   "teaching": [],
   "portfolio": []
 }
