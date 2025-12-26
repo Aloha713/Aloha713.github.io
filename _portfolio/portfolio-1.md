@@ -6,13 +6,13 @@ author_profile: true
 
 ## 🏆 Awards & Honors
 
-**[Dean’s List](https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1)**
+**[Dean’s List](https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1)** <br/>
 - **Spring 2024, Spring 2025** <br/>
 Recognized for outstanding academic performance (top 5% of the department).
 
 <br/>
 
-**Capstone Design Award (2025) – Ajou University**
+**Capstone Design Award (2025) – Ajou University** <br/>
 - **Project**: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention  
 - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
 - **Materials**:
@@ -21,7 +21,7 @@ Recognized for outstanding academic performance (top 5% of the department).
 
 <br/>
 
-**Gyeonggi-do Assistive Device Idea Competition (2025)**  
+**Gyeonggi-do Assistive Device Idea Competition (2025)** <br/> 
 - **Organized by**: Gyeonggi Province Rehabilitation Engineering Service Support Center  
 - **Focus**: Development of practical and user-centered assistive technologies  
 - **Materials**:
@@ -35,6 +35,7 @@ Recognized for outstanding academic performance (top 5% of the department).
         <img src="/images/ass_devi/ass_devi.png" class="portfolio-img photo">
       </div>
     </details>
+    
 ---
 
 ## 🎤 Conference Presentations
@@ -51,13 +52,18 @@ Recognized for outstanding academic performance (top 5% of the department).
 
 <br/>
 
-- **Asian Congress of Fluid Mechanics 2025** <span class="talk-meta">(Seoul, South Korea · Sep 2025)</span>
-  **<span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>**
+- <span class="talk-heading">
+    <strong>Asian Congress of Fluid Mechanics 2025</strong>
+    <span class="talk-meta">(Seoul, South Korea · Sep 2025)</span>
+  </span>
+
+  <span class="talk-title"><strong>Leidenfrost-induced active matter dynamics of spherical hydrogels</strong></span>
+
   <details class="talk-toggle">
     <summary class="talk-action">▶ View presentation photos</summary>
     <div class="portfolio-row">
-      <img src="/images/18ACFM/18ACFM2025.jpg" class="portfolio-img slide">
-      <img src="/images/18ACFM/18ACFM2025.jpeg" class="portfolio-img photo">
+      <img src="/images/18ACFM2025/18ACFM2025.jpg" class="portfolio-img slide">
+      <img src="/images/18ACFM2025/18ACFM2025.jpeg" class="portfolio-img photo">
     </div>
   </details>
 
