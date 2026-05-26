@@ -48,7 +48,7 @@ author_profile: true
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gyeonggi-do Assistive Device Idea Competition</span><span class="portfolio-entry-date">Nov 2025</span></span>
   **<span class="talk-title">3rd Place · KRW 300,000 prize</span>**
-    - **Organized by**: Gyeonggi Province Rehabilitation Engineering Service Support Center  
+    - **Organized by**: Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)
     - **Project**: Compliant-mechanism-based knee assistive device for older adults
     - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
     - **Materials**:
