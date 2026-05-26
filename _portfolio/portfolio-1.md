@@ -6,9 +6,9 @@ author_profile: true
 ## 🎓 Education
 
 - **M.S. in Mechanical Engineering** (*Sep 2025 – Present*)<br/>
-  [Ajou University](https://www.ajou.ac.kr/en/index.do#a), Suwon, South Korea   
+  [Ajou University](https://www.ajou.ac.kr/en/index.do#a), Suwon, South Korea
 
-- **B.S. in Mechanical Engineering** (*Mar 2020 – Aug. 2025*)<br/>
+- **B.S. in Mechanical Engineering** (*Mar 2020 – Aug 2025*)<br/>
   [Ajou University](https://www.ajou.ac.kr/en/index.do#a), Suwon, South Korea
 
 
@@ -16,18 +16,18 @@ author_profile: true
 
 - **Graduate Research Student** (*Sep 2025 – Present*)  
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
-  - **Topics**: Boundary-driven active matter in soft hydrogels
+  - **Topics**:
     - Boundary-driven active matter in soft hydrogels
-    - Hair Frizz dynamics 
+    - Hair frizz dynamics
   - **Keywords**: Active matter, Elastic Leidenfrost effect, Hair dynamics  
-  - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2) 
+  - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2)
 &nbsp;
 
 - **Undergraduate Research Student** (*Mar 2023 – Aug 2025*)  
-  [Softlab](https://www.softlab.ajou.ac.kr), Ajou University   
+  [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
   - **Topics**: Boundary-driven active matter in soft hydrogels  
   - **Keywords**: Active matter, Elastic Leidenfrost effect  
-  - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2)   
+  - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2)  
 
 
 
@@ -48,9 +48,9 @@ author_profile: true
         - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
 &nbsp;
 
-- **Gyeonggi-do Assistive Device Idea Competition** <span class="talk-meta">(2025)</span>
+- **Gyeonggi-do Assistive Device Idea Competition** <span class="talk-meta">(Nov 2025)</span>
   **<span class="talk-title">3rd Place · KRW 300,000 prize</span>**
-    - **Organized by**: Gyeonggi province rehabilitation engineering service support center  
+    - **Organized by**: Gyeonggi Province Rehabilitation Engineering Service Support Center  
     - **Project**: Compliant-mechanism-based knee assistive device for older adults
     - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
     - **Materials**:
@@ -94,7 +94,7 @@ author_profile: true
     </div>
   </details>
 
-- **KSME Annual Conference**  <span class="talk-meta">(Jeju, South Korea · Nov 2024)</span>
+- **KSME Annual Conference** <span class="talk-meta">(Jeju, South Korea · Nov 2024)</span>
   **<span class="talk-title">Explosive motion of spherical hydrogel via Leidenfrost effect</span>**
   <details class="talk-toggle">
     <summary class="talk-action">View presentation photos</summary>
