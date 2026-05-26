@@ -102,9 +102,3 @@ author_profile: true
       <img src="/images/KSME2024/KSME2024.jpeg" class="portfolio-img photo">
     </div>
   </details>
-
----
-
-## 📄 CV
-
-<a href="/files/Minseong_Cho.pdf" class="btn btn--primary" target="_blank" rel="noopener">Download CV as PDF</a>

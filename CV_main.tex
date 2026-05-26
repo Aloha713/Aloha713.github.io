@@ -1,240 +1,161 @@
-% Document class and page setup
-\documentclass[letterpaper,11pt]{extarticle}
+% =========================
+% CV - based on the original homepage-style template
+% =========================
+\documentclass[a4paper,10pt]{article}
 
-\usepackage[utf8]{inputenc}
+% ---------- Page ----------
+\usepackage[a4paper,margin=0.85in]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+% ---------- Fonts / Symbols ----------
 \usepackage[T1]{fontenc}
-\usepackage[letterpaper,margin=0.72in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{fontawesome5}
 
-% Core packages
-\usepackage{graphicx}
+% ---------- Colors / Links ----------
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{1F5FBF}
+\definecolor{muted}{HTML}{444444}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent
+}
+
+% ---------- Layout helpers ----------
 \usepackage{tabularx}
 \usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt, parsep=0pt}
+
+% ---------- Section styling ----------
 \usepackage{titlesec}
-\usepackage{xcolor}
-\usepackage{fontawesome5}
-\usepackage{microtype}
-\usepackage{needspace}
-\usepackage{fancyhdr}
-
-% Font: use a clean sans-serif font, with a safe fallback for Overleaf.
-\IfFileExists{sourcesanspro.sty}{%
-  \usepackage[default]{sourcesanspro}
-}{%
-  \usepackage{helvet}
-  \renewcommand{\familydefault}{\sfdefault}
-}
-
-% Colors
-\definecolor{cvtext}{HTML}{222222}
-\definecolor{cvmuted}{HTML}{555555}
-\definecolor{cvdate}{HTML}{111111}
-\definecolor{cvline}{HTML}{B7B7B7}
-\definecolor{cvlink}{HTML}{0645AD}
-
-% Links
-\usepackage[colorlinks=true, linkcolor=cvlink, urlcolor=cvlink, citecolor=cvlink]{hyperref}
-
-% Page style
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}
-\fancyhead{}
-\fancyhead[L]{\small\textit{Minseong Cho}}
-\fancyhead[R]{\small\textit{05/2026}}
-\setlength{\headheight}{14pt}
-
-% General spacing
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
-\linespread{1.02}
-
 \titleformat{\section}
-  {\fontsize{12}{14}\selectfont\bfseries\scshape\color{cvtext}}
+  {\Large\bfseries\color{accent}}
   {}{0pt}{}
-  [\vspace{-0.35em}\color{cvline}\titlerule]
-\titlespacing*{\section}{0pt}{1.05em}{0.65em}
+  [\vspace{3pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
 
-% Entry helpers
-\newcommand{\cvheading}[2]{%
-  \begin{tabular*}{\textwidth}{@{}p{0.74\textwidth}@{\extracolsep{\fill}}r@{}}
-    \textbf{#1} & {\color{cvdate}#2}
-  \end{tabular*}\par
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{muted}}
+  {}{0pt}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% ---------- Small macros ----------
+\newcommand{\sep}{\hspace{6pt}\textcolor{muted}{\textbar}\hspace{6pt}}
+\newcommand{\entry}[4]{%
+\textbf{#1}\hfill \textcolor{muted}{#2}\\
+\textit{#3}\hfill \textcolor{muted}{#4}\\[-2pt]
 }
+\newcommand{\tinygap}{\vspace{3pt}}
 
-\newcommand{\cvplainentry}[3]{%
-  \Needspace{3\baselineskip}
-  \cvheading{#1}{#2}
-  {\color{cvmuted}#3}\par
-  \vspace{0.75em}
-}
-
-\newcommand{\cvdetailentry}[4]{%
-  \Needspace{5\baselineskip}
-  \cvheading{#1}{#2}
-  {\color{cvmuted}#3}\par
-  \vspace{0.15em}
-  #4\par
-  \vspace{0.85em}
-}
-
-\newlist{cvbullets}{itemize}{1}
-\setlist[cvbullets]{
-  label=\textbullet,
-  leftmargin=1.25em,
-  topsep=0.15em,
-  itemsep=0.08em,
-  parsep=0pt
-}
-
+% =========================
 \begin{document}
-\thispagestyle{empty}
-\color{cvtext}
 
+% =========================
 % Header
-\noindent
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r@{}}
-  \begin{minipage}[t]{0.76\textwidth}
-    \vspace{0pt}
-    {\fontsize{25}{29}\selectfont\textbf{Minseong Cho}}\par
-    \vspace{0.55em}
-    {\small
-    \faEnvelope\ \href{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}
-    \quad
-    \faPhone\ \href{tel:+821088037786}{+82 10-8803-7786}
-    \quad
-    \faMapMarker*\ Suwon, South Korea\\[3pt]
-    \faGraduationCap\ \href{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}}
-  \end{minipage}
-  &
-  \begin{minipage}[t]{0.18\textwidth}
-    \vspace{0pt}
-    \raggedleft
-    \IfFileExists{hi.JPG}{\includegraphics[width=0.72\linewidth]{hi.JPG}}{}
-  \end{minipage}
-\end{tabular*}
-\vspace{0.55em}
+% =========================
+\begin{tabularx}{\textwidth}{X r}
+{\Huge \textbf{Minseong Cho}} &
+\begin{minipage}[t]{0.43\textwidth}\raggedleft
+\faEnvelope\ \href{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}\\
+\faPhone\ \href{tel:+821088037786}{+82 10-8803-7786}\\
+\faGlobe\ \href{https://aloha713.github.io}{aloha713.github.io}\\
+\faGraduationCap\ \href{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}\\
+\textcolor{muted}{Suwon, South Korea}
+\end{minipage}
+\end{tabularx}
 
-\section*{RESEARCH INTERESTS}
-Active matter dynamics \quad $\cdot$ \quad Elastic Leidenfrost effect \quad $\cdot$ \quad Hair frizz dynamics
+\vspace{6pt}
+\textcolor{muted}{M.S. student in Mechanical Engineering, Ajou University \sep Active matter \sep Leidenfrost dynamics \sep Hair frizz dynamics}
 
-\section*{EDUCATION}
+% =========================
+\section*{Summary}
+Currently a graduate researcher at Ajou University. My research interests include active matter dynamics, the Leidenfrost effect, and hair frizz dynamics.
 
-\cvplainentry
-  {M.S. in Mechanical Engineering}
-  {Sep 2025 -- Present}
-  {\href{https://www.ajou.ac.kr/en/}{Ajou University}, Suwon, South Korea}
+% =========================
+\section*{Research Interests}
+Active matter dynamics; Leidenfrost-induced motion; soft matter and fluid--structure interaction; hair frizz dynamics; centerline curvature and excursion analysis.
 
-\cvplainentry
-  {B.S. in Mechanical Engineering}
-  {Mar 2020 -- Aug 2025}
-  {Ajou University, Suwon, South Korea}
+% =========================
+\section*{Education}
+\entry{Ajou University}{Sep 2025 -- Present}{M.S. in Mechanical Engineering}{Suwon, South Korea}
+\textcolor{muted}{Advisor: Prof. Jonghyun Ha}\\
+\tinygap
+\entry{Ajou University}{Mar 2020 -- Aug 2025}{B.S. in Mechanical Engineering}{Suwon, South Korea}
 
-\section*{RESEARCH EXPERIENCE}
+% =========================
+\section*{Research Experience}
+\entry{Graduate Research Student, Softlab -- Ajou University}{Sep 2025 -- Present}{Hair frizz dynamics; boundary-driven active matter in soft hydrogels}{}
+\begin{itemize}
+  \item Study hair frizz dynamics using centerline-based geometric analysis and simulation-assisted interpretation.
+  \item Analyze boundary-driven active matter in soft hydrogels, focusing on Leidenfrost-induced dynamics.
+  \item Develop reproducible analysis and visualization scripts for experimental and simulation data.
+  \item \textbf{Advisor:} Prof. Jonghyun Ha; Dr. Yeonsu Jung.
+\end{itemize}
 
-\cvdetailentry
-  {Graduate Research Student}
-  {Sep 2025 -- Present}
-  {\href{https://www.softlab.ajou.ac.kr}{Softlab}, Ajou University, Suwon, South Korea}
-  {%
-    \begin{cvbullets}
-      \item \textbf{Topics:} Hair frizz dynamics; boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels
-      \item \textbf{Keywords:} Hair frizz dynamics, active matter, elastic Leidenfrost effect
-      \item \textbf{Advisor:} Prof.\ Jonghyun Ha; Dr.\ Yeonsu Jung
-    \end{cvbullets}
-  }
+\entry{Undergraduate Research Student, Softlab -- Ajou University}{Mar 2023 -- Aug 2025}{Undergraduate research in soft matter and fluid mechanics}{}
+\begin{itemize}
+  \item Conducted research on Leidenfrost-related soft-matter dynamics.
+  \item Performed image-based tracking, quantitative analysis, and figure preparation for presentations.
+  \item \textbf{Advisor:} Prof. Jonghyun Ha; Dr. Yeonsu Jung.
+\end{itemize}
 
-\cvdetailentry
-  {Undergraduate Research Student}
-  {Mar 2023 -- Aug 2025}
-  {Softlab, Ajou University, Suwon, South Korea}
-  {%
-    \begin{cvbullets}
-      \item \textbf{Topics:} Boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels
-      \item \textbf{Keywords:} Active matter, elastic Leidenfrost effect
-      \item \textbf{Advisor:} Prof.\ Jonghyun Ha; Dr.\ Yeonsu Jung
-    \end{cvbullets}
-  }
+% =========================
+\section*{Selected Presentations}
+\begin{itemize}
+  \item \textbf{APS Division of Fluid Dynamics Meeting} (Houston, TX, USA; Nov 2025)\\
+  \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
 
-\section*{CONFERENCE PRESENTATIONS}
+  \item \textbf{Asian Congress of Fluid Mechanics} (Seoul, South Korea; Sep 2025)\\
+  \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
 
-\cvdetailentry
-  {APS Division of Fluid Dynamics Meeting}
-  {2025}
-  {Houston, TX, USA \quad $\cdot$ \quad Nov 2025}
-  {\textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}}
+  \item \textbf{KSME Annual Conference} (Jeju, South Korea; Nov 2024)\\
+  \textit{Explosive motion of spherical hydrogel via the Leidenfrost effect}
+\end{itemize}
 
-\cvdetailentry
-  {Asian Congress of Fluid Mechanics}
-  {2025}
-  {Seoul, South Korea \quad $\cdot$ \quad Sep 2025}
-  {\textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}}
+% =========================
+\section*{Awards \& Honors}
+\begin{itemize}
+  \item \textbf{Dean's List} (Ajou University) \hfill \textcolor{muted}{Spring 2024, Spring 2025}\\
+  Recognized for outstanding academic performance (top 5\% of the department).
 
-\cvdetailentry
-  {KSME Annual Conference}
-  {2024}
-  {Jeju, South Korea \quad $\cdot$ \quad Nov 2024}
-  {\textit{Explosive motion of spherical hydrogel via the Leidenfrost effect}}
+  \item \textbf{Capstone Design Award} (Ajou University) \hfill \textcolor{muted}{June 2025}\\
+  2nd Place; KRW 1,000,000 prize. Project: compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention.
 
-\section*{AWARDS \& HONORS}
+  \item \textbf{Gyeonggi-do Assistive Device Idea Competition} \hfill \textcolor{muted}{Nov 2025}\\
+  3rd Place; KRW 300,000 prize. Project: compliant-mechanism-based knee assistive device for older adults.
 
-\cvdetailentry
-  {Dean's List}
-  {Spring 2024, Spring 2025}
-  {Ajou University}
-  {Recognized for outstanding academic performance (top 5\% of the department).}
+  \item \textbf{APS DFD Travel/Enabling Grant} \hfill \textcolor{muted}{2025}\\
+  US\$750 travel cost reimbursement for participation in the APS Division of Fluid Dynamics Meeting.
+\end{itemize}
 
-\cvdetailentry
-  {Capstone Design Award}
-  {June 2025}
-  {Ajou University}
-  {%
-    \textbf{2nd Place \quad $\cdot$ \quad KRW 1,000,000 prize}
-    \begin{cvbullets}
-      \item \textbf{Project:} Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention
-      \item \textbf{Role:} Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling
-    \end{cvbullets}
-  }
+% =========================
+\section*{Selected Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Programming} & Python, MATLAB, LaTeX \\
+\textbf{Tools} & DeepLabCut, OpenCV, Git, Overleaf \\
+\textbf{Methods} & image-based tracking, trajectory analysis, centerline extraction, curvature/excursion profiling, data visualization \\
+\end{tabularx}
 
-\cvdetailentry
-  {Gyeonggi-do Assistive Device Idea Competition}
-  {Nov 2025}
-  {Gyeonggi Province Rehabilitation Engineering Service Support Center}
-  {%
-    \textbf{3rd Place \quad $\cdot$ \quad KRW 300,000 prize}
-    \begin{cvbullets}
-      \item \textbf{Project:} Compliant-mechanism-based knee assistive device for older adults
-      \item \textbf{Role:} Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling
-    \end{cvbullets}
-  }
+% =========================
+\section*{References}
+\textbf{Prof. Jonghyun Ha}\\
+\textit{Assistant Professor, Department of Mechanical Engineering, Ajou University, Suwon, South Korea}\\
+E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\
+Scholar Profiles:
+\href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \sep
+\href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}\\[5pt]
 
-\cvdetailentry
-  {APS DFD Travel/Enabling Grant}
-  {2025}
-  {APS Division of Fluid Dynamics, American Physical Society}
-  {%
-    \textbf{US\$750 travel cost reimbursement}\\[-0.15em]
-    Travel support for participation in the APS Division of Fluid Dynamics Meeting.
-  }
-
-\section*{REFERENCES}
-
-\cvdetailentry
-  {Prof.\ Jonghyun Ha}
-  {}
-  {Assistant Professor, Department of Mechanical Engineering, Ajou University}
-  {%
-    E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\
-    Scholar Profiles: \href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \quad $\cdot$ \quad
-    \href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}
-  }
-
-\cvdetailentry
-  {Dr.\ Yeonsu Jung}
-  {}
-  {Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University}
-  {%
-    E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\
-    Scholar Profiles: \href{https://yeonsu-jung.github.io}{Personal Page} \quad $\cdot$ \quad
-    \href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
-  }
+\textbf{Dr. Yeonsu Jung}\\
+\textit{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\
+E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\
+Scholar Profiles:
+\href{https://yeonsu-jung.github.io}{Personal Page} \sep
+\href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
 
 \end{document}
