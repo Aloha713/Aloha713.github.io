@@ -14,6 +14,9 @@
   .cv-container {
     max-width: 980px;
     margin: 0 auto;
+    color: #4b4f54;
+    font-size: 0.9rem;
+    line-height: 1.45;
   }
 
   .cv-header {
@@ -24,7 +27,7 @@
 
   .cv-header h1 {
     margin-bottom: 0.4rem;
-    font-size: 1.9rem;
+    font-size: 1.65rem;
     line-height: 1.2;
   }
 
@@ -42,14 +45,15 @@
   }
 
   .cv-section {
-    margin-bottom: 2.15rem;
+    margin-bottom: 1.7rem;
   }
 
   .cv-section h2 {
-    margin: 0 0 1.0rem 0;
-    padding-bottom: 0.35rem;
+    margin: 0 0 0.85rem 0;
+    padding-bottom: 0.3rem;
     border-bottom: 1px solid #e8e8e8;
-    font-size: 1.45rem;
+    font-size: 1.15rem;
+    font-weight: 700;
     line-height: 1.25;
   }
 
@@ -67,18 +71,12 @@
 
   .cv-item {
     position: relative;
-    margin-bottom: 1.35rem;
-    padding-left: 1.35rem;
+    margin-bottom: 1.05rem;
+    padding-left: 0;
   }
 
   .cv-item::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: 0.02rem;
-    color: #555;
-    font-weight: 700;
-    line-height: 1.25;
+    content: none;
   }
 
   .cv-item-heading {
@@ -90,14 +88,15 @@
 
   .cv-item-title {
     flex: 1;
-    font-weight: 700;
+    color: #3f454b;
+    font-weight: 650;
     line-height: 1.3;
   }
 
   .cv-item-date {
     flex: 0 0 auto;
     color: #888;
-    font-size: 0.92rem;
+    font-size: 0.82rem;
     font-weight: 400;
     line-height: 1.3;
     text-align: right;
@@ -109,24 +108,25 @@
   }
 
   .cv-item-subtitle {
-    margin-top: 0.2rem;
+    margin-top: 0.15rem;
     color: #555;
+    font-size: 0.9rem;
     line-height: 1.35;
   }
 
   .cv-item-kicker,
   .cv-present-title {
     display: block;
-    margin-top: 0.25rem;
+    margin-top: 0.22rem;
     color: #555;
     font-weight: 600;
     line-height: 1.4;
   }
 
   .cv-item-detail {
-    margin-top: 0.3rem;
+    margin-top: 0.22rem;
     color: #666;
-    font-size: 0.92rem;
+    font-size: 0.86rem;
     line-height: 1.5;
     max-width: 60rem;
   }
@@ -150,15 +150,15 @@
     }
 
     .cv-header h1 {
-      font-size: 1.65rem;
+      font-size: 1.45rem;
     }
 
     .cv-section h2 {
-      font-size: 1.25rem;
+      font-size: 1.05rem;
     }
 
     .cv-item {
-      padding-left: 1.05rem;
+      padding-left: 0;
     }
 
     .cv-item-heading {
@@ -179,7 +179,9 @@
   }
 
   html[data-theme="dark"] .cv-contact,
+  html[data-theme="dark"] .cv-container,
   html[data-theme="dark"] .cv-section p,
+  html[data-theme="dark"] .cv-item-title,
   html[data-theme="dark"] .cv-item-subtitle,
   html[data-theme="dark"] .cv-item-kicker,
   html[data-theme="dark"] .cv-present-title {
