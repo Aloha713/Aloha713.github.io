@@ -38,7 +38,9 @@ author_profile: true
     Recognized for outstanding academic performance (top 5% of the department).
 &nbsp;
 
-- **Capstone Design Award (2025) – Ajou University**
+- **Capstone Design Award** <span class="talk-meta">(June 2025)</span>
+  **<span class="talk-title">2nd Place · KRW 1,000,000 prize</span>**
+    - **Organized by**: Ajou University  
     - **Project**: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention  
     - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
     - **Materials**:
@@ -46,7 +48,8 @@ author_profile: true
         - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
 &nbsp;
 
-- **Gyeonggi-do Assistive Device Idea Competition (2025)**
+- **Gyeonggi-do Assistive Device Idea Competition** <span class="talk-meta">(2025)</span>
+  **<span class="talk-title">3rd Place · KRW 300,000 prize</span>**
     - **Organized by**: Gyeonggi province rehabilitation engineering service support center  
     - **Project**: Compliant-mechanism-based knee assistive device for older adults
     - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
@@ -61,6 +64,11 @@ author_profile: true
                 <img src="/images/ass_devi/ass_devi.png" class="portfolio-img photo">
             </div>
             </details>
+
+- **APS DFD Travel/Enabling Grant** <span class="talk-meta">(2025)</span>
+  **<span class="talk-title">US$750 travel cost reimbursement</span>**
+    - **Awarded by**: APS Division of Fluid Dynamics, American Physical Society  
+    - **Purpose**: Travel support for participation in the APS Division of Fluid Dynamics Meeting  
     
 ---
 
