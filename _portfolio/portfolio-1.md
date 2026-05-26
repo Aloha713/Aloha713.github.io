@@ -104,3 +104,7 @@ author_profile: true
   </details>
 
 ---
+
+## 📄 CV
+
+<a href="/files/Minseong_Cho.pdf" class="btn btn--primary" target="_blank" rel="noopener">Download CV as PDF</a>

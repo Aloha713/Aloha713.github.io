@@ -32,57 +32,45 @@
 % Header/footer
 \usepackage{fancyhdr}
 
-% Left bar box
-\usepackage[framemethod=TikZ]{mdframed}
-\newmdenv[
-  leftline=true,
-  rightline=false,
-  topline=false,
-  bottomline=false,
-  linecolor=cvline,
-  linewidth=1.1pt,
-  backgroundcolor=cvbox,
-  leftmargin=0.5em,
-  innerleftmargin=0.7em,
-  innerrightmargin=0.2em,
-  innertopmargin=2pt,
-  innerbottommargin=2pt,
-  skipabove=2pt,
-  skipbelow=6pt
-]{cvleftbar}
-
 % Formatting
 \setlength{\parindent}{0pt}
 \setlist{noitemsep, topsep=2pt, leftmargin=1.25em}
 \titleformat{\section}{\normalsize\bfseries\scshape\color{cvtext}}{\thesection}{1em}{}[\color{cvline}\titlerule]
 \titlespacing*{\section}{0pt}{0.9\baselineskip}{0.45\baselineskip}
-\newcommand{\presentationentry}[4]{%
-  \Needspace{4\baselineskip}
-  \noindent
-  \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
-    \textbf{#1} & {\color{cvdate}#2}
-  \end{tabular*}\\[-1pt]
-  \hspace*{1.2em}{\color{cvmuted}#3}\\[1pt]
-  \hspace*{1.2em}\textit{#4}\par\vspace{10pt}
+\newenvironment{cvbody}{%
+  \begin{list}{}{\leftmargin=1.55em\rightmargin=0pt\topsep=0pt\partopsep=0pt\parsep=0pt\itemsep=0pt}
+  \item\relax
+}{%
+  \end{list}\vspace{7pt}
 }
-\newcommand{\awardentry}[5]{%
+\newlist{cvdetails}{itemize}{1}
+\setlist[cvdetails]{label=\textbullet, leftmargin=1.2em, topsep=3pt, itemsep=2pt, parsep=0pt}
+\newcommand{\cventry}[3]{%
   \Needspace{5\baselineskip}
   \noindent
-  \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
-    \textbf{#1} & {\color{cvdate}#2}
+  \begin{tabular*}{\textwidth}{@{}p{0.77\textwidth}@{\extracolsep{\fill}}r@{}}
+    \textbullet\hspace{0.55em}\textbf{#1} & {\color{cvdate}#2}
   \end{tabular*}\\[-1pt]
-  \hspace*{1.2em}{\color{cvmuted}#3}\\[1pt]
-  \hspace*{1.2em}{\small\textbf{#4}}\\[-1pt]
-  \hspace*{1.2em}{\small #5}\par\vspace{8pt}
+  \begin{cvbody}#3\end{cvbody}
+}
+\newcommand{\presentationentry}[4]{%
+  \cventry{#1}{#2}{%
+    {\color{cvmuted}#3}\\[1pt]
+    \textbf{#4}%
+  }%
+}
+\newcommand{\awardentry}[5]{%
+  \cventry{#1}{#2}{%
+    {\color{cvmuted}#3}\\[1pt]
+    \textbf{#4}\\[-1pt]
+    #5%
+  }%
 }
 \newcommand{\awardentryplain}[4]{%
-  \Needspace{4\baselineskip}
-  \noindent
-  \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
-    \textbf{#1} & {\color{cvdate}#2}
-  \end{tabular*}\\[-1pt]
-  \hspace*{1.2em}{\color{cvmuted}#3}\\[1pt]
-  \hspace*{1.2em}{\small #4}\par\vspace{8pt}
+  \cventry{#1}{#2}{%
+    {\color{cvmuted}#3}\\[1pt]
+    #4%
+  }%
 }
 
 % Begin document
@@ -127,113 +115,57 @@
 \end{tabular*}
 \vspace{10pt}
 
-% Education Section
+% Research Interests
 \section*{RESEARCH INTERESTS}
 \noindent
 Active matter dynamics \quad $\cdot$ \quad Elastic Leidenfrost effect \quad $\cdot$ \quad Hair frizz dynamics
 \vspace{5pt}
 
-% Education Section
+% Education
 \section*{EDUCATION}
-\noindent
-{\large \textbf{\href{https://www.ajou.ac.kr/en/}{Ajou University}}}, Suwon, South Korea \hfill Sep 2025 -- Present\\
-M.S. in Mechanical Engineering \\
-% \vspace{1pt}
-\noindent\\
-{\large \textbf{Ajou University}}, Suwon, South Korea \hfill Mar 2020 -- Aug 2025\\
-B.S. in Mechanical Engineering
+
+\cventry
+  {M.S. in Mechanical Engineering}
+  {Sep 2025 -- Present}
+  {\href{https://www.ajou.ac.kr/en/}{Ajou University}, Suwon, South Korea}
+
+\cventry
+  {B.S. in Mechanical Engineering}
+  {Mar 2020 -- Aug 2025}
+  {Ajou University, Suwon, South Korea}
 \vspace{5pt}
 
-% Research Experience Section
+% Research Experience
 \section*{RESEARCH EXPERIENCE}
-\noindent
-{\large\textbf{Graduate Research Student}} --- Ajou University (\href{https://www.softlab.ajou.ac.kr}{Softlab})
-\hfill Sep 2025 -- Present\\[-2pt]
-\textit{Suwon, South Korea}\\[-3pt]
-\begin{cvleftbar}
-{\small\textbf{Topics:}} Hair frizz dynamics\\[2pt]
-{\small\textbf{Keywords:}} Hair frizz dynamics\\[2pt]
-{\small\textbf{Advisor:}} Prof.\ Jonghyun Ha
-\end{cvleftbar}
-\vspace{9pt}
-\begin{cvleftbar}
-{\small\textbf{Topics:}} Boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels\\[2pt]
-{\small\textbf{Keywords:}} Active matter, Elastic Leidenfrost effect\\[2pt]
-{\small\textbf{Advisor:}} Dr.\ Yeonsu Jung, Prof.\ Jonghyun Ha
-\end{cvleftbar}
-\vspace{10pt}
 
-% ===== Undergraduate =====
-\noindent
-{\large\textbf{Undergraduate Research Student}} --- Ajou University (Softlab)
-\hfill Mar 2023 -- Aug 2025\\[-2pt]
-\textit{Suwon, South Korea}\\[-3pt]
-\noindent
-\begin{cvleftbar}
-{\small\textbf{Topics:}} Boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels\\[2pt]
-{\small\textbf{Keywords:}} Active matter, Elastic Leidenfrost effect\\[2pt]
-{\small\textbf{Advisor:}} Dr.\ Yeonsu Jung, Prof.\ Jonghyun Ha
-\end{cvleftbar}
+\cventry
+  {Graduate Research Student}
+  {Sep 2025 -- Present}
+  {%
+    \href{https://www.softlab.ajou.ac.kr}{Softlab}, Ajou University\\[-1pt]
+    {\color{cvmuted}Suwon, South Korea}
+    \begin{cvdetails}
+      \item \textbf{Topics:} Hair frizz dynamics; boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels
+      \item \textbf{Keywords:} Hair frizz dynamics, active matter, elastic Leidenfrost effect
+      \item \textbf{Advisor:} Prof.\ Jonghyun Ha; Dr.\ Yeonsu Jung
+    \end{cvdetails}
+  }
+
+\cventry
+  {Undergraduate Research Student}
+  {Mar 2023 -- Aug 2025}
+  {%
+    Softlab, Ajou University\\[-1pt]
+    {\color{cvmuted}Suwon, South Korea}
+    \begin{cvdetails}
+      \item \textbf{Topics:} Boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels
+      \item \textbf{Keywords:} Active matter, elastic Leidenfrost effect
+      \item \textbf{Advisor:} Prof.\ Jonghyun Ha; Dr.\ Yeonsu Jung
+    \end{cvdetails}
+  }
 \vspace{5pt}
-% % Projects Section
-% \section*{PROJECTS}
-% \noindent
-% \textbf{\# Project Name} \hfill \#City, \#Country\\ % Project name and location
-% \textit{\# Your Position}
-%    \hfill \#Month \#Year | \#Month \#Year % Project link and duration
 
-% \begin{itemize}
-%      \item \# Description of your job duty and responsibilities.
-%     \item \# Description of your job duty and responsibilities.
-%     \item \# Description of your job duty and responsibilities.
-% \end{itemize}
-
-% \section*{PUBLICATIONS}
-% \noindent
-% \textbf{Journal paper}\\
-% \textup{\# You can use some options here such as: In-Progress, Submitted, reviewed, Published}% Project name and location
-% \begin{itemize}
-%     \item \# write your publication based on common form of referencing in your field of study. For example if you study psychology APA is one of common formats. In following I brought one example
-%     \item Kahnemann, D., \& Tversky, A. (1979). Prospect theory: A decision making under risk. Econometrica, 47(2), 263-291.
-% \end{itemize}
-% \noindent
-% \textbf{\# Here you can also add your other publication such as: Translation, book and so on ...}
-% \begin{itemize}
-%     \item O'Connor, J., Lages, A. (2019). Coaching the brain: Practical applications of neuroscience to coaching. Routledge.
-% \end{itemize}
-
-% \section*{SELECTED COURSES}
-%     \begin{tabularx}{1\textwidth}{
-%     >{\raggedright\arraybackslash}X 
-%    >{\raggedright\arraybackslash}X }
-%       \textbf{Master's Courses}&   \textbf{Bachelor's Courses}\\ 
-%      \begin{itemize}
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%      \end{itemize}
-%      & \begin{itemize}
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%               \end{itemize}\\
-%          \textbf{Additional Courses}
-%          \begin{itemize}
-%          \item \# Course that worth mentioning for committee
-%          \item \# Course that worth mentioning for committee
-%      \end{itemize}
-%     \end{tabularx}
-
-% ===== Conference Presentations =====
+% Conference Presentations
 \section*{CONFERENCE PRESENTATIONS}
 
 \presentationentry
@@ -256,74 +188,71 @@ B.S. in Mechanical Engineering
 \vspace{5pt}
 
 \section*{AWARDS \& HONORS}
-\awardentryplain
+
+\cventry
   {Dean's List}
   {Spring 2024, Spring 2025}
-  {Ajou University}
-  {Recognized for outstanding academic performance (top 5\% of the department).}
+  {%
+    Ajou University
+    \begin{cvdetails}
+      \item Recognized for outstanding academic performance (top 5\% of the department).
+    \end{cvdetails}
+  }
 
-\awardentry
+\cventry
   {Capstone Design Award}
   {June 2025}
-  {Ajou University}
-  {2nd Place \,·\, KRW 1,000,000 prize}
-  {Awarded for a capstone project on a compliant-mechanism-based knee assistive device.}
+  {%
+    \textbf{2nd Place \,·\, KRW 1,000,000 prize}
+    \begin{cvdetails}
+      \item \textbf{Organized by:} Ajou University
+      \item \textbf{Project:} Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention
+      \item \textbf{Role:} Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling
+    \end{cvdetails}
+  }
 
-\awardentry
+\cventry
   {Gyeonggi-do Assistive Device Idea Competition}
   {Nov 2025}
-  {Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)}
-  {3rd Place \,·\, KRW 300,000 prize}
-  {Awarded for a user-centered assistive device concept for older adults.}
+  {%
+    \textbf{3rd Place \,·\, KRW 300,000 prize}
+    \begin{cvdetails}
+      \item \textbf{Organized by:} Gyeonggi Province Rehabilitation Engineering Service Support Center
+      \item \textbf{Project:} Compliant-mechanism-based knee assistive device for older adults
+      \item \textbf{Role:} Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling
+    \end{cvdetails}
+  }
 
-\awardentry
+\cventry
   {APS DFD Travel/Enabling Grant}
   {2025}
-  {APS Division of Fluid Dynamics, American Physical Society}
-  {US\$750 travel cost reimbursement}
-  {Travel support for participation in the APS Division of Fluid Dynamics Meeting.}
+  {%
+    \textbf{US\$750 travel cost reimbursement}
+    \begin{cvdetails}
+      \item \textbf{Awarded by:} APS Division of Fluid Dynamics, American Physical Society
+      \item \textbf{Purpose:} Travel support for participation in the APS Division of Fluid Dynamics Meeting.
+    \end{cvdetails}
+  }
 \vspace{5pt}
-% \section*{OTHER EXPERIENCES}
-% \noindent
-% \textbf{\# you can here experiences those are less related to you applying position}  \hfill \#City, \#Country\\ % Company name and location
-% \textit{\# Your Position} \hfill \#Month \#Year | \#Month \#Year % Position and duration
-% \begin{itemize}
-%     \item \# Description of your job duty and responsibilities.
-%     \item \# Description of your job duty and responsibilities.
-%     \item \# Description of your job duty and responsibilities.
-%     \item \# Description of your job duty and responsibilities.
-% \end{itemize}
 
-
-% \section*{ENGLISH \& GRE TESTS}
-%     \begin{tabularx}{1\textwidth}{
-%     >{\raggedright\arraybackslash}X 
-%    >{\raggedright\arraybackslash}X }
-%       \textbf{IELTS (Academic): 7.5} (overall score)&   \textbf{GRE General Test:}\\ \\
-%     Listening: XX | Reading: XX & Quant: XXX | Verbal: XXX\\
-%     Speaking: XX   | Writing: XX& Analytical writing: X\\
-%     Test date: \#Month \#Year &Test date: \#Month \#Year
-%     \end{tabularx}
-
-% Skills Section
-% \section*{SKILLS}
-% \begin{itemize}
-%     \item \textbf{Programming:} \# Related Programming languages those can be helpful; comma separated
-%     \item \textbf{Software:} \# Related software those can be helpful; comma separated
-%     \item \textbf{Soft Skills:} \# Related soft skills those can be helpful; comma separated
-% \end{itemize}
 \section*{REFERENCES}
-\textbf{Prof.\ Jonghyun Ha}\\
-\textit{Assistant Professor, Department of Mechanical Engineering, Ajou University, Suwon, South Korea}\\
-E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\
-Scholar Profiles:
-\href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \,·\,
-\href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}\\[7pt]
-\noindent
-\textbf{Dr.\ Yeonsu Jung}\\
-\textit{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\
-E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\
-Scholar Profiles:
-\href{https://yeonsu-jung.github.io}{Personal Page} \,·\,
-\href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
+
+\cventry
+  {Prof.\ Jonghyun Ha}
+  {}
+  {%
+    \textit{Assistant Professor, Department of Mechanical Engineering, Ajou University, Suwon, South Korea}\\[-1pt]
+    E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\[-1pt]
+    Scholar Profiles: \href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \,·\, \href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}
+  }
+
+\cventry
+  {Dr.\ Yeonsu Jung}
+  {}
+  {%
+    \textit{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\[-1pt]
+    E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\[-1pt]
+    Scholar Profiles: \href{https://yeonsu-jung.github.io}{Personal Page} \,·\, \href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
+  }
+
 \end{document}
