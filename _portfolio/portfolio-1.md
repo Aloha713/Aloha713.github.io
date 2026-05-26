@@ -33,11 +33,11 @@ author_profile: true
 
 ## 🏆 Awards & Honors
 
-- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">[Dean’s List](https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1)</span><span class="portfolio-entry-date">Spring 2024, Spring 2025</span></span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><a href="https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1">Dean’s List</a></span><span class="portfolio-entry-date">Spring 2024, Spring 2025</span></span>
     - Recognized for outstanding academic performance (top 5% of the department).
 &nbsp;
 
-- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Capstone Design Award</span><span class="portfolio-entry-date">June 2025</span></span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Capstone Design Competition</span><span class="portfolio-entry-date">June 2025</span></span>
   **<span class="talk-title">2nd Place · KRW 1,000,000 prize</span>**
     - **Organized by**: Ajou University  
     - **Project**: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention  
@@ -73,7 +73,7 @@ author_profile: true
 
 ## 🎤 Conference Presentations
 
-- **APS Division of Fluid Dynamics Meeting** <span class="talk-meta">(Houston, TX, USA · Nov 2025)</span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><strong>APS Division of Fluid Dynamics Meeting</strong> <span class="talk-meta">(Houston, TX, USA)</span></span><span class="portfolio-entry-date">Nov 2025</span></span>
   **<span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>**
   <details class="talk-toggle">
     <summary class="talk-action">View presentation photos</summary>
@@ -83,7 +83,7 @@ author_profile: true
     </div>
   </details>
 
-- **Asian Congress of Fluid Mechanics** <span class="talk-meta">(Seoul, South Korea · Sep 2025)</span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><strong>Asian Congress of Fluid Mechanics</strong> <span class="talk-meta">(Seoul, South Korea)</span></span><span class="portfolio-entry-date">Sep 2025</span></span>
   **<span class="talk-title">Leidenfrost-induced active matter dynamics of spherical hydrogels</span>**
   <details class="talk-toggle">
     <summary class="talk-action">View presentation photos</summary>
@@ -93,7 +93,7 @@ author_profile: true
     </div>
   </details>
 
-- **KSME Annual Conference** <span class="talk-meta">(Jeju, South Korea · Nov 2024)</span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><strong>KSME Annual Conference</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Nov 2024</span></span>
   **<span class="talk-title">Explosive motion of spherical hydrogel via Leidenfrost effect</span>**
   <details class="talk-toggle">
     <summary class="talk-action">View presentation photos</summary>

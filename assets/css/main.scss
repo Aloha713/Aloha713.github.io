@@ -117,8 +117,8 @@ html[data-theme="dark"] .section-block::before {
 .portfolio-entry-date {
   color: #3f454b;
   flex: 0 0 auto;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
   white-space: nowrap;
 }
 
@@ -203,8 +203,9 @@ html[data-theme="dark"] .section-block::before {
 
 .cv-item-date {
   white-space: nowrap;
-  color: #777;
-  font-size: 0.95rem;
+  color: #3f454b;
+  font-size: 1rem;
+  font-weight: 650;
 }
 
 .cv-item-subtitle {
