@@ -21,7 +21,7 @@
 % Readability colors
 \definecolor{cvtext}{HTML}{111111}
 \definecolor{cvmuted}{HTML}{555555}
-\definecolor{cvdate}{HTML}{666666}
+\definecolor{cvdate}{HTML}{111111}
 \definecolor{cvline}{HTML}{666666}
 \definecolor{cvbox}{HTML}{FFFFFF}
 \definecolor{cvlink}{HTML}{0645AD}
@@ -62,8 +62,8 @@
   \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
     \textbf{#1} & {\color{cvdate}#2}
   \end{tabular*}\\[-1pt]
-  {\color{cvmuted}#3}\\[1pt]
-  \textit{#4}\par\vspace{10pt}
+  \hspace*{1.2em}{\color{cvmuted}#3}\\[1pt]
+  \hspace*{1.2em}\textit{#4}\par\vspace{10pt}
 }
 \newcommand{\awardentry}[5]{%
   \Needspace{5\baselineskip}
@@ -71,9 +71,18 @@
   \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
     \textbf{#1} & {\color{cvdate}#2}
   \end{tabular*}\\[-1pt]
-  {\color{cvmuted}#3}\\[1pt]
-  {\small\textbf{#4}}\\[-1pt]
-  {\small #5}\par\vspace{8pt}
+  \hspace*{1.2em}{\color{cvmuted}#3}\\[1pt]
+  \hspace*{1.2em}{\small\textbf{#4}}\\[-1pt]
+  \hspace*{1.2em}{\small #5}\par\vspace{8pt}
+}
+\newcommand{\awardentryplain}[4]{%
+  \Needspace{4\baselineskip}
+  \noindent
+  \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & {\color{cvdate}#2}
+  \end{tabular*}\\[-1pt]
+  \hspace*{1.2em}{\color{cvmuted}#3}\\[1pt]
+  \hspace*{1.2em}{\small #4}\par\vspace{8pt}
 }
 
 % Begin document
@@ -247,11 +256,10 @@ B.S. in Mechanical Engineering
 \vspace{5pt}
 
 \section*{AWARDS \& HONORS}
-\awardentry
+\awardentryplain
   {Dean's List}
   {Spring 2024, Spring 2025}
   {Ajou University}
-  {Academic distinction}
   {Recognized for outstanding academic performance (top 5\% of the department).}
 
 \awardentry
