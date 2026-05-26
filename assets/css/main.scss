@@ -101,6 +101,35 @@ html[data-theme="dark"] .section-block::before {
   margin: 0.1rem 0 0.05rem 0;
 }
 
+.portfolio-entry-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.portfolio-entry-title {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.portfolio-entry-date {
+  color: #959191;
+  flex: 0 0 auto;
+  font-size: 0.85rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .portfolio-entry-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
 .talk-title {
   display: block;
   font-size: 1rem;

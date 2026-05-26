@@ -3,6 +3,7 @@
 
 % Encoding & geometry
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{geometry}
 \geometry{letterpaper, margin=0.75in}
 
@@ -13,9 +14,14 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
+\usepackage{newpxtext,newpxmath}
+\usepackage{microtype}
+\usepackage{needspace}
 
 % Readability colors
 \definecolor{cvtext}{HTML}{111111}
+\definecolor{cvmuted}{HTML}{555555}
+\definecolor{cvdate}{HTML}{666666}
 \definecolor{cvline}{HTML}{666666}
 \definecolor{cvbox}{HTML}{FFFFFF}
 \definecolor{cvlink}{HTML}{0645AD}
@@ -48,8 +54,27 @@
 % Formatting
 \setlength{\parindent}{0pt}
 \setlist{noitemsep, topsep=2pt, leftmargin=1.25em}
-\titleformat{\section}{\large\bfseries\color{cvtext}}{\thesection}{1em}{}[\color{cvline}\titlerule]
-\titlespacing*{\section}{0pt}{0.85\baselineskip}{0.5\baselineskip}
+\titleformat{\section}{\normalsize\bfseries\scshape\color{cvtext}}{\thesection}{1em}{}[\color{cvline}\titlerule]
+\titlespacing*{\section}{0pt}{0.9\baselineskip}{0.45\baselineskip}
+\newcommand{\presentationentry}[4]{%
+  \Needspace{4\baselineskip}
+  \noindent
+  \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & {\color{cvdate}#2}
+  \end{tabular*}\\[-1pt]
+  {\color{cvmuted}#3}\\[1pt]
+  \textit{#4}\par\vspace{10pt}
+}
+\newcommand{\awardentry}[5]{%
+  \Needspace{5\baselineskip}
+  \noindent
+  \begin{tabular*}{\textwidth}{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & {\color{cvdate}#2}
+  \end{tabular*}\\[-1pt]
+  {\color{cvmuted}#3}\\[1pt]
+  {\small\textbf{#4}}\\[-1pt]
+  {\small #5}\par\vspace{8pt}
+}
 
 % Begin document
 \begin{document}
@@ -202,49 +227,53 @@ B.S. in Mechanical Engineering
 % ===== Conference Presentations =====
 \section*{CONFERENCE PRESENTATIONS}
 
-% (선택) 이 섹션만 줄간격 살짝 타이트하게
-\setlength{\parskip}{0pt}
+\presentationentry
+  {APS Division of Fluid Dynamics Meeting}
+  {2025}
+  {Houston, TX, USA \,·\, Nov 2025}
+  {Leidenfrost-induced active matter dynamics of spherical hydrogels}
 
-% 항목 간 간격 컨트롤용 (원하면 10pt -> 6pt로 더 줄여도 됨)
-\newcommand{\confsep}{\vspace{10pt}}
+\presentationentry
+  {Asian Congress of Fluid Mechanics}
+  {2025}
+  {Seoul, South Korea \,·\, Sep 2025}
+  {Leidenfrost-induced active matter dynamics of spherical hydrogels}
 
-\noindent
-\textbf{APS Division of Fluid Dynamics Meeting} \hfill 2025\\
-{\small Houston, TX, USA \,·\, Nov 2025}\\
-\textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
-\confsep
-
-\noindent
-\textbf{Asian Congress of Fluid Mechanics} \hfill 2025\\
-{\small Seoul, South Korea \,·\, Sep 2025}\\
-\textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
-\confsep
-
-\noindent
-\textbf{KSME Annual Conference} \hfill 2024\\
-{\small Jeju, South Korea \,·\, Nov 2024}\\
-\textit{Explosive motion of spherical hydrogel via the Leidenfrost effect}
+\presentationentry
+  {KSME Annual Conference}
+  {2024}
+  {Jeju, South Korea \,·\, Nov 2024}
+  {Explosive motion of spherical hydrogel via the Leidenfrost effect}
 \vspace{5pt}
 
 \section*{AWARDS \& HONORS}
-\noindent
-\textbf{Dean's List} \hfill Spring 2024, Spring 2025\\[2pt]
-Ajou University\\
-Recognized for outstanding academic performance (top 5\% of the department).\\[8pt]
-\noindent
-\textbf{Capstone Design Award} \hfill June 2025\\[2pt]
-Ajou University\\
-2nd Place \,·\, KRW 1,000,000 prize.\\
-Awarded for a capstone project on a compliant-mechanism-based knee assistive device.\\[8pt]
-\noindent
-\textbf{Gyeonggi-do Assistive Device Idea Competition} \hfill Nov 2025\\[2pt]
-Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)\\
-3rd Place \,·\, KRW 300,000 prize.\\
-Awarded for a user-centered assistive device concept for older adults.\\[8pt]
-\noindent
-\textbf{APS DFD Travel/Enabling Grant} \hfill 2025\\[2pt]
-APS Division of Fluid Dynamics, American Physical Society\\
-US\$750 travel cost reimbursement for participation in the APS Division of Fluid Dynamics Meeting.
+\awardentry
+  {Dean's List}
+  {Spring 2024, Spring 2025}
+  {Ajou University}
+  {Academic distinction}
+  {Recognized for outstanding academic performance (top 5\% of the department).}
+
+\awardentry
+  {Capstone Design Award}
+  {June 2025}
+  {Ajou University}
+  {2nd Place \,·\, KRW 1,000,000 prize}
+  {Awarded for a capstone project on a compliant-mechanism-based knee assistive device.}
+
+\awardentry
+  {Gyeonggi-do Assistive Device Idea Competition}
+  {Nov 2025}
+  {Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)}
+  {3rd Place \,·\, KRW 300,000 prize}
+  {Awarded for a user-centered assistive device concept for older adults.}
+
+\awardentry
+  {APS DFD Travel/Enabling Grant}
+  {2025}
+  {APS Division of Fluid Dynamics, American Physical Society}
+  {US\$750 travel cost reimbursement}
+  {Travel support for participation in the APS Division of Fluid Dynamics Meeting.}
 \vspace{5pt}
 % \section*{OTHER EXPERIENCES}
 % \noindent

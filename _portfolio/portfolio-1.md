@@ -33,12 +33,11 @@ author_profile: true
 
 ## 🏆 Awards & Honors
 
-- **[Dean’s List](https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1)**
-    - **Spring 2024, Spring 2025** <br/>
-    Recognized for outstanding academic performance (top 5% of the department).
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><a href="https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1">Dean’s List</a></span><span class="portfolio-entry-date">Spring 2024, Spring 2025</span></span>
+    - Recognized for outstanding academic performance (top 5% of the department).
 &nbsp;
 
-- **Capstone Design Award** <span class="talk-meta">(June 2025)</span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Capstone Design Award</span><span class="portfolio-entry-date">June 2025</span></span>
   **<span class="talk-title">2nd Place · KRW 1,000,000 prize</span>**
     - **Organized by**: Ajou University  
     - **Project**: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention  
@@ -48,7 +47,7 @@ author_profile: true
         - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
 &nbsp;
 
-- **Gyeonggi-do Assistive Device Idea Competition** <span class="talk-meta">(Nov 2025)</span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gyeonggi-do Assistive Device Idea Competition</span><span class="portfolio-entry-date">Nov 2025</span></span>
   **<span class="talk-title">3rd Place · KRW 300,000 prize</span>**
     - **Organized by**: Gyeonggi Province Rehabilitation Engineering Service Support Center  
     - **Project**: Compliant-mechanism-based knee assistive device for older adults
@@ -65,7 +64,7 @@ author_profile: true
             </div>
             </details>
 
-- **APS DFD Travel/Enabling Grant** <span class="talk-meta">(2025)</span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">APS DFD Travel/Enabling Grant</span><span class="portfolio-entry-date">2025</span></span>
   **<span class="talk-title">US$750 travel cost reimbursement</span>**
     - **Awarded by**: APS Division of Fluid Dynamics, American Physical Society  
     - **Purpose**: Travel support for participation in the APS Division of Fluid Dynamics Meeting  
