@@ -18,7 +18,6 @@ My research
 **Elastic Leidenfrost effect**  
 
 
-**Hair FRizz dynamcis**  
-
+**Hair frizz dynamics**  
 
 

@@ -123,6 +123,32 @@ html[data-theme="dark"] .section-block::before {
   margin-bottom: 0.6rem !important;
 }
 
+/* Keep the theme toggle pinned to the far right of the masthead. */
+.greedy-nav {
+  padding-right: 3.25rem;
+}
+
+.greedy-nav .visible-links #theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2.5rem;
+}
+
+.greedy-nav .visible-links #theme-toggle a {
+  align-items: center;
+  height: 2.5rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 2.5rem;
+}
+
+.greedy-nav button:not(.hidden),
+.greedy-nav .hidden-links {
+  right: 2.75rem;
+}
+
 
 /* ===== CV readability boost ===== */
 .cv-section { margin-bottom: 2.2rem; }
