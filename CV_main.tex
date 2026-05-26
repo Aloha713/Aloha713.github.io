@@ -1,11 +1,9 @@
-% Document class and font size
+% Document class and page setup
 \documentclass[letterpaper,11pt]{extarticle}
 
-% Encoding & geometry
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{geometry}
-\geometry{letterpaper, margin=0.75in}
+\usepackage[letterpaper,margin=0.72in]{geometry}
 
 % Core packages
 \usepackage{graphicx}
@@ -14,245 +12,229 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
-\usepackage{newpxtext,newpxmath}
 \usepackage{microtype}
 \usepackage{needspace}
+\usepackage{fancyhdr}
 
-% Readability colors
-\definecolor{cvtext}{HTML}{111111}
+% Font: use a clean sans-serif font, with a safe fallback for Overleaf.
+\IfFileExists{sourcesanspro.sty}{%
+  \usepackage[default]{sourcesanspro}
+}{%
+  \usepackage{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+}
+
+% Colors
+\definecolor{cvtext}{HTML}{222222}
 \definecolor{cvmuted}{HTML}{555555}
 \definecolor{cvdate}{HTML}{111111}
-\definecolor{cvline}{HTML}{666666}
-\definecolor{cvbox}{HTML}{FFFFFF}
+\definecolor{cvline}{HTML}{B7B7B7}
 \definecolor{cvlink}{HTML}{0645AD}
 
 % Links
 \usepackage[colorlinks=true, linkcolor=cvlink, urlcolor=cvlink, citecolor=cvlink]{hyperref}
 
-% Header/footer
-\usepackage{fancyhdr}
-
-% Formatting
-\setlength{\parindent}{0pt}
-\setlist{noitemsep, topsep=2pt, leftmargin=1.25em}
-\titleformat{\section}{\normalsize\bfseries\scshape\color{cvtext}}{\thesection}{1em}{}[\color{cvline}\titlerule]
-\titlespacing*{\section}{0pt}{0.9\baselineskip}{0.45\baselineskip}
-\newenvironment{cvbody}{%
-  \begin{list}{}{\leftmargin=1.55em\rightmargin=0pt\topsep=0pt\partopsep=0pt\parsep=0pt\itemsep=0pt}
-  \item\relax
-}{%
-  \end{list}\vspace{7pt}
-}
-\newlist{cvdetails}{itemize}{1}
-\setlist[cvdetails]{label=\textbullet, leftmargin=1.2em, topsep=3pt, itemsep=2pt, parsep=0pt}
-\newcommand{\cventry}[3]{%
-  \Needspace{5\baselineskip}
-  \noindent
-  \begin{tabular*}{\textwidth}{@{}p{0.77\textwidth}@{\extracolsep{\fill}}r@{}}
-    \textbullet\hspace{0.55em}\textbf{#1} & {\color{cvdate}#2}
-  \end{tabular*}\\[-1pt]
-  \begin{cvbody}#3\end{cvbody}
-}
-\newcommand{\presentationentry}[4]{%
-  \cventry{#1}{#2}{%
-    {\color{cvmuted}#3}\\[1pt]
-    \textbf{#4}%
-  }%
-}
-\newcommand{\awardentry}[5]{%
-  \cventry{#1}{#2}{%
-    {\color{cvmuted}#3}\\[1pt]
-    \textbf{#4}\\[-1pt]
-    #5%
-  }%
-}
-\newcommand{\awardentryplain}[4]{%
-  \cventry{#1}{#2}{%
-    {\color{cvmuted}#3}\\[1pt]
-    #4%
-  }%
-}
-
-% Begin document
-\begin{document}
-\pagecolor{white}
-\color{cvtext}
-
-% Disable page numbers
+% Page style
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
-\fancyhead[L]{\textit{Minseong Cho}}
-\fancyhead[R]{\textit{05/2026}}
-\thispagestyle{empty} % Remove header from the first page
+\fancyhead[L]{\small\textit{Minseong Cho}}
+\fancyhead[R]{\small\textit{05/2026}}
+\setlength{\headheight}{14pt}
 
-% ===== Header =====
+% General spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.02}
+
+\titleformat{\section}
+  {\fontsize{12}{14}\selectfont\bfseries\scshape\color{cvtext}}
+  {}{0pt}{}
+  [\vspace{-0.35em}\color{cvline}\titlerule]
+\titlespacing*{\section}{0pt}{1.05em}{0.65em}
+
+% Entry helpers
+\newcommand{\cvheading}[2]{%
+  \begin{tabular*}{\textwidth}{@{}p{0.74\textwidth}@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & {\color{cvdate}#2}
+  \end{tabular*}\par
+}
+
+\newcommand{\cvplainentry}[3]{%
+  \Needspace{3\baselineskip}
+  \cvheading{#1}{#2}
+  {\color{cvmuted}#3}\par
+  \vspace{0.75em}
+}
+
+\newcommand{\cvdetailentry}[4]{%
+  \Needspace{5\baselineskip}
+  \cvheading{#1}{#2}
+  {\color{cvmuted}#3}\par
+  \vspace{0.15em}
+  #4\par
+  \vspace{0.85em}
+}
+
+\newlist{cvbullets}{itemize}{1}
+\setlist[cvbullets]{
+  label=\textbullet,
+  leftmargin=1.25em,
+  topsep=0.15em,
+  itemsep=0.08em,
+  parsep=0pt
+}
+
+\begin{document}
+\thispagestyle{empty}
+\color{cvtext}
+
+% Header
 \noindent
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r @{}}
-
-% ----- LEFT -----
-\begin{minipage}[t]{0.72\textwidth}
-\vspace{0pt}
-
-{\fontsize{25}{36}\selectfont\textbf{Minseong Cho}}
-
-\vspace{12pt}
-\faEnvelope\ \href{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}\\[4pt]
-\faPhone\ \href{tel:+821088037786}{+82 10-8803-7786}\\[4pt]
-\faMapMarker*\ Suwon, South Korea\\[4pt]
-\faGraduationCap\ \href{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}
-
-\end{minipage}
-
-&
-% ----- RIGHT -----
-\begin{minipage}[t]{0.26\textwidth}
-\vspace{0pt}
-\raggedleft
-\includegraphics[width=0.60\linewidth]{hi.JPG}
-\end{minipage}
-
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r@{}}
+  \begin{minipage}[t]{0.76\textwidth}
+    \vspace{0pt}
+    {\fontsize{25}{29}\selectfont\textbf{Minseong Cho}}\par
+    \vspace{0.55em}
+    {\small
+    \faEnvelope\ \href{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}
+    \quad
+    \faPhone\ \href{tel:+821088037786}{+82 10-8803-7786}
+    \quad
+    \faMapMarker*\ Suwon, South Korea\\[3pt]
+    \faGraduationCap\ \href{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}}
+  \end{minipage}
+  &
+  \begin{minipage}[t]{0.18\textwidth}
+    \vspace{0pt}
+    \raggedleft
+    \IfFileExists{hi.JPG}{\includegraphics[width=0.72\linewidth]{hi.JPG}}{}
+  \end{minipage}
 \end{tabular*}
-\vspace{10pt}
+\vspace{0.55em}
 
-% Research Interests
 \section*{RESEARCH INTERESTS}
-\noindent
 Active matter dynamics \quad $\cdot$ \quad Elastic Leidenfrost effect \quad $\cdot$ \quad Hair frizz dynamics
-\vspace{5pt}
 
-% Education
 \section*{EDUCATION}
 
-\cventry
+\cvplainentry
   {M.S. in Mechanical Engineering}
   {Sep 2025 -- Present}
   {\href{https://www.ajou.ac.kr/en/}{Ajou University}, Suwon, South Korea}
 
-\cventry
+\cvplainentry
   {B.S. in Mechanical Engineering}
   {Mar 2020 -- Aug 2025}
   {Ajou University, Suwon, South Korea}
-\vspace{5pt}
 
-% Research Experience
 \section*{RESEARCH EXPERIENCE}
 
-\cventry
+\cvdetailentry
   {Graduate Research Student}
   {Sep 2025 -- Present}
+  {\href{https://www.softlab.ajou.ac.kr}{Softlab}, Ajou University, Suwon, South Korea}
   {%
-    \href{https://www.softlab.ajou.ac.kr}{Softlab}, Ajou University\\[-1pt]
-    {\color{cvmuted}Suwon, South Korea}
-    \begin{cvdetails}
+    \begin{cvbullets}
       \item \textbf{Topics:} Hair frizz dynamics; boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels
       \item \textbf{Keywords:} Hair frizz dynamics, active matter, elastic Leidenfrost effect
       \item \textbf{Advisor:} Prof.\ Jonghyun Ha; Dr.\ Yeonsu Jung
-    \end{cvdetails}
+    \end{cvbullets}
   }
 
-\cventry
+\cvdetailentry
   {Undergraduate Research Student}
   {Mar 2023 -- Aug 2025}
+  {Softlab, Ajou University, Suwon, South Korea}
   {%
-    Softlab, Ajou University\\[-1pt]
-    {\color{cvmuted}Suwon, South Korea}
-    \begin{cvdetails}
+    \begin{cvbullets}
       \item \textbf{Topics:} Boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels
       \item \textbf{Keywords:} Active matter, elastic Leidenfrost effect
       \item \textbf{Advisor:} Prof.\ Jonghyun Ha; Dr.\ Yeonsu Jung
-    \end{cvdetails}
+    \end{cvbullets}
   }
-\vspace{5pt}
 
-% Conference Presentations
 \section*{CONFERENCE PRESENTATIONS}
 
-\presentationentry
+\cvdetailentry
   {APS Division of Fluid Dynamics Meeting}
   {2025}
-  {Houston, TX, USA \,·\, Nov 2025}
-  {Leidenfrost-induced active matter dynamics of spherical hydrogels}
+  {Houston, TX, USA \quad $\cdot$ \quad Nov 2025}
+  {\textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}}
 
-\presentationentry
+\cvdetailentry
   {Asian Congress of Fluid Mechanics}
   {2025}
-  {Seoul, South Korea \,·\, Sep 2025}
-  {Leidenfrost-induced active matter dynamics of spherical hydrogels}
+  {Seoul, South Korea \quad $\cdot$ \quad Sep 2025}
+  {\textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}}
 
-\presentationentry
+\cvdetailentry
   {KSME Annual Conference}
   {2024}
-  {Jeju, South Korea \,·\, Nov 2024}
-  {Explosive motion of spherical hydrogel via the Leidenfrost effect}
-\vspace{5pt}
+  {Jeju, South Korea \quad $\cdot$ \quad Nov 2024}
+  {\textit{Explosive motion of spherical hydrogel via the Leidenfrost effect}}
 
 \section*{AWARDS \& HONORS}
 
-\cventry
+\cvdetailentry
   {Dean's List}
   {Spring 2024, Spring 2025}
-  {%
-    Ajou University
-    \begin{cvdetails}
-      \item Recognized for outstanding academic performance (top 5\% of the department).
-    \end{cvdetails}
-  }
+  {Ajou University}
+  {Recognized for outstanding academic performance (top 5\% of the department).}
 
-\cventry
+\cvdetailentry
   {Capstone Design Award}
   {June 2025}
+  {Ajou University}
   {%
-    \textbf{2nd Place \,·\, KRW 1,000,000 prize}
-    \begin{cvdetails}
-      \item \textbf{Organized by:} Ajou University
+    \textbf{2nd Place \quad $\cdot$ \quad KRW 1,000,000 prize}
+    \begin{cvbullets}
       \item \textbf{Project:} Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention
       \item \textbf{Role:} Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling
-    \end{cvdetails}
+    \end{cvbullets}
   }
 
-\cventry
+\cvdetailentry
   {Gyeonggi-do Assistive Device Idea Competition}
   {Nov 2025}
+  {Gyeonggi Province Rehabilitation Engineering Service Support Center}
   {%
-    \textbf{3rd Place \,·\, KRW 300,000 prize}
-    \begin{cvdetails}
-      \item \textbf{Organized by:} Gyeonggi Province Rehabilitation Engineering Service Support Center
+    \textbf{3rd Place \quad $\cdot$ \quad KRW 300,000 prize}
+    \begin{cvbullets}
       \item \textbf{Project:} Compliant-mechanism-based knee assistive device for older adults
       \item \textbf{Role:} Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling
-    \end{cvdetails}
+    \end{cvbullets}
   }
 
-\cventry
+\cvdetailentry
   {APS DFD Travel/Enabling Grant}
   {2025}
+  {APS Division of Fluid Dynamics, American Physical Society}
   {%
-    \textbf{US\$750 travel cost reimbursement}
-    \begin{cvdetails}
-      \item \textbf{Awarded by:} APS Division of Fluid Dynamics, American Physical Society
-      \item \textbf{Purpose:} Travel support for participation in the APS Division of Fluid Dynamics Meeting.
-    \end{cvdetails}
+    \textbf{US\$750 travel cost reimbursement}\\[-0.15em]
+    Travel support for participation in the APS Division of Fluid Dynamics Meeting.
   }
-\vspace{5pt}
 
 \section*{REFERENCES}
 
-\cventry
+\cvdetailentry
   {Prof.\ Jonghyun Ha}
   {}
+  {Assistant Professor, Department of Mechanical Engineering, Ajou University}
   {%
-    \textit{Assistant Professor, Department of Mechanical Engineering, Ajou University, Suwon, South Korea}\\[-1pt]
-    E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\[-1pt]
-    Scholar Profiles: \href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \,·\, \href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}
+    E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\
+    Scholar Profiles: \href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \quad $\cdot$ \quad
+    \href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}
   }
 
-\cventry
+\cvdetailentry
   {Dr.\ Yeonsu Jung}
   {}
+  {Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University}
   {%
-    \textit{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\[-1pt]
-    E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\[-1pt]
-    Scholar Profiles: \href{https://yeonsu-jung.github.io}{Personal Page} \,·\, \href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
+    E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\
+    Scholar Profiles: \href{https://yeonsu-jung.github.io}{Personal Page} \quad $\cdot$ \quad
+    \href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
   }
 
 \end{document}
