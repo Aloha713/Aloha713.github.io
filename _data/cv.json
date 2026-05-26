@@ -4,7 +4,7 @@
     "email": "mscho713@ajou.ac.kr",
     "phone": "+82 010-8803-7786",
     "website": "https://aloha713.github.io",
-    "summary": "Currently a graduate researcher at Ajou University. My research interests include active matter dynamics, the Leidenfrost effect, and hair dynamics.",
+    "summary": "Currently a graduate researcher at Ajou University. My research interests include active matter dynamics, the Leidenfrost effect, and hair frizz dynamics.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -88,21 +88,21 @@
       "name": "Leidenfrost-induced active matter dynamics of spherical hydrogels",
       "event": "APS Division of Fluid Dynamics Meeting",
       "location": "Houston, TX, USA",
-      "date": "2025-11",
+      "date": "Nov 2025",
       "description": ""
     },
     {
       "name": "Leidenfrost-induced active matter dynamics of spherical hydrogels",
       "event": "Asian Congress of Fluid Mechanics",
       "location": "Seoul, South Korea",
-      "date": "2025-09",
+      "date": "Sep 2025",
       "description": ""
     },
     {
       "name": "Explosive motion of spherical hydrogel via the Leidenfrost effect",
       "event": "KSME Annual Conference",
       "location": "Jeju, South Korea",
-      "date": "2024-11",
+      "date": "Nov 2024",
       "description": ""
     }
   ],
@@ -112,25 +112,28 @@
       "title": "Dean’s List",
       "date": "Spring 2024, Spring 2025",
       "awarder": "Ajou University",
-      "summary": "Recognized for outstanding academic performance (top 5% of the department)."
+      "description": "Recognized for outstanding academic performance (top 5% of the department)."
     },
     {
       "title": "Capstone Design Award",
       "date": "June 2025",
       "awarder": "Ajou University",
-      "summary": "2nd Place · KRW 1,000,000 prize. Awarded for a capstone project on a compliant-mechanism-based knee assistive device."
+      "highlight": "2nd Place · KRW 1,000,000 prize",
+      "description": "Awarded for a capstone project on a compliant-mechanism-based knee assistive device."
     },
     {
       "title": "Gyeonggi-do Assistive Device Idea Competition",
       "date": "Nov 2025",
       "awarder": "Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)",
-      "summary": "3rd Place · KRW 300,000 prize. Awarded for a user-centered assistive device concept for older adults."
+      "highlight": "3rd Place · KRW 300,000 prize",
+      "description": "Awarded for a user-centered assistive device concept for older adults."
     },
     {
       "title": "APS DFD Travel/Enabling Grant",
       "date": "2025",
       "awarder": "APS Division of Fluid Dynamics, American Physical Society",
-      "summary": "US$750 travel cost reimbursement for participation in the APS Division of Fluid Dynamics Meeting."
+      "highlight": "US$750 travel cost reimbursement",
+      "description": "Travel support for participation in the APS Division of Fluid Dynamics Meeting."
     }
   ],
 

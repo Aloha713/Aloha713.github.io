@@ -14,8 +14,15 @@
 \usepackage{xcolor}
 \usepackage{fontawesome5}
 
+% Readability colors
+\definecolor{cvtext}{HTML}{111111}
+\definecolor{cvmuted}{HTML}{555555}
+\definecolor{cvline}{HTML}{666666}
+\definecolor{cvbox}{HTML}{FFFFFF}
+\definecolor{cvlink}{HTML}{0645AD}
+
 % Links
-\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[colorlinks=true, linkcolor=cvlink, urlcolor=cvlink, citecolor=cvlink]{hyperref}
 
 % Header/footer
 \usepackage{fancyhdr}
@@ -27,31 +34,35 @@
   rightline=false,
   topline=false,
   bottomline=false,
-  linecolor=black,
-  linewidth=0.8pt,
+  linecolor=cvline,
+  linewidth=1.1pt,
+  backgroundcolor=cvbox,
   leftmargin=0.5em,
-  innerleftmargin=0.5em,
-  innerrightmargin=0pt,
-  innertopmargin=0pt,
-  innerbottommargin=0pt,
-  skipabove=0pt,
-  skipbelow=4pt
+  innerleftmargin=0.7em,
+  innerrightmargin=0.2em,
+  innertopmargin=2pt,
+  innerbottommargin=2pt,
+  skipabove=2pt,
+  skipbelow=6pt
 ]{cvleftbar}
 
 % Formatting
-\setlist{noitemsep}
-\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+\setlist{noitemsep, topsep=2pt, leftmargin=1.25em}
+\titleformat{\section}{\large\bfseries\color{cvtext}}{\thesection}{1em}{}[\color{cvline}\titlerule]
+\titlespacing*{\section}{0pt}{0.85\baselineskip}{0.5\baselineskip}
 
 % Begin document
 \begin{document}
+\pagecolor{white}
+\color{cvtext}
 
 % Disable page numbers
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
 \fancyhead[L]{\textit{Minseong Cho}}
-\fancyhead[R]{\textit{01/2026}}
+\fancyhead[R]{\textit{05/2026}}
 \thispagestyle{empty} % Remove header from the first page
 
 % ===== Header =====
@@ -68,7 +79,7 @@
 \faEnvelope\ \href{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}\\[4pt]
 \faPhone\ \href{tel:+821088037786}{+82 10-8803-7786}\\[4pt]
 \faMapMarker*\ Suwon, South Korea\\[4pt]
-\faGraduationCap\ \href{https://scholar.google.com/citations?user=XXXX}{Google Scholar}
+\faGraduationCap\ \href{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}
 
 \end{minipage}
 
@@ -86,17 +97,17 @@
 % Education Section
 \section*{RESEARCH INTERESTS}
 \noindent
-Active matter dynamics \quad $\cdot$ \quad Elastic Leidenfrost effect \quad $\cdot$ \quad Hair dynamics
+Active matter dynamics \quad $\cdot$ \quad Elastic Leidenfrost effect \quad $\cdot$ \quad Hair frizz dynamics
 \vspace{5pt}
 
 % Education Section
 \section*{EDUCATION}
 \noindent
-{\large \textbf{\href{https://www.ajou.ac.kr/en/}{Ajou University}}}, Suwon, South Korea \hfill Sep 2025 | Present\\
+{\large \textbf{\href{https://www.ajou.ac.kr/en/}{Ajou University}}}, Suwon, South Korea \hfill Sep 2025 -- Present\\
 M.S. in Mechanical Engineering \\
 % \vspace{1pt}
 \noindent\\
-{\large \textbf{Ajou University}}, Suwon, South Korea \hfill Mar 2020 | Aug 2025\\
+{\large \textbf{Ajou University}}, Suwon, South Korea \hfill Mar 2020 -- Aug 2025\\
 B.S. in Mechanical Engineering
 \vspace{5pt}
 
@@ -126,8 +137,8 @@ B.S. in Mechanical Engineering
 \textit{Suwon, South Korea}\\[-3pt]
 \noindent
 \begin{cvleftbar}
-{\small\textbf{Topics:}} Boundary-driven active matter powered by the Leidenfrost effect in soft hydrogel\\[2pt]
-{\small\textbf{Keywords:}} Active matter; Elastic Leidenfrost effect\\[2pt]
+{\small\textbf{Topics:}} Boundary-driven active matter powered by the Leidenfrost effect in soft hydrogels\\[2pt]
+{\small\textbf{Keywords:}} Active matter, Elastic Leidenfrost effect\\[2pt]
 {\small\textbf{Advisor:}} Dr.\ Yeonsu Jung, Prof.\ Jonghyun Ha
 \end{cvleftbar}
 \vspace{5pt}
@@ -200,19 +211,19 @@ B.S. in Mechanical Engineering
 
 \noindent
 \textbf{APS Division of Fluid Dynamics Meeting} \hfill 2025\\
-{\small Houston, TX, USA \,·\, 2025-11}\\
+{\small Houston, TX, USA \,·\, Nov 2025}\\
 \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
 \confsep
 
 \noindent
 \textbf{Asian Congress of Fluid Mechanics} \hfill 2025\\
-{\small Seoul, South Korea \,·\, 2025-09}\\
+{\small Seoul, South Korea \,·\, Sep 2025}\\
 \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
 \confsep
 
 \noindent
 \textbf{KSME Annual Conference} \hfill 2024\\
-{\small Jeju, South Korea \,·\, 2024-11}\\
+{\small Jeju, South Korea \,·\, Nov 2024}\\
 \textit{Explosive motion of spherical hydrogel via the Leidenfrost effect}
 \vspace{5pt}
 
@@ -222,13 +233,17 @@ B.S. in Mechanical Engineering
 Ajou University\\
 Recognized for outstanding academic performance (top 5\% of the department).\\[8pt]
 \noindent
-\textbf{Capstone Design Award} \hfill 2025\\[2pt]
+\textbf{Capstone Design Award} \hfill June 2025\\[2pt]
 Ajou University\\
-Awarded for a capstone project on a compliant-mechanism-based knee assistive device.\\[8pt]
+2nd Place \,·\, KRW 1,000,000 prize. \\ Awarded for a capstone project on a compliant-mechanism-based knee assistive device.\\[8pt]
 \noindent
-\textbf{Gyeonggi-do Assistive Device Idea Competition} \hfill 2025\\[2pt]
-Gyeonggi province rehabilitation engineering service support center (South Korea)\\
-Awarded for a user-centered assistive device concept for older adults.
+\textbf{Gyeonggi-do Assistive Device Idea Competition} \hfill Nov 2025\\[2pt]
+Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)\\
+3rd Place \,·\, KRW 300,000 prize. \\ Awarded for a user-centered assistive device concept for older adults.\\[8pt]
+\noindent
+\textbf{APS DFD Travel/Enabling Grant} \hfill 2025\\[2pt]
+APS Division of Fluid Dynamics, American Physical Society\\
+US\$750 travel cost reimbursement for participation in the APS Division of Fluid Dynamics Meeting.
 \vspace{5pt}
 % \section*{OTHER EXPERIENCES}
 % \noindent
@@ -265,12 +280,12 @@ Awarded for a user-centered assistive device concept for older adults.
 E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\
 Scholar Profiles:
 \href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \,·\,
-\href{https://scholar.google.com/citations?user=H73RmsAAAAAJ&hl=ko}{Google Scholar}\\[7pt]
+\href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}\\[7pt]
 \noindent
 \textbf{Dr.\ Yeonsu Jung}\\
 \textit{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\
 E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\
 Scholar Profiles:
 \href{https://yeonsu-jung.github.io}{Personal Page} \,·\,
-\href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ&hl=en}{Google Scholar}
+\href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
 \end{document}
