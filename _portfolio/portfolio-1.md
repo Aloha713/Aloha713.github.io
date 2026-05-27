@@ -39,18 +39,18 @@ author_profile: true
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Capstone Design Competition</span><span class="portfolio-entry-date">June 2025</span></span>
   **<span class="talk-title">2nd Place · KRW 1,000,000 prize</span>**
-    - **Organized by**: Ajou University  
-    - **Project**: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention  
-    - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
+    - <span class="portfolio-field"><strong>Organized by:</strong><span>Ajou University</span></span>
+    - <span class="portfolio-field"><strong>Project:</strong><span>Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention</span></span>
+    - <span class="portfolio-field"><strong>Role:</strong><span>Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling</span></span>
     - **Materials**:
         - [Project Poster](https://linc.ajou.ac.kr/acot/?m=30002&mode=view&idx=2557)
         - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gyeonggi-do Assistive Device Idea Competition</span><span class="portfolio-entry-date">Nov 2025</span></span>
   **<span class="talk-title">3rd Place · KRW 300,000 prize</span>**
-    - **Organized by**: Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)
-    - **Project**: Compliant-mechanism-based knee assistive device for older adults
-    - **Role**: Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling  
+    - <span class="portfolio-field"><strong>Organized by:</strong><span>Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)</span></span>
+    - <span class="portfolio-field"><strong>Project:</strong><span>Compliant-mechanism-based knee assistive device for older adults</span></span>
+    - <span class="portfolio-field"><strong>Role:</strong><span>Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling</span></span>
     - **Materials**:
         - [Project Poster](/images/ass_devi/gyeonggi-assistive-device-competition-2025-poster.pdf)
         - [Award Ceremony Photo](https://at3d.or.kr/board/notice/view?idx=761)
@@ -66,8 +66,8 @@ author_profile: true
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">APS DFD Travel/Enabling Grant</span><span class="portfolio-entry-date">2025</span></span>
   **<span class="talk-title">US$750 travel cost reimbursement</span>**
-    - **Awarded by**: APS Division of Fluid Dynamics, American Physical Society  
-    - **Purpose**: Travel support for participation in the APS Division of Fluid Dynamics Meeting  
+    - <span class="portfolio-field"><strong>Awarded by:</strong><span>APS Division of Fluid Dynamics, American Physical Society</span></span>
+    - <span class="portfolio-field"><strong>Purpose:</strong><span>Travel support for participation in the APS Division of Fluid Dynamics Meeting</span></span>
     
 ---
 

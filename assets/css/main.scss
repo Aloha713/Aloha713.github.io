@@ -143,6 +143,14 @@ html[data-theme="dark"] .section-block::before {
   margin: 0 0 0.15rem 0;
 }
 
+.portfolio-field {
+  align-items: start;
+  column-gap: 0.25rem;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  line-height: 1.35;
+}
+
 .page__content h2 {
   color: #111;
 }
@@ -163,7 +171,7 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .page__content > ul > li {
-  margin-bottom: 1.05rem !important;
+  margin-bottom: 1.4rem !important;
 }
 
 .page__content ul ul > li {
