@@ -115,6 +115,10 @@ html[data-theme="dark"] .section-block::before {
   line-height: 1.3;
 }
 
+.portfolio-entry-title a {
+  color: inherit;
+}
+
 .portfolio-entry-date {
   color: #111;
   flex: 0 0 auto;
@@ -240,6 +244,13 @@ html[data-theme="dark"] .section-block::before {
   line-height: 1.35;
 }
 
+.cv-item-affiliation {
+  margin-top: 0.15rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
 .cv-item-detail {
   margin-top: 0.35rem;
   color: #666;
@@ -256,6 +267,7 @@ html[data-theme="dark"] .section-block::before {
 
 /* Dark mode */
 html[data-theme="dark"] .cv-item-date { color: #cfcfcf; }
+html[data-theme="dark"] .cv-item-affiliation { color: #cfcfcf; }
 html[data-theme="dark"] .cv-item-subtitle { color: #cfcfcf; }
 html[data-theme="dark"] .cv-item-detail { color: #bdbdbd; }
 html[data-theme="dark"] .cv-item-sep { color: #888; }

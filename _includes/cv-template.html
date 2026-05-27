@@ -131,6 +131,13 @@
     line-height: 1.35;
   }
 
+  .cv-item-affiliation {
+    margin-top: 0.15rem;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
   .cv-item-kicker,
   .cv-present-title {
     display: block;
@@ -211,6 +218,7 @@
   html[data-theme="dark"] .cv-section h2,
   html[data-theme="dark"] .cv-section p,
   html[data-theme="dark"] .cv-item-title,
+  html[data-theme="dark"] .cv-item-affiliation,
   html[data-theme="dark"] .cv-item-subtitle,
   html[data-theme="dark"] .cv-item-kicker,
   html[data-theme="dark"] .cv-present-title {
@@ -296,16 +304,19 @@
       {% for education in cv.education %}
       <li class="cv-item">
         <div class="cv-item-heading">
-          <div class="cv-item-title">{{ education.institution }}</div>
+          <div class="cv-item-title">{{ education.studyType }} in {{ education.area }}</div>
           <div class="cv-item-date">{% if education.startDate %}{{ education.startDate }}{% endif %}{% if education.startDate and education.endDate %} – {% endif %}{% if education.endDate %}{{ education.endDate }}{% endif %}</div>
         </div>
 
-        <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ education.studyType }} in {{ education.area }}</div>
-          {% if education.gpa %}
-          <div class="cv-item-detail cv-compact">GPA: {{ education.gpa }}</div>
-          {% endif %}
+        <div class="cv-item-affiliation">
+          {{ education.institution }}{% if education.location %}, {{ education.location }}{% endif %}
         </div>
+
+        {% if education.gpa %}
+        <div class="cv-item-content">
+          <div class="cv-item-detail cv-compact">GPA: {{ education.gpa }}</div>
+        </div>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -325,13 +336,13 @@
           <div class="cv-item-date">{% if work.startDate %}{{ work.startDate }}{% endif %}{% if work.startDate and work.endDate %} – {% endif %}{% if work.endDate %}{{ work.endDate }}{% endif %}</div>
         </div>
 
-        <div class="cv-item-content">
-          <div class="cv-item-subtitle">
-            {% if work.institution %}{{ work.institution }}{% endif %}
-            {% if work.institution and work.lab %} · {% endif %}
-            {% if work.lab %}{{ work.lab }}{% endif %}
-          </div>
+        <div class="cv-item-affiliation">
+          {% if work.institution %}{{ work.institution }}{% endif %}
+          {% if work.institution and work.lab %} · {% endif %}
+          {% if work.lab %}{{ work.lab }}{% endif %}
+        </div>
 
+        <div class="cv-item-content">
           {% if work.topics and work.topics.size > 0 %}
           <div class="cv-item-detail"><strong>Topics:</strong> {{ work.topics | join: ", " }}</div>
           {% endif %}
@@ -452,6 +463,9 @@
           {% if description_parts.size > 1 %}
           <div class="cv-item-detail cv-compact">{{ description_parts[0] }}.</div>
           <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong> {{ description_parts[1] }}</div>
+          {% elsif award.description contains "Project: " %}
+          {% assign project_text = award.description | remove_first: "Project: " %}
+          <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong> {{ project_text }}</div>
           {% else %}
           <div class="cv-item-detail cv-compact">{{ award.description }}</div>
           {% endif %}

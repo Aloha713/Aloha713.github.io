@@ -63,6 +63,7 @@
       "studyType": "M.S.",
       "startDate": "Sep 2025",
       "endDate": "Present",
+      "location": "Suwon, South Korea",
       "gpa": null,
       "courses": []
     },
@@ -72,6 +73,7 @@
       "studyType": "B.S.",
       "startDate": "Mar 2020",
       "endDate": "Aug 2025",
+      "location": "Suwon, South Korea",
       "gpa": null,
       "courses": []
     }
@@ -119,14 +121,14 @@
       "date": "June 2025",
       "awarder": "Ajou University",
       "highlight": "2nd Place · KRW 1,000,000 prize",
-      "description": "Awarded for a capstone project. Project: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention."
+      "description": "Project: Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention."
     },
     {
       "title": "Gyeonggi-do Assistive Device Idea Competition",
       "date": "Nov 2025",
       "awarder": "Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)",
       "highlight": "3rd Place · KRW 300,000 prize",
-      "description": "Awarded for a user-centered assistive device concept. Project: Compliant-mechanism-based knee assistive device for older adults."
+      "description": "Project: Compliant-mechanism-based knee assistive device for older adults."
     },
     {
       "title": "APS DFD Travel/Enabling Grant",

@@ -5,16 +5,16 @@ author_profile: true
 ---
 ## 🎓 Education
 
-- **M.S. in Mechanical Engineering** (*Sep 2025 – Present*)<br/>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">M.S. in Mechanical Engineering</span><span class="portfolio-entry-date">Sep 2025 – Present</span></span>
   [Ajou University](https://www.ajou.ac.kr/en/index.do#a), Suwon, South Korea
 
-- **B.S. in Mechanical Engineering** (*Mar 2020 – Aug 2025*)<br/>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">B.S. in Mechanical Engineering</span><span class="portfolio-entry-date">Mar 2020 – Aug 2025</span></span>
   [Ajou University](https://www.ajou.ac.kr/en/index.do#a), Suwon, South Korea
 
 
 ## 🧐 Research Experience
 
-- **Graduate Research Student** (*Sep 2025 – Present*)  
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Graduate Research Student</span><span class="portfolio-entry-date">Sep 2025 – Present</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
   - **Topics**:
     - Boundary-driven active matter in soft hydrogels
@@ -23,7 +23,7 @@ author_profile: true
   - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2)
 &nbsp;
 
-- **Undergraduate Research Student** (*Mar 2023 – Aug 2025*)  
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Undergraduate Research Student</span><span class="portfolio-entry-date">Mar 2023 – Aug 2025</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
   - **Topics**: Boundary-driven active matter in soft hydrogels  
   - **Keywords**: Active matter, Elastic Leidenfrost effect  
