@@ -165,8 +165,12 @@
   }
 
   .cv-award-project {
-    display: block;
-    margin-top: 0.22rem;
+    align-items: start;
+    column-gap: 0.25rem;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    line-height: 1.35;
+    margin-top: 0.12rem;
   }
 
   .cv-item-detail.cv-compact {
@@ -462,10 +466,10 @@
           {% assign description_parts = award.description | split: ". Project: " %}
           {% if description_parts.size > 1 %}
           <div class="cv-item-detail cv-compact">{{ description_parts[0] }}.</div>
-          <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong> {{ description_parts[1] }}</div>
+          <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong><span>{{ description_parts[1] }}</span></div>
           {% elsif award.description contains "Project: " %}
           {% assign project_text = award.description | remove_first: "Project: " %}
-          <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong> {{ project_text }}</div>
+          <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong><span>{{ project_text }}</span></div>
           {% else %}
           <div class="cv-item-detail cv-compact">{{ award.description }}</div>
           {% endif %}

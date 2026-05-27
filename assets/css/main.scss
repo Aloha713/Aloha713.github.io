@@ -162,6 +162,10 @@ html[data-theme="dark"] .section-block::before {
   margin-bottom: 0.6rem !important;
 }
 
+.page__content > ul > li {
+  margin-bottom: 1.05rem !important;
+}
+
 .page__content ul ul > li {
   margin-bottom: 0.35rem !important;
 }
@@ -259,6 +263,15 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .cv-item-detail.cv-compact { margin-top: 0.2rem; }
+
+.cv-award-project {
+  align-items: start;
+  column-gap: 0.25rem;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  line-height: 1.35;
+  margin-top: 0.12rem;
+}
 
 .cv-item-sep {
   margin: 0 0.35rem;
