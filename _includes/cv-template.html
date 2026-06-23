@@ -462,6 +462,12 @@
           {% if award.highlight %}
           <div class="cv-item-kicker">{{ award.highlight }}</div>
           {% endif %}
+          {% if award.work %}
+          <div class="cv-item-detail cv-compact cv-award-project"><strong>Work:</strong><span>{{ award.work }}</span></div>
+          {% endif %}
+          {% if award.authors %}
+          <div class="cv-item-detail cv-compact cv-award-project"><strong>Authors:</strong><span>{{ award.authors }}</span></div>
+          {% endif %}
           {% if award.description %}
           {% assign description_parts = award.description | split: ". Project: " %}
           {% if description_parts.size > 1 %}
