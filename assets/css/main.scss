@@ -265,6 +265,24 @@ html[data-theme="dark"] .section-block::before {
   line-height: 1.35;
 }
 
+.cv-award-org {
+  color: #555;
+  line-height: 1.35;
+  margin-top: 0.12rem;
+}
+
+.cv-award-content {
+  margin-top: 0.24rem;
+}
+
+.cv-award-highlight {
+  color: #111;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-top: 0;
+}
+
 .cv-item-detail {
   margin-top: 0.35rem;
   color: #666;
@@ -282,11 +300,11 @@ html[data-theme="dark"] .section-block::before {
 
 .cv-award-project {
   align-items: start;
-  column-gap: 0.25rem;
+  column-gap: 0.3rem;
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
   line-height: 1.35;
-  margin-top: 0.12rem;
+  margin-top: 0.08rem;
 }
 
 .cv-item-sep {
@@ -296,6 +314,8 @@ html[data-theme="dark"] .section-block::before {
 
 /* Dark mode */
 html[data-theme="dark"] .cv-item-date { color: #cfcfcf; }
+html[data-theme="dark"] .cv-award-highlight { color: #f2f2f2; }
+html[data-theme="dark"] .cv-award-org { color: #cfcfcf; }
 html[data-theme="dark"] .cv-item-affiliation { color: #cfcfcf; }
 html[data-theme="dark"] .cv-item-subtitle { color: #cfcfcf; }
 html[data-theme="dark"] .cv-item-detail { color: #bdbdbd; }

@@ -98,9 +98,22 @@
     font-weight: 400;
   }
 
-  .cv-item-awarder-block {
-    display: block;
-    margin-top: 0.1rem;
+  .cv-award-org {
+    color: #555;
+    line-height: 1.35;
+    margin-top: 0.12rem;
+  }
+
+  .cv-award-content {
+    margin-top: 0.24rem;
+  }
+
+  .cv-award-highlight {
+    color: #111;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.35;
+    margin-top: 0;
   }
 
   .cv-item-date {
@@ -175,11 +188,11 @@
 
   .cv-award-project {
     align-items: start;
-    column-gap: 0.25rem;
+    column-gap: 0.3rem;
     display: grid;
     grid-template-columns: max-content minmax(0, 1fr);
     line-height: 1.35;
-    margin-top: 0.12rem;
+    margin-top: 0.08rem;
   }
 
   .cv-item-detail.cv-compact {
@@ -447,35 +460,23 @@
     <ul class="cv-list">
       {% for award in cv.awards %}
       <li class="cv-item">
-        {% assign long_awarder = false %}
-        {% if award.awarder and award.awarder.size > 40 %}
-        {% assign long_awarder = true %}
-        {% endif %}
         <div class="cv-item-heading">
-          <div class="cv-item-title">
-            {{ award.title }}
-            {% if award.awarder %}
-              {% if long_awarder %}
-              <span class="cv-item-awarder cv-item-awarder-block">- {{ award.awarder }}</span>
-              {% else %}
-              <span class="cv-item-awarder">- {{ award.awarder }}</span>
-              {% endif %}
-            {% endif %}
-          </div>
+          <div class="cv-item-title">{{ award.title }}</div>
           {% if award.date %}
           <div class="cv-item-date">{{ award.date }}</div>
           {% endif %}
         </div>
 
-        <div class="cv-item-content">
+        {% if award.awarder %}
+        <div class="cv-award-org">{{ award.awarder }}</div>
+        {% endif %}
+
+        <div class="cv-item-content cv-award-content">
           {% if award.highlight %}
-          <div class="cv-item-kicker">{{ award.highlight }}</div>
+          <div class="cv-award-highlight">{{ award.highlight }}</div>
           {% endif %}
           {% if award.workTitle %}
           <div class="cv-item-detail cv-compact cv-award-project"><strong>Title:</strong><span>{{ award.workTitle }}</span></div>
-          {% endif %}
-          {% if award.authors %}
-          <div class="cv-item-detail cv-compact cv-award-project"><strong>Authors:</strong><span>{{ award.authors }}</span></div>
           {% endif %}
           {% if award.description %}
           {% assign description_parts = award.description | split: ". Project: " %}
