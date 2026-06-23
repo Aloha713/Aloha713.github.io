@@ -151,17 +151,22 @@ html[data-theme="dark"] .section-block::before {
   line-height: 1.35;
 }
 
-.portfolio-video-field {
-  align-items: start;
+.portfolio-video-wrap {
+  margin-top: 0.35rem;
+  max-width: 520px;
+  width: 100%;
 }
 
 .portfolio-video {
+  aspect-ratio: 16 / 9;
   background: #111;
   border-radius: 4px;
   display: block;
-  height: auto;
-  max-width: 560px;
-  width: 100%;
+  height: auto !important;
+  max-height: 320px;
+  max-width: 100% !important;
+  object-fit: contain;
+  width: 100% !important;
 }
 
 .page__content h2 {
