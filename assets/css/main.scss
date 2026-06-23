@@ -252,22 +252,29 @@ html[data-theme="dark"] .section-block::before {
 
 .cv-item-subtitle {
   margin-top: 0.25rem;
-  color: #555;
+  color: #111;
+  font-weight: 400;
   line-height: 1.35;
 }
 
 .cv-item-affiliation {
   margin-top: 0.15rem;
-  color: #555;
+  color: #111;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.35;
 }
 
 .cv-item-detail {
   margin-top: 0.35rem;
-  color: #666;
+  color: #111;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.45;
+}
+
+.cv-item-detail strong {
+  font-weight: 400;
 }
 
 .cv-item-detail.cv-compact { margin-top: 0.2rem; }
@@ -302,9 +309,9 @@ html[data-theme="dark"] .cv-item-sep { color: #888; }
 }
 
 .cv-present-title{
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
-  color: #222;
+  color: #111;
   line-height: 1.45;
 }
 
