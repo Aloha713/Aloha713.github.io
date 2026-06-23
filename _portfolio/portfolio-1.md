@@ -33,6 +33,12 @@ author_profile: true
 
 ## 🏆 Awards & Honors
 
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gallery of Fluid Motion Competition</span><span class="portfolio-entry-date">Apr 2026</span></span>
+  **<span class="talk-title">Haecheon Choi GFM Award · KRW 400,000 prize</span>**
+    - <span class="portfolio-field"><strong>Organized by:</strong><span>The Korean Society of Mechanical Engineers, Fluid Engineering Division</span></span>
+    - <span class="portfolio-field"><strong>Work:</strong><span>Explosive motion of spherical hydrogel via the Leidenfrost effect</span></span>
+    - <span class="portfolio-field"><strong>Authors:</strong><span>Minseong Cho, Yeonsu Jung, Jonghyun Ha</span></span>
+
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><a href="https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1">Dean’s List</a></span><span class="portfolio-entry-date">Spring 2024, Spring 2025</span></span>
     - Recognized for outstanding academic performance (top 5% of the department).
 &nbsp;
