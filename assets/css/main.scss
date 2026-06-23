@@ -278,7 +278,7 @@ html[data-theme="dark"] .section-block::before {
 .cv-award-highlight {
   color: #111;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.35;
   margin-top: 0;
 }
@@ -296,6 +296,10 @@ html[data-theme="dark"] .section-block::before {
   font-weight: 400;
 }
 
+.cv-award-label {
+  font-weight: 700;
+}
+
 .cv-item-detail.cv-compact { margin-top: 0.2rem; }
 
 .cv-award-project {
@@ -305,6 +309,19 @@ html[data-theme="dark"] .section-block::before {
   grid-template-columns: max-content minmax(0, 1fr);
   line-height: 1.35;
   margin-top: 0.08rem;
+}
+
+.cv-award-video {
+  margin-top: 0.55rem;
+  max-width: 560px;
+}
+
+.cv-award-video video {
+  background: #111;
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .cv-item-sep {

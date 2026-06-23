@@ -111,7 +111,7 @@
   .cv-award-highlight {
     color: #111;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.35;
     margin-top: 0;
   }
@@ -186,6 +186,10 @@
     font-weight: 400;
   }
 
+  .cv-award-label {
+    font-weight: 700;
+  }
+
   .cv-award-project {
     align-items: start;
     column-gap: 0.3rem;
@@ -193,6 +197,19 @@
     grid-template-columns: max-content minmax(0, 1fr);
     line-height: 1.35;
     margin-top: 0.08rem;
+  }
+
+  .cv-award-video {
+    margin-top: 0.55rem;
+    max-width: 560px;
+  }
+
+  .cv-award-video video {
+    background: #111;
+    border-radius: 4px;
+    display: block;
+    height: auto;
+    width: 100%;
   }
 
   .cv-item-detail.cv-compact {
@@ -476,16 +493,23 @@
           <div class="cv-award-highlight">{{ award.highlight }}</div>
           {% endif %}
           {% if award.workTitle %}
-          <div class="cv-item-detail cv-compact cv-award-project"><strong>Title:</strong><span>{{ award.workTitle }}</span></div>
+          <div class="cv-item-detail cv-compact cv-award-project"><strong class="cv-award-label">Title:</strong><span>{{ award.workTitle }}</span></div>
+          {% endif %}
+          {% if award.video %}
+          <div class="cv-award-video">
+            <video controls preload="metadata" playsinline>
+              <source src="{{ award.video }}" type="video/mp4">
+            </video>
+          </div>
           {% endif %}
           {% if award.description %}
           {% assign description_parts = award.description | split: ". Project: " %}
           {% if description_parts.size > 1 %}
           <div class="cv-item-detail cv-compact">{{ description_parts[0] }}.</div>
-          <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong><span>{{ description_parts[1] }}</span></div>
+          <div class="cv-item-detail cv-compact cv-award-project"><strong class="cv-award-label">Project:</strong><span>{{ description_parts[1] }}</span></div>
           {% elsif award.description contains "Project: " %}
           {% assign project_text = award.description | remove_first: "Project: " %}
-          <div class="cv-item-detail cv-compact cv-award-project"><strong>Project:</strong><span>{{ project_text }}</span></div>
+          <div class="cv-item-detail cv-compact cv-award-project"><strong class="cv-award-label">Project:</strong><span>{{ project_text }}</span></div>
           {% else %}
           <div class="cv-item-detail cv-compact">{{ award.description }}</div>
           {% endif %}
