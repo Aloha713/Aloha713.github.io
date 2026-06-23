@@ -151,6 +151,19 @@ html[data-theme="dark"] .section-block::before {
   line-height: 1.35;
 }
 
+.portfolio-video-field {
+  align-items: start;
+}
+
+.portfolio-video {
+  background: #111;
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  max-width: 560px;
+  width: 100%;
+}
+
 .page__content h2 {
   color: #111;
 }
@@ -309,19 +322,6 @@ html[data-theme="dark"] .section-block::before {
   grid-template-columns: max-content minmax(0, 1fr);
   line-height: 1.35;
   margin-top: 0.08rem;
-}
-
-.cv-award-video {
-  margin-top: 0.55rem;
-  max-width: 560px;
-}
-
-.cv-award-video video {
-  background: #111;
-  border-radius: 4px;
-  display: block;
-  height: auto;
-  width: 100%;
 }
 
 .cv-item-sep {

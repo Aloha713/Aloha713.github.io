@@ -199,19 +199,6 @@
     margin-top: 0.08rem;
   }
 
-  .cv-award-video {
-    margin-top: 0.55rem;
-    max-width: 560px;
-  }
-
-  .cv-award-video video {
-    background: #111;
-    border-radius: 4px;
-    display: block;
-    height: auto;
-    width: 100%;
-  }
-
   .cv-item-detail.cv-compact {
     margin-left: 0;
   }
@@ -494,13 +481,6 @@
           {% endif %}
           {% if award.workTitle %}
           <div class="cv-item-detail cv-compact cv-award-project"><strong class="cv-award-label">Title:</strong><span>{{ award.workTitle }}</span></div>
-          {% endif %}
-          {% if award.video %}
-          <div class="cv-award-video">
-            <video controls preload="metadata" playsinline>
-              <source src="{{ award.video }}" type="video/mp4">
-            </video>
-          </div>
           {% endif %}
           {% if award.description %}
           {% assign description_parts = award.description | split: ". Project: " %}
