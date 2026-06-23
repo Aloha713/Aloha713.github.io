@@ -69,10 +69,10 @@ author_profile: true
     - <span class="portfolio-field"><strong>Awarded by:</strong><span>APS Division of Fluid Dynamics, American Physical Society</span></span>
     - <span class="portfolio-field"><strong>Purpose:</strong><span>Travel support for participation in the APS Division of Fluid Dynamics Meeting</span></span>
 
-- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gallery of Fluid Motion Competition</span><span class="portfolio-entry-date">Apr 2026</span></span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gallery of Fluid Motion</span><span class="portfolio-entry-date">Apr 2026</span></span>
   **<span class="talk-title">Haecheon Choi GFM Award · KRW 400,000 prize</span>**
     - <span class="portfolio-field"><strong>Organized by:</strong><span>The Korean Society of Mechanical Engineers, Fluid Engineering Division</span></span>
-    - <span class="portfolio-field"><strong>Work:</strong><span>Explosive motion of spherical hydrogel via the Leidenfrost effect</span></span>
+    - <span class="portfolio-field"><strong>Title:</strong><span>Explosive motion of spherical hydrogel via the Leidenfrost effect</span></span>
     - <span class="portfolio-field"><strong>Authors:</strong><span>Minseong Cho, Yeonsu Jung, Jonghyun Ha</span></span>
     
 ---
