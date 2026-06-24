@@ -94,6 +94,72 @@ html[data-theme="dark"] .section-block::before {
 
 
 /* Conference presentation layout */
+.page__title-row {
+  align-items: center;
+  border-bottom: 1px solid var(--global-border-color);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+  padding-bottom: 0.7rem;
+}
+
+.page__title-row .page__title {
+  margin-bottom: 0;
+}
+
+.page__title-actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.portfolio-title-button {
+  align-items: center;
+  background: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  border-radius: 4px;
+  color: var(--global-bg-color) !important;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 700;
+  gap: 0.35rem;
+  line-height: 1;
+  padding: 0.55rem 0.7rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.portfolio-title-button:hover {
+  background: var(--global-link-color);
+  border-color: var(--global-link-color);
+  color: var(--global-bg-color) !important;
+  text-decoration: none;
+}
+
+.portfolio-title-button--share {
+  background: transparent;
+  color: var(--global-text-color) !important;
+}
+
+.portfolio-title-button--share:hover {
+  color: var(--global-bg-color) !important;
+}
+
+@media (max-width: 640px) {
+  .page__title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .page__title-actions {
+    justify-content: flex-start;
+  }
+}
+
 .talk-meta {
   display: inline;
   font-size: 0.85rem;

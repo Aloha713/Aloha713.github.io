@@ -26,7 +26,23 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}
+            {% if page.portfolio_header_actions %}
+              <div class="page__title-row">
+                <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+                <div class="page__title-actions" aria-label="Portfolio actions">
+                  <a href="{{ base_path }}/files/cv/main.pdf" class="portfolio-title-button" download>
+                    <i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span>
+                  </a>
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ base_path }}{{ page.url }}" class="portfolio-title-button portfolio-title-button--share">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share</span>
+                  </a>
+                </div>
+              </div>
+            {% else %}
+              <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+            {% endif %}
+          {% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
