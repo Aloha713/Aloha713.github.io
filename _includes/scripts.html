@@ -1,3 +1,50 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  (function () {
+    function restoreStaticMastheadNav() {
+      var nav = document.getElementById("site-nav");
+      if (!nav) return;
+
+      var visibleLinks = nav.querySelector(".visible-links");
+      var hiddenLinks = nav.querySelector(".hidden-links");
+      var themeToggle = nav.querySelector("#theme-toggle");
+      var menuButton = nav.querySelector("button");
+
+      if (!visibleLinks || !hiddenLinks) return;
+
+      while (hiddenLinks.firstElementChild) {
+        visibleLinks.insertBefore(hiddenLinks.firstElementChild, themeToggle || null);
+      }
+
+      hiddenLinks.classList.add("hidden");
+
+      if (menuButton) {
+        menuButton.classList.add("hidden");
+        menuButton.setAttribute("aria-hidden", "true");
+        menuButton.setAttribute("tabindex", "-1");
+      }
+    }
+
+    function scheduleStaticMastheadNav() {
+      restoreStaticMastheadNav();
+      [0, 50, 200, 500].forEach(function (delay) {
+        window.setTimeout(restoreStaticMastheadNav, delay);
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", scheduleStaticMastheadNav);
+    window.addEventListener("load", scheduleStaticMastheadNav);
+    window.addEventListener("resize", scheduleStaticMastheadNav);
+
+    if (
+      window.screen &&
+      window.screen.orientation &&
+      window.screen.orientation.addEventListener
+    ) {
+      window.screen.orientation.addEventListener("change", scheduleStaticMastheadNav);
+    }
+  })();
+</script>
+
 {% include analytics.html %}

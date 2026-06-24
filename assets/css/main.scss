@@ -252,9 +252,9 @@ html[data-theme="dark"] .section-block::before {
   width: 2.5rem;
 }
 
-.greedy-nav button:not(.hidden),
+.greedy-nav button,
 .greedy-nav .hidden-links {
-  right: 2.75rem;
+  display: none !important;
 }
 
 @media (max-width: 720px) {
