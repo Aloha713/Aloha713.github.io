@@ -14,7 +14,7 @@
   .cv-container {
     max-width: 980px;
     margin: 0 auto;
-    color: #4b4f54;
+    color: var(--global-text-color);
     font-size: 1rem;
     line-height: 1.5;
   }
@@ -22,11 +22,11 @@
   .cv-header {
     margin-bottom: 2.0rem;
     padding-bottom: 1.0rem;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid var(--global-border-color);
   }
 
   .cv-header h1 {
-    color: #111;
+    color: var(--global-text-color);
     margin-bottom: 0.4rem;
     font-size: 1.85rem;
     line-height: 1.2;
@@ -38,7 +38,7 @@
     flex-wrap: wrap;
     gap: 0.35rem 1.0rem;
     font-size: 1rem;
-    color: #5f6368;
+    color: var(--global-fig-caption-color);
   }
 
   .cv-profiles {
@@ -50,10 +50,10 @@
   }
 
   .cv-section h2 {
-    color: #111;
+    color: var(--global-text-color);
     margin: 0 0 0.85rem 0;
     padding-bottom: 0.3rem;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--global-border-color);
     font-size: 1.55rem;
     font-weight: 700;
     line-height: 1.25;
@@ -61,7 +61,7 @@
 
   .cv-section p {
     margin-top: 0;
-    color: #5f6368;
+    color: var(--global-fig-caption-color);
     line-height: 1.5;
   }
 
@@ -86,7 +86,7 @@
 
   .cv-item-title {
     flex: 1;
-    color: #111;
+    color: var(--global-text-color);
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.3;
@@ -94,12 +94,12 @@
   }
 
   .cv-item-awarder {
-    color: #555;
+    color: var(--global-fig-caption-color);
     font-weight: 400;
   }
 
   .cv-award-org {
-    color: #555;
+    color: var(--global-fig-caption-color);
     line-height: 1.35;
     margin-top: 0.12rem;
   }
@@ -109,7 +109,7 @@
   }
 
   .cv-award-highlight {
-    color: #111;
+    color: var(--global-text-color);
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.35;
@@ -118,7 +118,7 @@
 
   .cv-item-date {
     flex: 0 0 auto;
-    color: #111;
+    color: var(--global-text-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.3;
@@ -128,7 +128,7 @@
 
   .cv-item-meta {
     display: inline;
-    color: #959191;
+    color: var(--global-fig-caption-color);
     font-size: 0.85rem;
     font-weight: 400;
   }
@@ -139,7 +139,7 @@
 
   .cv-item-subtitle {
     margin-top: 0.15rem;
-    color: #555;
+    color: var(--global-fig-caption-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.35;
@@ -147,7 +147,7 @@
 
   .cv-item-affiliation {
     margin-top: 0.15rem;
-    color: #555;
+    color: var(--global-fig-caption-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.35;
@@ -157,7 +157,7 @@
   .cv-present-title {
     display: block;
     margin-top: 0.22rem;
-    color: #111;
+    color: var(--global-text-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
@@ -168,13 +168,13 @@
   }
 
   .cv-present-title {
-    color: #555;
+    color: var(--global-fig-caption-color);
     font-weight: 400;
   }
 
   .cv-item-detail {
     margin-top: 0.22rem;
-    color: #666;
+    color: var(--global-fig-caption-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -182,7 +182,7 @@
   }
 
   .cv-item-detail strong {
-    color: #111;
+    color: var(--global-text-color);
     font-weight: 400;
   }
 
@@ -239,36 +239,7 @@
 
   html[data-theme="dark"] .cv-header,
   html[data-theme="dark"] .cv-section h2 {
-    border-color: #333;
-  }
-
-  html[data-theme="dark"] .cv-contact,
-  html[data-theme="dark"] .cv-container,
-  html[data-theme="dark"] .cv-header h1,
-  html[data-theme="dark"] .cv-section h2,
-  html[data-theme="dark"] .cv-section p,
-  html[data-theme="dark"] .cv-item-title,
-  html[data-theme="dark"] .cv-item-affiliation,
-  html[data-theme="dark"] .cv-item-subtitle,
-  html[data-theme="dark"] .cv-item-kicker,
-  html[data-theme="dark"] .cv-present-title {
-    color: #cfcfcf;
-  }
-
-  html[data-theme="dark"] .cv-item-date {
-    color: #cfcfcf;
-  }
-
-  html[data-theme="dark"] .cv-item-meta {
-    color: #aaa;
-  }
-
-  html[data-theme="dark"] .cv-item-awarder {
-    color: #cfcfcf;
-  }
-
-  html[data-theme="dark"] .cv-item-detail {
-    color: #bdbdbd;
+    border-color: var(--global-border-color);
   }
 </style>
 

@@ -97,7 +97,7 @@ html[data-theme="dark"] .section-block::before {
 .talk-meta {
   display: inline;
   font-size: 0.85rem;
-  color: #959191;
+  color: var(--global-fig-caption-color);
   margin: 0.1rem 0 0.05rem 0;
 }
 
@@ -110,7 +110,7 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .portfolio-entry-title {
-  color: #111;
+  color: var(--global-text-color);
   font-weight: 700;
   line-height: 1.3;
 }
@@ -120,7 +120,7 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .portfolio-entry-date {
-  color: #111;
+  color: var(--global-text-color);
   flex: 0 0 auto;
   font-size: 1rem;
   font-weight: 400;
@@ -136,7 +136,7 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .talk-title {
-  color: #222;
+  color: var(--global-text-color);
   display: block;
   font-size: 1rem;
   font-weight: 500;
@@ -170,7 +170,7 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .page__content h2 {
-  color: #111;
+  color: var(--global-text-color);
 }
 
 .talk-action {
@@ -178,7 +178,7 @@ html[data-theme="dark"] .section-block::before {
   align-items: center;
   gap: 0.3rem;
   font-size: 0.85rem;
-  color: #1158b5;
+  color: var(--global-link-color);
   margin: 0 0 0.35rem 0;
   cursor: pointer;
 }
@@ -230,7 +230,7 @@ html[data-theme="dark"] .section-block::before {
 /* ===== CV readability boost ===== */
 .cv-section { margin-bottom: 2.2rem; }
 .cv-section h2 {
-  color: #111;
+  color: var(--global-text-color);
   margin-bottom: 1.0rem;
 }
 
@@ -255,7 +255,7 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .cv-item-title {
-  color: #111;
+  color: var(--global-text-color);
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.3;
@@ -263,28 +263,28 @@ html[data-theme="dark"] .section-block::before {
 
 .cv-item-date {
   white-space: nowrap;
-  color: #111;
+  color: var(--global-text-color);
   font-size: 1rem;
   font-weight: 400;
 }
 
 .cv-item-subtitle {
   margin-top: 0.25rem;
-  color: #555;
+  color: var(--global-fig-caption-color);
   font-weight: 400;
   line-height: 1.35;
 }
 
 .cv-item-affiliation {
   margin-top: 0.15rem;
-  color: #555;
+  color: var(--global-fig-caption-color);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.35;
 }
 
 .cv-award-org {
-  color: #555;
+  color: var(--global-fig-caption-color);
   line-height: 1.35;
   margin-top: 0.12rem;
 }
@@ -294,7 +294,7 @@ html[data-theme="dark"] .section-block::before {
 }
 
 .cv-award-highlight {
-  color: #111;
+  color: var(--global-text-color);
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.35;
@@ -303,14 +303,14 @@ html[data-theme="dark"] .section-block::before {
 
 .cv-item-detail {
   margin-top: 0.35rem;
-  color: #666;
+  color: var(--global-fig-caption-color);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.45;
 }
 
 .cv-item-detail strong {
-  color: #111;
+  color: var(--global-text-color);
   font-weight: 400;
 }
 
@@ -331,30 +331,30 @@ html[data-theme="dark"] .section-block::before {
 
 .cv-item-sep {
   margin: 0 0.35rem;
-  color: #999;
+  color: var(--global-fig-caption-color);
 }
 
 /* Dark mode */
-html[data-theme="dark"] .cv-item-date { color: #cfcfcf; }
-html[data-theme="dark"] .cv-award-highlight { color: #f2f2f2; }
-html[data-theme="dark"] .cv-award-org { color: #cfcfcf; }
-html[data-theme="dark"] .cv-item-affiliation { color: #cfcfcf; }
-html[data-theme="dark"] .cv-item-subtitle { color: #cfcfcf; }
-html[data-theme="dark"] .cv-item-detail { color: #bdbdbd; }
-html[data-theme="dark"] .cv-item-sep { color: #888; }
+html[data-theme="dark"] .cv-item-date { color: var(--global-text-color); }
+html[data-theme="dark"] .cv-award-highlight { color: var(--global-text-color); }
+html[data-theme="dark"] .cv-award-org { color: var(--global-fig-caption-color); }
+html[data-theme="dark"] .cv-item-affiliation { color: var(--global-fig-caption-color); }
+html[data-theme="dark"] .cv-item-subtitle { color: var(--global-fig-caption-color); }
+html[data-theme="dark"] .cv-item-detail { color: var(--global-fig-caption-color); }
+html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
 
 /* Presentations */
 .cv-present-meta{
   font-size: 0.9rem;
   font-weight: 400;
-  color: #888;
+  color: var(--global-fig-caption-color);
   margin-left: 0.25rem;
 }
 
 .cv-present-title{
   font-weight: 400;
   font-size: 1rem;
-  color: #555;
+  color: var(--global-fig-caption-color);
   line-height: 1.45;
 }
 
@@ -365,11 +365,11 @@ html[data-theme="dark"] .portfolio-entry-date,
 html[data-theme="dark"] .talk-title,
 html[data-theme="dark"] .cv-section h2,
 html[data-theme="dark"] .cv-item-title {
-  color: #f2f2f2;
+  color: var(--global-text-color);
 }
 
 html[data-theme="dark"] .cv-present-title{
-  color: #cfcfcf;
+  color: var(--global-fig-caption-color);
 }
 
 /* 제목 아래 내용만 들여쓰기 */
