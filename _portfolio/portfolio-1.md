@@ -76,7 +76,7 @@ author_profile: true
     - <span class="portfolio-field"><strong>Authors:</strong><span>Minseong Cho, Yeonsu Jung, Jonghyun Ha</span></span>
     - **Video**:
       <div class="portfolio-video-wrap">
-        <video class="portfolio-video" controls preload="metadata" playsinline>
+        <video class="portfolio-video" controls preload="metadata" playsinline poster="/images/gfm/gfm-poster.jpg">
           <source src="/files/%5BKSME%20GFM26%5D%20Leidenfrost-powered%20explosive%20motion%20of%20a%20bouncing%20hydrogel.mp4" type="video/mp4">
         </video>
       </div>
