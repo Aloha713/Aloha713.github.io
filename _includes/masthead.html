@@ -13,7 +13,13 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign nav_active = false %}
+            {% if page.url == link.url %}
+              {% assign nav_active = true %}
+            {% elsif page.url == "/" and link.url contains "#my-research" %}
+              {% assign nav_active = true %}
+            {% endif %}
+            <li class="masthead__menu-item{% if nav_active %} is-active{% endif %}"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
