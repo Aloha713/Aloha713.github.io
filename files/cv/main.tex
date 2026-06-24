@@ -1,0 +1,220 @@
+% =========================
+% Academic CV - Minseong Cho
+% =========================
+\documentclass[a4paper,10pt]{article}
+
+% ---------- Page ----------
+\usepackage[a4paper,margin=0.82in]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+
+% ---------- Fonts / Symbols ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{fontawesome5}
+
+% ---------- Colors / Links ----------
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{0B6B5D}
+\definecolor{textmain}{HTML}{111111}
+\definecolor{muted}{HTML}{555555}
+\definecolor{rulegray}{HTML}{D7E2DF}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent
+}
+
+% ---------- Layout helpers ----------
+\usepackage{tabularx}
+\usepackage{enumitem}
+\setlist[itemize,1]{
+  label=\textbullet,
+  leftmargin=1.15em,
+  labelsep=0.55em,
+  topsep=2pt,
+  itemsep=4pt,
+  parsep=0pt
+}
+\setlist[itemize,2]{
+  label=\raisebox{0.15ex}{\scriptsize$\circ$},
+  leftmargin=1.55em,
+  labelsep=0.45em,
+  topsep=1pt,
+  itemsep=1pt,
+  parsep=0pt
+}
+
+% ---------- Section styling ----------
+\usepackage{titlesec}
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\vspace{3pt}{\color{rulegray}\titlerule}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% ---------- Small macros ----------
+\newcommand{\sep}{\hspace{6pt}\textcolor{muted}{\textbar}\hspace{6pt}}
+\newcommand{\cvdate}[1]{\hfill \textcolor{textmain}{#1}}
+\newcommand{\cvorg}[1]{\textcolor{muted}{#1}}
+\newcommand{\cvaward}[1]{\textbf{#1}}
+\newcommand{\cvfield}[2]{\textbf{#1:} #2}
+\newcommand{\cvitemtitle}[2]{\textbf{\textcolor{textmain}{#1}}\cvdate{#2}}
+\newcommand{\cvsubline}[1]{\textcolor{muted}{#1}}
+\newcommand{\smallgap}{\vspace{2pt}}
+
+% =========================
+\begin{document}
+\color{textmain}
+
+% =========================
+% Header
+% =========================
+\begin{tabularx}{\textwidth}{X r}
+{\Huge \textbf{Minseong Cho}} &
+\begin{minipage}[t]{0.43\textwidth}\raggedleft
+\faEnvelope\ \href{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}\\
+\faPhone\ \href{tel:+821088037786}{+82 10-8803-7786}\\
+\faGlobe\ \href{https://aloha713.github.io}{aloha713.github.io}\\
+\faGraduationCap\ \href{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}\\
+\textcolor{muted}{Suwon, South Korea}
+\end{minipage}
+\end{tabularx}
+
+\vspace{6pt}
+\textcolor{muted}{M.S. student in Mechanical Engineering, Ajou University \sep Active matter \sep Leidenfrost dynamics \sep Hair frizz dynamics}
+
+% =========================
+\section*{Summary}
+Currently a graduate researcher at Ajou University. My research interests include active matter dynamics, the Leidenfrost effect, and hair frizz dynamics.
+
+% =========================
+\section*{Research Interests}
+Active matter dynamics; Leidenfrost-induced motion; soft matter and fluid--structure interaction; hair frizz dynamics; centerline curvature and excursion analysis.
+
+% =========================
+\section*{Education}
+\begin{itemize}
+  \item \cvitemtitle{M.S. in Mechanical Engineering}{Sep 2025 -- Present}\\
+  \href{https://www.ajou.ac.kr/en/index.do}{Ajou University}, Suwon, South Korea
+  \begin{itemize}
+    \item \cvfield{Advisor}{Prof. Jonghyun Ha}
+  \end{itemize}
+
+  \item \cvitemtitle{B.S. in Mechanical Engineering}{Mar 2020 -- Aug 2025}\\
+  \href{https://www.ajou.ac.kr/en/index.do}{Ajou University}, Suwon, South Korea
+\end{itemize}
+
+% =========================
+\section*{Research Experience}
+\begin{itemize}
+  \item \cvitemtitle{Graduate Research Student}{Sep 2025 -- Present}\\
+  \href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University
+  \begin{itemize}
+    \item \cvfield{Topics}{Hair frizz dynamics; boundary-driven active matter in soft hydrogels}
+    \item Study hair frizz dynamics using centerline-based geometric analysis and simulation-assisted interpretation.
+    \item Analyze boundary-driven active matter in soft hydrogels, focusing on Leidenfrost-induced dynamics.
+    \item Develop reproducible analysis and visualization scripts for experimental and simulation data.
+    \item \cvfield{Advisor}{Prof. Jonghyun Ha; Dr. Yeonsu Jung}
+  \end{itemize}
+
+  \item \cvitemtitle{Undergraduate Research Student}{Mar 2023 -- Aug 2025}\\
+  \href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University
+  \begin{itemize}
+    \item \cvfield{Topics}{Boundary-driven active matter in soft hydrogels}
+    \item Conducted research on Leidenfrost-related soft-matter dynamics.
+    \item Performed image-based tracking, quantitative analysis, and figure preparation for presentations.
+    \item \cvfield{Advisor}{Prof. Jonghyun Ha; Dr. Yeonsu Jung}
+  \end{itemize}
+\end{itemize}
+
+% =========================
+\section*{Selected Presentations}
+\begin{itemize}
+  \item \cvitemtitle{APS Division of Fluid Dynamics Meeting}{Nov 2025}\\
+  \cvorg{Houston, TX, USA}
+  \begin{itemize}
+    \item \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
+  \end{itemize}
+
+  \item \cvitemtitle{Asian Congress of Fluid Mechanics}{Sep 2025}\\
+  \cvorg{Seoul, South Korea}
+  \begin{itemize}
+    \item \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
+  \end{itemize}
+
+  \item \cvitemtitle{KSME Annual Conference}{Nov 2024}\\
+  \cvorg{Jeju, South Korea}
+  \begin{itemize}
+    \item \textit{Explosive motion of spherical hydrogel via the Leidenfrost effect}
+  \end{itemize}
+\end{itemize}
+
+% =========================
+\section*{Awards \& Honors}
+\begin{itemize}
+  \item \cvitemtitle{Dean's List}{Spring 2024, Spring 2025}\\
+  \cvorg{Ajou University}
+  \begin{itemize}
+    \item Recognized for outstanding academic performance (top 5\% of the department).
+  \end{itemize}
+
+  \item \cvitemtitle{Capstone Design Competition}{June 2025}\\
+  \cvorg{Ajou University}
+  \begin{itemize}
+    \item \cvaward{2nd Place; KRW 1,000,000 prize}
+    \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention}
+  \end{itemize}
+
+  \item \cvitemtitle{Gyeonggi-do Assistive Device Idea Competition}{Nov 2025}\\
+  \cvorg{Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)}
+  \begin{itemize}
+    \item \cvaward{3rd Place; KRW 300,000 prize}
+    \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for older adults}
+  \end{itemize}
+
+  \item \cvitemtitle{APS DFD Travel/Enabling Grant}{2025}\\
+  \cvorg{APS Division of Fluid Dynamics, American Physical Society}
+  \begin{itemize}
+    \item \cvaward{US\$750 travel cost reimbursement}
+    \item Travel support for participation in the APS Division of Fluid Dynamics Meeting.
+  \end{itemize}
+
+  \item \cvitemtitle{Gallery of Fluid Motion}{Apr 2026}\\
+  \cvorg{The Korean Society of Mechanical Engineers, Fluid Engineering Division}
+  \begin{itemize}
+    \item \cvaward{Haecheon Choi GFM Award; KRW 400,000 prize}
+    \item \cvfield{Title}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
+    \item \cvfield{Authors}{Minseong Cho, Yeonsu Jung, Jonghyun Ha}
+  \end{itemize}
+\end{itemize}
+
+% =========================
+\section*{Selected Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Programming} & Python, MATLAB, LaTeX \\
+\textbf{Tools} & DeepLabCut, OpenCV, Git, Overleaf \\
+\textbf{Methods} & image-based tracking, trajectory analysis, centerline extraction, curvature/excursion profiling, data visualization \\
+\end{tabularx}
+
+% =========================
+\section*{References}
+\textbf{Prof. Jonghyun Ha}\\
+\textit{Assistant Professor, Department of Mechanical Engineering, Ajou University, Suwon, South Korea}\\
+E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\
+Scholar Profiles:
+\href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \sep
+\href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}\\[5pt]
+
+\textbf{Dr. Yeonsu Jung}\\
+\textit{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\
+E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\
+Scholar Profiles:
+\href{https://yeonsu-jung.github.io}{Personal Page} \sep
+\href{https://scholar.google.com/citations?user=BMZc1CcAAAAJ}{Google Scholar}
+
+\end{document}
