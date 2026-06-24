@@ -11,13 +11,11 @@ I am an M.S. student at the Softlab, Ajou University.<br/>
 My research interests include active matter dynamics, the Leidenfrost effect, and hair dynamics.
 
 
-My research
-======
+<h2 id="my-research">My research</h2>
 
 
 **Elastic Leidenfrost effect**  
 
 
 **Hair frizz dynamics**  
-
 

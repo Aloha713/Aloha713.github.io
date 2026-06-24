@@ -4,7 +4,7 @@
 \documentclass[a4paper,10pt]{article}
 
 % ---------- Page ----------
-\usepackage[a4paper,margin=0.82in]{geometry}
+\usepackage[a4paper,left=0.76in,right=0.76in,top=0.55in,bottom=0.55in]{geometry}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1.5pt}
 
@@ -12,14 +12,15 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{fontawesome}
 
 % ---------- Colors / Links ----------
 \usepackage{xcolor}
-\definecolor{accent}{HTML}{0B6B5D}
+\definecolor{accent}{HTML}{25519B}
 \definecolor{textmain}{HTML}{111111}
 \definecolor{muted}{HTML}{555555}
-\definecolor{rulegray}{HTML}{D7E2DF}
+\definecolor{rulegray}{HTML}{111111}
 
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
@@ -32,20 +33,21 @@
 % ---------- Layout helpers ----------
 \usepackage{tabularx}
 \usepackage{enumitem}
+\usepackage{needspace}
 \setlist[itemize,1]{
   label=\textbullet,
   leftmargin=1.15em,
   labelsep=0.55em,
-  topsep=2pt,
-  itemsep=4pt,
+  topsep=1pt,
+  itemsep=1.5pt,
   parsep=0pt
 }
 \setlist[itemize,2]{
   label=\raisebox{0.15ex}{\scriptsize$\circ$},
   leftmargin=1.55em,
   labelsep=0.45em,
-  topsep=1pt,
-  itemsep=1pt,
+  topsep=0pt,
+  itemsep=0.5pt,
   parsep=0pt
 }
 
@@ -54,8 +56,8 @@
 \titleformat{\section}
   {\Large\bfseries\color{accent}}
   {}{0pt}{}
-  [\vspace{3pt}{\color{rulegray}\titlerule}]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+  [\vspace{2pt}{\color{rulegray}\titlerule}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
 
 % ---------- Small macros ----------
 \newcommand{\sep}{\hspace{6pt}\textcolor{muted}{\textbar}\hspace{6pt}}
@@ -66,6 +68,22 @@
 \newcommand{\cvitemtitle}[2]{\textbf{\textcolor{textmain}{#1}}\cvdate{#2}}
 \newcommand{\cvsubline}[1]{\textcolor{muted}{#1}}
 \newcommand{\smallgap}{\vspace{2pt}}
+\newcommand{\contacticon}[1]{\makebox[1.15em][c]{\textcolor{textmain}{#1}}}
+\newcommand{\contactlink}[2]{\href{#1}{\textcolor{textmain}{#2}\,\textcolor{accent}{\scriptsize\faLink}}}
+\newcommand{\interestsep}{\hspace{8pt}\textcolor{muted}{\(\cdot\)}\hspace{8pt}}
+\newcommand{\awardsep}{\textcolor{muted}{\(\cdot\)}}
+\newcommand{\cventryhead}[3]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{\textcolor{textmain}{#1}} \textcolor{muted}{--} #3 & \textcolor{textmain}{#2}
+  \end{tabularx}
+}
+\newenvironment{cvdetailblock}
+  {\begin{minipage}{0.86\linewidth}\raggedright\begin{itemize}}
+  {\end{itemize}\end{minipage}}
+\newcommand{\researchtopic}[2]{%
+  \item \textbf{#1}\\[-1pt]
+  \textcolor{muted}{#2}
+}
 
 % =========================
 \begin{document}
@@ -74,27 +92,37 @@
 % =========================
 % Header
 % =========================
-\begin{tabularx}{\textwidth}{X r}
-{\Huge \textbf{Minseong Cho}} &
-\begin{minipage}[t]{0.43\textwidth}\raggedleft
-\faEnvelope\ \href{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}\\
-\faPhone\ \href{tel:+821088037786}{+82 10-8803-7786}\\
-\faGlobe\ \href{https://aloha713.github.io}{aloha713.github.io}\\
-\faGraduationCap\ \href{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}\\
-\textcolor{muted}{Suwon, South Korea}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\begin{minipage}[t]{0.72\textwidth}
+\vspace{0pt}
+{\Huge \textbf{Minseong Cho}}\\[10pt]
+\contacticon{\faEnvelope} \contactlink{mailto:mscho713@ajou.ac.kr}{mscho713@ajou.ac.kr}\\
+\contacticon{\faPhone} \contactlink{tel:+821088037786}{+82 10-8803-7786}\\
+\contacticon{\faUniversity} Softlab, Ajou University\\
+\contacticon{\faMapMarker} Suwon, South Korea\\
+\contacticon{\faBriefcase} \contactlink{https://aloha713.github.io}{Portfolio}\\
+\contacticon{\faGraduationCap} \contactlink{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}
+\end{minipage}
+&
+\begin{minipage}[t]{1.34in}
+\vspace{0pt}
+\includegraphics[width=1.34in]{../../images/Minseong.JPG}
 \end{minipage}
 \end{tabularx}
 
-\vspace{6pt}
-\textcolor{muted}{M.S. student in Mechanical Engineering, Ajou University \sep Active matter \sep Leidenfrost dynamics \sep Hair frizz dynamics}
+% =========================
+\section*{Research Interests}
+Active matter dynamics\interestsep Elastic Leidenfrost effect\interestsep Hair dynamics
 
 % =========================
 \section*{Summary}
 Currently a graduate researcher at Ajou University. My research interests include active matter dynamics, the Leidenfrost effect, and hair frizz dynamics.
 
 % =========================
-\section*{Research Interests}
-Active matter dynamics; Leidenfrost-induced motion; soft matter and fluid--structure interaction; hair frizz dynamics; centerline curvature and excursion analysis.
+\section*{Publications}
+\begin{itemize}
+  \item Submitted manuscript. Details to be updated.
+\end{itemize}
 
 % =========================
 \section*{Education}
@@ -112,28 +140,25 @@ Active matter dynamics; Leidenfrost-induced motion; soft matter and fluid--struc
 % =========================
 \section*{Research Experience}
 \begin{itemize}
-  \item \cvitemtitle{Graduate Research Student}{Sep 2025 -- Present}\\
-  \href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University
-  \begin{itemize}
-    \item \cvfield{Topics}{Hair frizz dynamics; boundary-driven active matter in soft hydrogels}
-    \item Study hair frizz dynamics using centerline-based geometric analysis and simulation-assisted interpretation.
-    \item Analyze boundary-driven active matter in soft hydrogels, focusing on Leidenfrost-induced dynamics.
-    \item Develop reproducible analysis and visualization scripts for experimental and simulation data.
-    \item \cvfield{Advisor}{Prof. Jonghyun Ha; Dr. Yeonsu Jung}
-  \end{itemize}
+  \item \cventryhead{Graduate Research Student}{Sep 2025 -- Present}{\href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University}
+  \begin{cvdetailblock}
+    \researchtopic{Hair frizz dynamics}{Centerline-based geometric analysis and simulation-assisted interpretation of strand morphology.}
+    \researchtopic{Boundary-driven active matter in soft hydrogels}{Quantitative analysis of Leidenfrost-induced dynamics in soft hydrogel systems.}
+    \item \cvfield{Methods}{image-based tracking, curvature analysis, and visualization scripts}
+    \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+  \end{cvdetailblock}
 
-  \item \cvitemtitle{Undergraduate Research Student}{Mar 2023 -- Aug 2025}\\
-  \href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University
-  \begin{itemize}
-    \item \cvfield{Topics}{Boundary-driven active matter in soft hydrogels}
-    \item Conducted research on Leidenfrost-related soft-matter dynamics.
-    \item Performed image-based tracking, quantitative analysis, and figure preparation for presentations.
-    \item \cvfield{Advisor}{Prof. Jonghyun Ha; Dr. Yeonsu Jung}
-  \end{itemize}
+  \item \cventryhead{Undergraduate Research Student}{Mar 2023 -- Aug 2025}{\href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University}
+  \begin{cvdetailblock}
+    \researchtopic{Boundary-driven active matter in soft hydrogels}{Image-based tracking and quantitative analysis of Leidenfrost-related soft-matter dynamics.}
+    \item \cvfield{Contributions}{figure preparation and presentation support.}
+    \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+  \end{cvdetailblock}
 \end{itemize}
 
 % =========================
-\section*{Selected Presentations}
+\Needspace{5\baselineskip}
+\section*{Conferences and Presentations}
 \begin{itemize}
   \item \cvitemtitle{APS Division of Fluid Dynamics Meeting}{Nov 2025}\\
   \cvorg{Houston, TX, USA}
@@ -155,6 +180,7 @@ Active matter dynamics; Leidenfrost-induced motion; soft matter and fluid--struc
 \end{itemize}
 
 % =========================
+\Needspace{9\baselineskip}
 \section*{Awards \& Honors}
 \begin{itemize}
   \item \cvitemtitle{Dean's List}{Spring 2024, Spring 2025}\\
@@ -166,15 +192,15 @@ Active matter dynamics; Leidenfrost-induced motion; soft matter and fluid--struc
   \item \cvitemtitle{Capstone Design Competition}{June 2025}\\
   \cvorg{Ajou University}
   \begin{itemize}
-    \item \cvaward{2nd Place; KRW 1,000,000 prize}
-    \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention}
+    \item \cvaward{2nd Place \awardsep{} KRW 1,000,000 prize}
+    \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention.}
   \end{itemize}
 
   \item \cvitemtitle{Gyeonggi-do Assistive Device Idea Competition}{Nov 2025}\\
   \cvorg{Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)}
   \begin{itemize}
-    \item \cvaward{3rd Place; KRW 300,000 prize}
-    \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for older adults}
+    \item \cvaward{3rd Place \awardsep{} KRW 300,000 prize}
+    \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for older adults.}
   \end{itemize}
 
   \item \cvitemtitle{APS DFD Travel/Enabling Grant}{2025}\\
@@ -187,19 +213,21 @@ Active matter dynamics; Leidenfrost-induced motion; soft matter and fluid--struc
   \item \cvitemtitle{Gallery of Fluid Motion}{Apr 2026}\\
   \cvorg{The Korean Society of Mechanical Engineers, Fluid Engineering Division}
   \begin{itemize}
-    \item \cvaward{Haecheon Choi GFM Award; KRW 400,000 prize}
+    \item \cvaward{Haecheon Choi GFM Award \awardsep{} KRW 400,000 prize}
     \item \cvfield{Title}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
     \item \cvfield{Authors}{Minseong Cho, Yeonsu Jung, Jonghyun Ha}
   \end{itemize}
 \end{itemize}
 
 % =========================
+\iffalse
 \section*{Selected Technical Skills}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
 \textbf{Programming} & Python, MATLAB, LaTeX \\
 \textbf{Tools} & DeepLabCut, OpenCV, Git, Overleaf \\
 \textbf{Methods} & image-based tracking, trajectory analysis, centerline extraction, curvature/excursion profiling, data visualization \\
 \end{tabularx}
+\fi
 
 % =========================
 \section*{References}

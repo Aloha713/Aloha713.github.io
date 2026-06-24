@@ -9,7 +9,10 @@
 
 main:
 
-  - title: "Portfolio"
+  - title: "My Research"
+    url: /#my-research
+
+  - title: "Portfolio / CV"
     url: /portfolio/
 
   - title: "Publications"
@@ -25,6 +28,6 @@ main:
   # - title: "CV"
   #   url: /cv/
     
-  - title: "CV"
-    url: /cv-json/
+  # - title: "CV"
+  #   url: /cv-json/
     
