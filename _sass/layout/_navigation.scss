@@ -189,6 +189,15 @@
     }
   }
 
+  .site-title-text {
+    display: block;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    color: var(--global-masthead-link-color);
+    text-decoration: none;
+    cursor: default;
+  }
+
   button {
     position: absolute;
     height: 2.5rem;
