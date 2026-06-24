@@ -203,14 +203,16 @@ html[data-theme="dark"] .section-block::before {
 /* Keep the theme toggle pinned to the far right of the masthead. */
 .greedy-nav {
   padding-right: 3.25rem;
+  text-align: center;
 }
 
 .greedy-nav .visible-links {
   align-items: center;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  position: relative;
-  width: 100%;
+  position: static;
+  text-align: left;
+  width: auto;
 }
 
 .greedy-nav .visible-links > li {
