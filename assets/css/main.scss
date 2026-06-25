@@ -522,6 +522,69 @@ html[data-theme="dark"] .cv-item-detail { color: var(--global-fig-caption-color)
 html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
 
 /* Presentations */
+.talk-list__item {
+  margin-bottom: 2.1rem;
+}
+
+.talk-list__item .archive__item {
+  margin-bottom: 0;
+}
+
+.talk-list__title {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 0.2rem;
+}
+
+.talk-list__title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.talk-list__title a:hover {
+  color: #25519a;
+  text-decoration: none;
+}
+
+.talk-list__date {
+  margin: 0 0 0.12rem;
+}
+
+.talk-list__meta {
+  margin: 0 0 0.55rem;
+}
+
+.talk-list__actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.1rem;
+}
+
+.talk-list__button {
+  border: 1px solid rgba(37, 81, 154, 0.34);
+  border-radius: 4px;
+  color: #25519a;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.42rem 0.55rem;
+  text-decoration: none;
+}
+
+.talk-list__button:hover {
+  background-color: rgba(37, 81, 154, 0.08);
+  border-color: #25519a;
+  color: #25519a;
+  text-decoration: none;
+}
+
+.talk-list__button--external {
+  background-color: rgba(37, 81, 154, 0.07);
+}
+
 .cv-present-meta{
   font-size: 0.9rem;
   font-weight: 400;
@@ -548,6 +611,21 @@ html[data-theme="dark"] .cv-item-title {
 
 html[data-theme="dark"] .cv-present-title{
   color: var(--global-fig-caption-color);
+}
+
+html[data-theme="dark"] .talk-list__title a:hover {
+  color: var(--global-link-color);
+}
+
+html[data-theme="dark"] .talk-list__button {
+  border-color: var(--global-border-color);
+  color: var(--global-text-color);
+}
+
+html[data-theme="dark"] .talk-list__button:hover,
+html[data-theme="dark"] .talk-list__button--external {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--global-text-color);
 }
 
 /* 제목 아래 내용만 들여쓰기 */
