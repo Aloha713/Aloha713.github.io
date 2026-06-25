@@ -21,8 +21,8 @@ share: false
   - **Boundary-driven active matter in soft hydrogels**
     - **Keywords**: Active matter, Elastic Leidenfrost effect
     - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2), Dr. [Yeonsu Jung](https://yeonsu-jung.github.io)
-  - **Hair frizz dynamics**
-    - **Keywords**: Hair dynamics
+  - **Mechanics of moisture-driven hair frizz**
+    - **Keywords**: Hair mechanics, Moisture-driven frizz
     - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2), Dr. [Yeonsu Jung](https://yeonsu-jung.github.io)
 &nbsp;
 

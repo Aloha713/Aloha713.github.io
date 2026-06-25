@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 I am an M.S. student at the Softlab, Ajou University.<br/>
-My research interests include active matter dynamics, the Leidenfrost effect, and hair dynamics.
+My research interests include active matter dynamics, the Leidenfrost effect, and the mechanics of moisture-driven hair frizz.
 
 
 <h2 id="my-research">My research</h2>
@@ -17,5 +17,4 @@ My research interests include active matter dynamics, the Leidenfrost effect, an
 **Elastic Leidenfrost effect**  
 
 
-**Hair frizz dynamics**  
-
+**Mechanics of moisture-driven hair frizz**
