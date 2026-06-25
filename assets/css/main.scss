@@ -218,6 +218,12 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   color: inherit;
 }
 
+.portfolio-content a,
+.portfolio-content a:hover,
+.portfolio-content a:focus {
+  text-decoration: none;
+}
+
 .portfolio-entry-date {
   color: var(--global-text-color);
   flex: 0 0 auto;

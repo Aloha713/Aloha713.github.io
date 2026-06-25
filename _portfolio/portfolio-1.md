@@ -18,19 +18,19 @@ share: false
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Graduate Research Student</span><span class="portfolio-entry-date">Sep 2025 – Present</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
-  - **Topics**:
-    - **Boundary-driven active matter in soft hydrogels**
-      - **Keywords**: Active matter, Elastic Leidenfrost effect
-    - **Hair frizz dynamics**
-      - **Keywords**: Hair dynamics
-  - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2), Dr. [Yeonsu Jung](https://yeonsu-jung.github.io)
+  - **Boundary-driven active matter in soft hydrogels**
+    - **Keywords**: Active matter, Elastic Leidenfrost effect
+    - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2), Dr. [Yeonsu Jung](https://yeonsu-jung.github.io)
+  - **Hair frizz dynamics**
+    - **Keywords**: Hair dynamics
+    - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2), Dr. [Yeonsu Jung](https://yeonsu-jung.github.io)
 &nbsp;
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Undergraduate Research Student</span><span class="portfolio-entry-date">Mar 2023 – Aug 2025</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
-  - **Topic**: Boundary-driven active matter in soft hydrogels
-  - **Keywords**: Active matter, Elastic Leidenfrost effect  
-  - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2), Dr. [Yeonsu Jung](https://yeonsu-jung.github.io)
+  - **Boundary-driven active matter in soft hydrogels**
+    - **Keywords**: Active matter, Elastic Leidenfrost effect
+    - **Advisor**: Prof. [Jonghyun Ha](https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2), Dr. [Yeonsu Jung](https://yeonsu-jung.github.io)
 
 
 
