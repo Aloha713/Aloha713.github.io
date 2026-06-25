@@ -6,7 +6,7 @@
 % ---------- Page ----------
 \usepackage[a4paper,left=0.76in,right=0.76in,top=0.55in,bottom=0.55in]{geometry}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{1.5pt}
+\setlength{\parskip}{2.2pt}
 
 % ---------- Fonts / Symbols ----------
 \usepackage[T1]{fontenc}
@@ -38,16 +38,16 @@
   label=\textbullet,
   leftmargin=1.15em,
   labelsep=0.55em,
-  topsep=1pt,
-  itemsep=1.5pt,
+  topsep=2pt,
+  itemsep=3pt,
   parsep=0pt
 }
 \setlist[itemize,2]{
   label=\raisebox{0.15ex}{\scriptsize$\circ$},
   leftmargin=1.55em,
   labelsep=0.45em,
-  topsep=0pt,
-  itemsep=0.5pt,
+  topsep=1pt,
+  itemsep=1.2pt,
   parsep=0pt
 }
 
@@ -57,13 +57,13 @@
   {\Large\bfseries\color{accent}}
   {}{0pt}{}
   [\vspace{2pt}{\color{rulegray}\titlerule}]
-\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
 
 % ---------- Small macros ----------
 \newcommand{\sep}{\hspace{6pt}\textcolor{muted}{\textbar}\hspace{6pt}}
 \newcommand{\cvdate}[1]{\hfill \textcolor{textmain}{#1}}
-\newcommand{\cvorg}[1]{\parbox[t]{\cvdetailwidth}{\textcolor{muted}{#1}}\par\vspace{-1pt}}
-\newcommand{\cvline}[1]{\parbox[t]{\cvdetailwidth}{#1}\par\vspace{-1pt}}
+\newcommand{\cvorg}[1]{\parbox[t]{\cvdetailwidth}{\textcolor{muted}{#1}}\par\vspace{0.5pt}}
+\newcommand{\cvline}[1]{\parbox[t]{\cvdetailwidth}{#1}\par\vspace{0.5pt}}
 \newcommand{\cvaward}[1]{\textbf{#1}}
 \newcommand{\cvfield}[2]{\textbf{#1:} #2}
 \newcommand{\cvitemtitle}[2]{\textbf{\textcolor{textmain}{#1}}\cvdate{#2}}
@@ -80,18 +80,18 @@
 \newcommand{\cventryhead}[3]{%
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
     \textbf{\textcolor{textmain}{#1}} \textcolor{muted}{--} #3 & \textcolor{textmain}{#2}
-  \end{tabularx}\par\vspace{-1pt}
+  \end{tabularx}\par\vspace{0.5pt}
 }
 \renewcommand{\cvitemtitle}[2]{%
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
     \textbf{\textcolor{textmain}{#1}} & \textcolor{textmain}{#2}
-  \end{tabularx}\par\vspace{-1pt}
+  \end{tabularx}\par\vspace{0.5pt}
 }
 \newenvironment{cvdetailblock}
   {\begin{minipage}{\cvdetailwidth}\raggedright\begin{itemize}}
   {\end{itemize}\end{minipage}}
 \newcommand{\researchtopic}[2]{%
-  \item \textbf{#1}\\[-1pt]
+  \item \textbf{#1}\\[0.5pt]
   \textcolor{muted}{#2}
 }
 
@@ -133,7 +133,7 @@ Currently a graduate researcher at Ajou University. My research interests includ
 \begin{itemize}
   \item \textbf{Boundary-driven active matter and stochastic rectification via Leidenfrost impulses}\\
   \textbf{Minseong Cho}, Yeonsu Jung, and Jonghyun Ha\\
-  \textit{In preparation}
+  \cvsubline{In preparation}
 \end{itemize}
 
 % =========================
@@ -169,25 +169,25 @@ Currently a graduate researcher at Ajou University. My research interests includ
 \end{itemize}
 
 % =========================
-\Needspace{5\baselineskip}
+\Needspace{18\baselineskip}
 \section*{Conferences and Presentations}
 \begin{itemize}
   \item \cvitemtitle{APS Division of Fluid Dynamics Meeting}{Nov 2025}
   \cvorg{Houston, TX, USA}
   \begin{cvdetailblock}
-    \item \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
+    \item \cvsubline{Leidenfrost-induced active matter dynamics of spherical hydrogels}
   \end{cvdetailblock}
 
   \item \cvitemtitle{Asian Congress of Fluid Mechanics}{Sep 2025}
   \cvorg{Seoul, South Korea}
   \begin{cvdetailblock}
-    \item \textit{Leidenfrost-induced active matter dynamics of spherical hydrogels}
+    \item \cvsubline{Leidenfrost-induced active matter dynamics of spherical hydrogels}
   \end{cvdetailblock}
 
   \item \cvitemtitle{KSME Annual Conference}{Nov 2024}
   \cvorg{Jeju, South Korea}
   \begin{cvdetailblock}
-    \item \textit{Explosive motion of spherical hydrogel via the Leidenfrost effect}
+    \item \cvsubline{Explosive motion of spherical hydrogel via the Leidenfrost effect}
   \end{cvdetailblock}
 \end{itemize}
 
@@ -244,14 +244,14 @@ Currently a graduate researcher at Ajou University. My research interests includ
 % =========================
 \section*{References}
 \textbf{Prof. Jonghyun Ha}\\
-\textit{Assistant Professor, Department of Mechanical Engineering, Ajou University, Suwon, South Korea}\\
+\cvsubline{Assistant Professor, Department of Mechanical Engineering, Ajou University, Suwon, South Korea}\\
 E-mail: \href{mailto:hajh@ajou.ac.kr}{hajh@ajou.ac.kr}\\
 Scholar Profiles:
 \href{https://www.softlab.ajou.ac.kr/people-ha}{Personal Page} \sep
 \href{https://scholar.google.com/citations?user=H73RmsAAAAAJ}{Google Scholar}\\[5pt]
 
 \textbf{Dr. Yeonsu Jung}\\
-\textit{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\
+\cvsubline{Postdoctoral Research Fellow, School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA}\\
 E-mail: \href{mailto:jung@seas.harvard.edu}{jung@seas.harvard.edu}\\
 Scholar Profiles:
 \href{https://yeonsu-jung.github.io}{Personal Page} \sep
