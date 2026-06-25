@@ -210,7 +210,12 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 .portfolio-content {
   --portfolio-date-column: 13.5rem;
-  --portfolio-field-label-column: 6.75rem;
+  --portfolio-field-label-column: 6.25rem;
+  --portfolio-research-field-label-column: 5.15rem;
+}
+
+.portfolio-content h2 {
+  margin: 1.85rem 0 0.95rem 0;
 }
 
 .portfolio-entry-title {
@@ -266,7 +271,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 .portfolio-field {
   align-items: start;
-  column-gap: 0.25rem;
+  column-gap: 0.2rem;
   display: grid;
   grid-template-columns: var(--portfolio-field-label-column) minmax(0, 1fr);
   line-height: 1.35;
@@ -274,6 +279,17 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 .portfolio-field strong {
   white-space: nowrap;
+}
+
+.portfolio-field--compact {
+  column-gap: 0.18rem;
+  grid-template-columns: var(--portfolio-research-field-label-column) minmax(0, 1fr);
+  line-height: 1.3;
+}
+
+.portfolio-research-topic {
+  color: var(--global-text-color);
+  font-weight: 700;
 }
 
 .portfolio-video-wrap {
