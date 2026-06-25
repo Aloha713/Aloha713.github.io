@@ -318,6 +318,12 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   margin-bottom: 0.25rem !important;
 }
 
+@media (min-width: 925px) {
+  .page {
+    padding-right: 0;
+  }
+}
+
 /* Keep the theme toggle pinned to the far right of the masthead. */
 .greedy-nav {
   padding-right: 3.25rem;
