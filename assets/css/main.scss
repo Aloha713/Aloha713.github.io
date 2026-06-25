@@ -593,11 +593,11 @@ html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
 }
 
 .talk-list__date {
-  margin: 0 0 0.12rem;
+  margin: 0 0 0.55rem;
 }
 
 .talk-list__meta {
-  margin: 0 0 0.55rem;
+  margin: 0.1rem 0 0.15rem;
 }
 
 .talk-list__actions {
@@ -605,7 +605,7 @@ html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin-top: 0.1rem;
+  margin-top: 0;
 }
 
 .talk-list__button {

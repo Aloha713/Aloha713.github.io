@@ -27,15 +27,15 @@
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
 
-    {% if post.date %}
-      <p class="page__meta talk-list__date">
-        <i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}
-      </p>
-    {% endif %}
-
     {% if post.venue %}
       <p class="archive__item-excerpt talk-list__meta" itemprop="description">
         {{ post.type }}, {{ post.venue }}, {{ post.location }}
+      </p>
+    {% endif %}
+
+    {% if post.date %}
+      <p class="page__meta talk-list__date">
+        <i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}
       </p>
     {% endif %}
 
