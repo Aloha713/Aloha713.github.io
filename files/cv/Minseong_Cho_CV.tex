@@ -46,13 +46,13 @@
   label=\raisebox{0.15ex}{\scriptsize$\circ$},
   leftmargin=1.55em,
   labelsep=0.45em,
-  topsep=1pt,
-  itemsep=1.6pt,
+  topsep=2.2pt,
+  itemsep=2.2pt,
   parsep=0pt
 }
 \setlist[itemize,3]{
   label={},
-  leftmargin=1.35em,
+  leftmargin=0.85em,
   labelsep=0pt,
   topsep=1pt,
   itemsep=0.8pt,
@@ -70,13 +70,13 @@
 % ---------- Small macros ----------
 \newcommand{\sep}{\hspace{6pt}\textcolor{muted}{\textbar}\hspace{6pt}}
 \newcommand{\cvdate}[1]{\hfill \textcolor{textmain}{#1}}
-\newcommand{\cvorg}[1]{\parbox[t]{\cvdetailwidth}{\textcolor{muted}{#1}}\par\vspace{0.5pt}}
-\newcommand{\cvline}[1]{\parbox[t]{\cvdetailwidth}{#1}\par\vspace{0.5pt}}
+\newcommand{\cvorg}[1]{\parbox[t]{\linewidth}{\textcolor{muted}{#1}}\par\vspace{0.5pt}}
+\newcommand{\cvline}[1]{\parbox[t]{\linewidth}{#1}\par\vspace{0.5pt}}
 \newcommand{\cvaward}[1]{#1}
 \newcommand{\cvfield}[2]{\textbf{#1:} #2}
 \newcommand{\cvitemtitle}[2]{\textbf{\textcolor{textmain}{#1}}\cvdate{#2}}
 \newcommand{\cvsubline}[1]{\textcolor{muted}{#1}}
-\newcommand{\cvawardline}[1]{\parbox[t]{\cvdetailwidth}{#1}\par\vspace{1pt}}
+\newcommand{\cvawardline}[1]{\parbox[t]{\linewidth}{#1}\par\vspace{3pt}}
 \newcommand{\smallgap}{\vspace{2pt}}
 \newcommand{\contacticon}[1]{\makebox[1.15em][c]{\textcolor{textmain}{#1}}}
 \newcommand{\contactlink}[2]{\href{#1}{\textcolor{textmain}{#2}\,\textcolor{accent}{\scriptsize\faLink}}}
@@ -97,7 +97,7 @@
   \end{tabularx}\par\vspace{0.5pt}
 }
 \newenvironment{cvdetailblock}
-  {\begin{minipage}{\cvdetailwidth}\raggedright\begin{itemize}}
+  {\begin{minipage}{\linewidth}\raggedright\begin{itemize}}
   {\end{itemize}\end{minipage}}
 \newcommand{\researchtopic}[2]{%
   \item \textbf{#1}\\[0.8pt]
