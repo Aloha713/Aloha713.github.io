@@ -18,8 +18,8 @@
 % ---------- Colors / Links ----------
 \usepackage{xcolor}
 \definecolor{accent}{HTML}{25519B}
-\definecolor{textmain}{HTML}{111111}
-\definecolor{muted}{HTML}{555555}
+\definecolor{textmain}{HTML}{2F3437}
+\definecolor{muted}{HTML}{62676D}
 \definecolor{rulegray}{HTML}{111111}
 
 \usepackage[hidelinks]{hyperref}
@@ -50,6 +50,14 @@
   itemsep=1.6pt,
   parsep=0pt
 }
+\setlist[itemize,3]{
+  label={},
+  leftmargin=1.35em,
+  labelsep=0pt,
+  topsep=1pt,
+  itemsep=0.8pt,
+  parsep=0pt
+}
 
 % ---------- Section styling ----------
 \usepackage{titlesec}
@@ -68,6 +76,7 @@
 \newcommand{\cvfield}[2]{\textbf{#1:} #2}
 \newcommand{\cvitemtitle}[2]{\textbf{\textcolor{textmain}{#1}}\cvdate{#2}}
 \newcommand{\cvsubline}[1]{\textcolor{muted}{#1}}
+\newcommand{\cvawardline}[1]{\parbox[t]{\cvdetailwidth}{#1}\par\vspace{1pt}}
 \newcommand{\smallgap}{\vspace{2pt}}
 \newcommand{\contacticon}[1]{\makebox[1.15em][c]{\textcolor{textmain}{#1}}}
 \newcommand{\contactlink}[2]{\href{#1}{\textcolor{textmain}{#2}\,\textcolor{accent}{\scriptsize\faLink}}}
@@ -80,7 +89,7 @@
 \newcommand{\cventryhead}[3]{%
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
     \textbf{\textcolor{textmain}{#1}} \textcolor{muted}{--} #3 & \textcolor{textmain}{#2}
-  \end{tabularx}\par\vspace{0.5pt}
+  \end{tabularx}\par\vspace{2pt}
 }
 \renewcommand{\cvitemtitle}[2]{%
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
@@ -91,8 +100,10 @@
   {\begin{minipage}{\cvdetailwidth}\raggedright\begin{itemize}}
   {\end{itemize}\end{minipage}}
 \newcommand{\researchtopic}[2]{%
-  \item \textbf{#1}\\[0.5pt]
-  \textcolor{muted}{#2}
+  \item \textbf{#1}\\[0.8pt]
+  \begin{itemize}
+    #2
+  \end{itemize}
 }
 
 % =========================
@@ -114,9 +125,9 @@
 \contacticon{\faGraduationCap} \contactlink{https://scholar.google.com/citations?user=j9RODW0AAAAJ}{Google Scholar}
 \end{minipage}
 &
-\begin{minipage}[t]{1.34in}
+\begin{minipage}[t]{1.16in}
 \vspace{0pt}
-\includegraphics[width=1.34in]{../../images/Minseong.JPG}
+\includegraphics[width=1.16in]{../../images/Minseong.JPG}
 \end{minipage}
 \end{tabularx}
 
@@ -125,7 +136,7 @@
 Active matter dynamics\interestsep Elastic Leidenfrost effect\interestsep Mechanics of moisture-driven hair frizz
 
 % =========================
-\section*{Summary}
+\section*{Personal Statement}
 Currently a graduate researcher at Ajou University. My research interests include active matter dynamics, the Elastic Leidenfrost effect, and the mechanics of moisture-driven hair frizz.
 
 % =========================
@@ -146,17 +157,25 @@ Currently a graduate researcher at Ajou University. My research interests includ
 \begin{itemize}
   \item \cventryhead{Graduate Research Student}{Sep 2025 -- Present}{\href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University}
   \begin{cvdetailblock}
-    \researchtopic{Mechanics of moisture-driven hair frizz}{Centerline-based geometric analysis and simulation-assisted interpretation of strand morphology.}
-    \researchtopic{Boundary-driven active matter in soft hydrogels}{Quantitative analysis of Leidenfrost-induced dynamics in soft hydrogel systems.}
-    \item \cvfield{Methods}{image-based tracking, curvature analysis, and visualization scripts}
-    \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+    \researchtopic{Mechanics of moisture-driven hair frizz}{
+      \item \cvfield{Focus}{moisture-driven changes in strand morphology.}
+      \item \cvfield{Techniques}{centerline-based geometric analysis and simulation-assisted interpretation.}
+      \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+    }
+    \researchtopic{Boundary-driven active matter in soft hydrogels}{
+      \item \cvfield{Focus}{Leidenfrost-induced dynamics in soft hydrogel systems.}
+      \item \cvfield{Techniques}{image-based tracking, curvature analysis, and visualization scripts.}
+      \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+    }
   \end{cvdetailblock}
 
   \item \cventryhead{Undergraduate Research Student}{Mar 2023 -- Aug 2025}{\href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University}
   \begin{cvdetailblock}
-    \researchtopic{Boundary-driven active matter in soft hydrogels}{Image-based tracking and quantitative analysis of Leidenfrost-related soft-matter dynamics.}
-    \item \cvfield{Contributions}{figure preparation and presentation support.}
-    \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+    \researchtopic{Boundary-driven active matter in soft hydrogels}{
+      \item \cvfield{Focus}{Leidenfrost-related soft-matter dynamics.}
+      \item \cvfield{Techniques}{image-based tracking, quantitative analysis, and figure preparation.}
+      \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+    }
   \end{cvdetailblock}
 \end{itemize}
 
@@ -190,28 +209,28 @@ Currently a graduate researcher at Ajou University. My research interests includ
   \end{cvdetailblock}
 
   \item \cventryhead{Capstone Design Competition}{June 2025}{Ajou University}
+  \cvawardline{2nd Place \awardsep{} KRW 1,000,000 prize}
   \begin{cvdetailblock}
-    \item \cvaward{2nd Place \awardsep{} KRW 1,000,000 prize}
     \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention.}
   \end{cvdetailblock}
 
   \item \cvitemtitle{Gyeonggi-do Assistive Device Idea Competition}{Nov 2025}
+  \cvawardline{3rd Place \awardsep{} KRW 300,000 prize}
   \begin{cvdetailblock}
-    \item \cvaward{3rd Place \awardsep{} KRW 300,000 prize}
     \item \cvfield{Organized by}{Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)}
     \item \cvfield{Project}{Compliant-mechanism-based knee assistive device for older adults.}
   \end{cvdetailblock}
 
   \item \cvitemtitle{APS DFD Travel/Enabling Grant}{2025}
+  \cvawardline{US\$750 travel cost reimbursement}
   \begin{cvdetailblock}
-    \item \cvaward{US\$750 travel cost reimbursement}
     \item \cvfield{Organized by}{APS Division of Fluid Dynamics, American Physical Society}
     \item \cvfield{Purpose}{Travel support for participation in the APS Division of Fluid Dynamics Meeting.}
   \end{cvdetailblock}
 
   \item \cvitemtitle{Gallery of Fluid Motion}{Apr 2026}
+  \cvawardline{Haecheon Choi GFM Award \awardsep{} KRW 400,000 prize}
   \begin{cvdetailblock}
-    \item \cvaward{Haecheon Choi GFM Award \awardsep{} KRW 400,000 prize}
     \item \cvfield{Organized by}{The Korean Society of Mechanical Engineers, Fluid Engineering Division}
     \item \cvfield{Title}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
     \item \cvfield{Authors}{Minseong Cho, Yeonsu Jung, Jonghyun Ha}
