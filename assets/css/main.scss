@@ -210,7 +210,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 .portfolio-content {
   --portfolio-date-column: 13.5rem;
-  --portfolio-field-label-column: 7.4rem;
+  --portfolio-field-label-column: 6.75rem;
 }
 
 .portfolio-entry-title {
@@ -275,7 +275,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 .portfolio-field {
   align-items: start;
-  column-gap: 0.35rem;
+  column-gap: 0.25rem;
   display: grid;
   grid-template-columns: var(--portfolio-field-label-column) minmax(0, 1fr);
   line-height: 1.35;
