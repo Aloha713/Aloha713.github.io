@@ -84,6 +84,8 @@
 \newcommand{\awardsep}{\textcolor{muted}{\(\cdot\)}}
 \newlength{\cvdatewidth}
 \setlength{\cvdatewidth}{1.72in}
+\newlength{\cvfieldlabelwidth}
+\setlength{\cvfieldlabelwidth}{0.82in}
 \newlength{\cvdetailwidth}
 \setlength{\cvdetailwidth}{\dimexpr\textwidth-\cvdatewidth-0.28in\relax}
 \newcommand{\cventryhead}[3]{%
@@ -99,8 +101,14 @@
 \newenvironment{cvdetailblock}
   {\begin{minipage}{\linewidth}\raggedright\begin{itemize}}
   {\end{itemize}\end{minipage}}
+\newcommand{\researchfield}[2]{%
+  \item
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{\cvfieldlabelwidth}@{\hspace{0.12in}}>{\raggedright\arraybackslash}X@{}}
+    {\small\bfseries\textcolor{muted}{#1:}} & {\small\textcolor{muted}{#2}}
+  \end{tabularx}
+}
 \newcommand{\researchtopic}[2]{%
-  \item \textbf{#1}\\[0.8pt]
+  \item \textbf{\textcolor{textmain}{#1}}\\[-0.3pt]
   \begin{itemize}
     #2
   \end{itemize}
@@ -158,23 +166,23 @@ Currently a graduate researcher at Ajou University. My research interests includ
   \item \cventryhead{Graduate Research Student}{Sep 2025 -- Present}{\href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University}
   \begin{cvdetailblock}
     \researchtopic{Mechanics of moisture-driven hair frizz}{
-      \item \cvfield{Focus}{moisture-driven changes in strand morphology.}
-      \item \cvfield{Techniques}{centerline-based geometric analysis and simulation-assisted interpretation.}
-      \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+      \researchfield{Focus}{moisture-driven changes in strand morphology.}
+      \researchfield{Techniques}{centerline-based geometric analysis and simulation-assisted interpretation.}
+      \researchfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
     }
     \researchtopic{Boundary-driven active matter in soft hydrogels}{
-      \item \cvfield{Focus}{Leidenfrost-induced dynamics in soft hydrogel systems.}
-      \item \cvfield{Techniques}{image-based tracking, curvature analysis, and visualization scripts.}
-      \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+      \researchfield{Focus}{Leidenfrost-induced dynamics in soft hydrogel systems.}
+      \researchfield{Techniques}{image-based tracking, curvature analysis, and visualization scripts.}
+      \researchfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
     }
   \end{cvdetailblock}
 
   \item \cventryhead{Undergraduate Research Student}{Mar 2023 -- Aug 2025}{\href{https://www.softlab.ajou.ac.kr/}{Softlab}, Ajou University}
   \begin{cvdetailblock}
     \researchtopic{Boundary-driven active matter in soft hydrogels}{
-      \item \cvfield{Focus}{Leidenfrost-related soft-matter dynamics.}
-      \item \cvfield{Techniques}{image-based tracking, quantitative analysis, and figure preparation.}
-      \item \cvfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
+      \researchfield{Focus}{Leidenfrost-related soft-matter dynamics.}
+      \researchfield{Techniques}{image-based tracking, quantitative analysis, and figure preparation.}
+      \researchfield{Advisor}{Prof. Jonghyun Ha, Dr. Yeonsu Jung}
     }
   \end{cvdetailblock}
 \end{itemize}
