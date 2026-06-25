@@ -675,26 +675,29 @@ html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
 }
 
 /* Publications */
-.publication-entry {
-  margin: 0.9rem 0 1.6rem;
+.publication-list__entry {
+  margin: 0.95rem 0 2.1rem;
 }
 
-.publication-entry__title {
+.publication-list__title {
   color: var(--global-text-color);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.35;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
-.publication-entry__authors,
-.publication-entry__status {
+.publication-list__authors {
+  color: var(--global-fig-caption-color);
+  margin: 0.1rem 0 0.15rem;
+}
+
+.publication-list__status {
   color: #6f7680;
-  font-size: 1rem;
-  line-height: 1.35;
+  margin: 0;
 }
 
-.publication-entry__authors strong {
+.publication-list__authors strong {
   color: var(--global-text-color);
   font-weight: 700;
 }

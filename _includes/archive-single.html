@@ -15,12 +15,14 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if post.collection == 'publications' and post.status == 'in_preparation' %}
-      <div class="publication-entry">
-        <div class="publication-entry__title" itemprop="headline">{{ title }}</div>
+      <div class="publication-list__entry">
+        <h2 class="archive__item-title publication-list__title" itemprop="headline">{{ title }}</h2>
         {% if post.authors %}
-          <div class="publication-entry__authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+          <p class="archive__item-excerpt publication-list__authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</p>
         {% endif %}
-        <div class="publication-entry__status">(In preparation)</div>
+        <p class="page__meta publication-list__status">
+          <i class="fa fa-hourglass-half" aria-hidden="true"></i> In preparation
+        </p>
       </div>
     {% else %}
     {% if include.type == "grid" and teaser %}
