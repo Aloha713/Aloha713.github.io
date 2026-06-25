@@ -342,6 +342,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   border-left: 1px solid rgba(37, 81, 154, 0.22);
   margin: 0;
   padding: 0.5rem 1.05rem;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
 }
 
 .greedy-nav .visible-links > .masthead__menu-item--lg + .masthead__menu-item a {
@@ -352,6 +353,13 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   background: rgba(37, 81, 154, 0.08);
   box-shadow: inset 0 -3px 0 #25519a;
   color: #1d407a;
+}
+
+.greedy-nav .visible-links > .masthead__menu-item:not(.masthead__menu-item--lg):not(#theme-toggle) a:hover,
+.greedy-nav .visible-links > .masthead__menu-item:not(.masthead__menu-item--lg):not(#theme-toggle) a:focus {
+  background: rgba(37, 81, 154, 0.1);
+  box-shadow: inset 0 -3px 0 #25519a;
+  color: #25519a;
 }
 
 .greedy-nav .visible-links #theme-toggle {
@@ -376,6 +384,13 @@ html[data-theme="dark"] .greedy-nav .visible-links > .masthead__menu-item:not(.m
 
 html[data-theme="dark"] .greedy-nav .visible-links > .masthead__menu-item.is-active:not(.masthead__menu-item--lg):not(#theme-toggle) a {
   background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 -3px 0 #fff;
+  color: #fff;
+}
+
+html[data-theme="dark"] .greedy-nav .visible-links > .masthead__menu-item:not(.masthead__menu-item--lg):not(#theme-toggle) a:hover,
+html[data-theme="dark"] .greedy-nav .visible-links > .masthead__menu-item:not(.masthead__menu-item--lg):not(#theme-toggle) a:focus {
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 -3px 0 #fff;
   color: #fff;
 }
