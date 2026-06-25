@@ -208,8 +208,13 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   width: 100%;
 }
 
+.portfolio-content {
+  --portfolio-date-column: 13.5rem;
+}
+
 .portfolio-entry-title {
   color: var(--global-text-color);
+  min-width: 0;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -226,17 +231,36 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 .portfolio-entry-date {
   color: #3d4144;
-  flex: 0 0 auto;
+  flex: 0 0 var(--portfolio-date-column);
   font-size: 1rem;
   font-weight: 400;
+  text-align: right;
   white-space: nowrap;
 }
 
+.portfolio-content > ul > li > ul {
+  box-sizing: border-box;
+  padding-right: var(--portfolio-date-column);
+}
+
 @media (max-width: 640px) {
+  .portfolio-content {
+    --portfolio-date-column: 0;
+  }
+
   .portfolio-entry-heading {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.1rem;
+  }
+
+  .portfolio-entry-date {
+    flex-basis: auto;
+    text-align: left;
+  }
+
+  .portfolio-content > ul > li > ul {
+    padding-right: 0;
   }
 }
 
