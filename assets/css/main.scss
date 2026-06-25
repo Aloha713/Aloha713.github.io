@@ -648,6 +648,39 @@ html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
   margin-right: 0.2rem;
 }
 
+.talk-pagination {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.talk-pagination .talk-pagination__pager {
+  border: 1px solid rgba(37, 81, 154, 0.28);
+  border-radius: 4px !important;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: var(--global-text-color);
+  float: none;
+  margin-left: 0 !important;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  width: 100%;
+}
+
+.talk-pagination .talk-pagination__pager:not(.disabled):hover,
+.talk-pagination .talk-pagination__pager:not(.disabled):focus {
+  background: #25519a;
+  border-color: #25519a;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.talk-pagination .talk-pagination__pager.disabled {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.08);
+  color: var(--global-text-color-light);
+}
+
 .cv-present-meta{
   font-size: 0.9rem;
   font-weight: 400;
@@ -689,6 +722,22 @@ html[data-theme="dark"] .talk-list__button:hover,
 html[data-theme="dark"] .talk-list__button--external {
   background-color: rgba(255, 255, 255, 0.08);
   color: var(--global-text-color);
+}
+
+html[data-theme="dark"] .talk-pagination .talk-pagination__pager {
+  border-color: var(--global-border-color);
+}
+
+html[data-theme="dark"] .talk-pagination .talk-pagination__pager:not(.disabled):hover,
+html[data-theme="dark"] .talk-pagination .talk-pagination__pager:not(.disabled):focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff;
+}
+
+html[data-theme="dark"] .talk-pagination .talk-pagination__pager.disabled {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 /* 제목 아래 내용만 들여쓰기 */
