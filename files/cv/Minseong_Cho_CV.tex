@@ -76,7 +76,7 @@
 \newcommand{\cvfield}[2]{\textbf{#1:} #2}
 \newcommand{\cvitemtitle}[2]{\textbf{\textcolor{textmain}{#1}}\cvdate{#2}}
 \newcommand{\cvsubline}[1]{\textcolor{muted}{#1}}
-\newcommand{\cvawardline}[1]{\parbox[t]{\linewidth}{#1}\par\vspace{3pt}}
+\newcommand{\cvawardline}[1]{\parbox[t]{\linewidth}{#1}\par\vspace{1.4pt}}
 \newcommand{\cvdetailfont}{\fontsize{9.4pt}{11.2pt}\selectfont}
 \newcommand{\smallgap}{\vspace{2pt}}
 \newcommand{\contacticon}[1]{\makebox[1.15em][c]{\textcolor{textmain}{#1}}}
@@ -86,9 +86,13 @@
 \newlength{\cvdatewidth}
 \setlength{\cvdatewidth}{1.72in}
 \newlength{\cvfieldlabelwidth}
-\setlength{\cvfieldlabelwidth}{0.82in}
+\setlength{\cvfieldlabelwidth}{0.78in}
 \newlength{\cvawardfieldlabelwidth}
-\setlength{\cvawardfieldlabelwidth}{1.08in}
+\setlength{\cvawardfieldlabelwidth}{0.98in}
+\newlength{\cvfieldgap}
+\setlength{\cvfieldgap}{0.08in}
+\newlength{\cvawarddetailindent}
+\setlength{\cvawarddetailindent}{1.35em}
 \newlength{\cvdetailwidth}
 \setlength{\cvdetailwidth}{\dimexpr\textwidth-\cvdatewidth-0.28in\relax}
 \newcommand{\cventryhead}[3]{%
@@ -104,24 +108,29 @@
 \newenvironment{cvdetailblock}
   {\begin{minipage}{\linewidth}\raggedright\begin{itemize}}
   {\end{itemize}\end{minipage}}
+\newenvironment{cvawarddetails}
+  {\par\vspace{0.4pt}\begingroup}
+  {\par\endgroup}
 \newcommand{\researchfield}[2]{%
   \item
-  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{\cvfieldlabelwidth}@{\hspace{0.12in}}>{\raggedright\arraybackslash}X@{}}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{\cvfieldlabelwidth}@{\hspace{\cvfieldgap}}>{\raggedright\arraybackslash}X@{}}
     {\cvdetailfont\bfseries\textcolor{muted}{#1:}} & {\cvdetailfont\textcolor{muted}{#2}}
   \end{tabularx}
 }
-\newcommand{\cvdetailfield}[2]{%
-  \item
-  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{\cvawardfieldlabelwidth}@{\hspace{0.12in}}>{\raggedright\arraybackslash}X@{}}
+\newcommand{\cvawarddetailfield}[2]{%
+  \noindent\hspace*{\cvawarddetailindent}%
+  \begin{tabularx}{\dimexpr\linewidth-\cvawarddetailindent\relax}{@{}>{\raggedright\arraybackslash}p{\cvawardfieldlabelwidth}@{\hspace{\cvfieldgap}}>{\raggedright\arraybackslash}X@{}}
     {\cvdetailfont\bfseries\textcolor{muted}{#1:}} & {\cvdetailfont\textcolor{muted}{#2}}
-  \end{tabularx}
+  \end{tabularx}\par\vspace{0.3pt}
 }
-\newcommand{\cvdetailnote}[1]{\item {\cvdetailfont\textcolor{muted}{#1}}}
+\newcommand{\cvawarddetailnote}[1]{%
+  \noindent\hspace*{\cvawarddetailindent}{\cvdetailfont\textcolor{muted}{#1}}\par\vspace{0.3pt}
+}
 \newcommand{\researchtopic}[2]{%
-  \item \textbf{\textcolor{textmain}{#1}}\\[-0.3pt]
+  \item \textbf{\textcolor{textmain}{#1}}\\[-1.3pt]
   \begin{itemize}
     #2
-  \end{itemize}
+  \end{itemize}\vspace{-1.8pt}
 }
 
 % =========================
@@ -222,37 +231,37 @@ Currently a graduate researcher at Ajou University. My research interests includ
 \section*{Awards \& Honors}
 \begin{itemize}
   \item \cventryhead{Dean's List}{Spring 2024, Spring 2025}{Ajou University}
-  \begin{cvdetailblock}
-    \cvdetailnote{Recognized for outstanding academic performance (top 5\% of the department).}
-  \end{cvdetailblock}
+  \begin{cvawarddetails}
+    \cvawarddetailnote{Recognized for outstanding academic performance (top 5\% of the department).}
+  \end{cvawarddetails}
 
   \item \cventryhead{Capstone Design Competition}{June 2025}{Ajou University}
   \cvawardline{2nd Place \awardsep{} KRW 1,000,000 prize}
-  \begin{cvdetailblock}
-    \cvdetailfield{Project}{Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention.}
-  \end{cvdetailblock}
+  \begin{cvawarddetails}
+    \cvawarddetailfield{Project}{Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention.}
+  \end{cvawarddetails}
 
   \item \cvitemtitle{Gyeonggi-do Assistive Device Idea Competition}{Nov 2025}
   \cvawardline{3rd Place \awardsep{} KRW 300,000 prize}
-  \begin{cvdetailblock}
-    \cvdetailfield{Organized by}{Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)}
-    \cvdetailfield{Project}{Compliant-mechanism-based knee assistive device for older adults.}
-  \end{cvdetailblock}
+  \begin{cvawarddetails}
+    \cvawarddetailfield{Organized by}{Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)}
+    \cvawarddetailfield{Project}{Compliant-mechanism-based knee assistive device for older adults.}
+  \end{cvawarddetails}
 
   \item \cvitemtitle{APS DFD Travel/Enabling Grant}{2025}
   \cvawardline{US\$750 travel cost reimbursement}
-  \begin{cvdetailblock}
-    \cvdetailfield{Organized by}{APS Division of Fluid Dynamics, American Physical Society}
-    \cvdetailfield{Purpose}{Travel support for participation in the APS Division of Fluid Dynamics Meeting.}
-  \end{cvdetailblock}
+  \begin{cvawarddetails}
+    \cvawarddetailfield{Organized by}{APS Division of Fluid Dynamics, American Physical Society}
+    \cvawarddetailfield{Purpose}{Travel support for participation in the APS Division of Fluid Dynamics Meeting.}
+  \end{cvawarddetails}
 
   \item \cvitemtitle{Gallery of Fluid Motion}{Apr 2026}
   \cvawardline{Haecheon Choi GFM Award \awardsep{} KRW 400,000 prize}
-  \begin{cvdetailblock}
-    \cvdetailfield{Organized by}{The Korean Society of Mechanical Engineers, Fluid Engineering Division}
-    \cvdetailfield{Title}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
-    \cvdetailfield{Authors}{Minseong Cho, Yeonsu Jung, Jonghyun Ha}
-  \end{cvdetailblock}
+  \begin{cvawarddetails}
+    \cvawarddetailfield{Organized by}{The Korean Society of Mechanical Engineers, Fluid Engineering Division}
+    \cvawarddetailfield{Title}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
+    \cvawarddetailfield{Authors}{Minseong Cho, Yeonsu Jung, Jonghyun Ha}
+  \end{cvawarddetails}
 \end{itemize}
 
 % =========================
