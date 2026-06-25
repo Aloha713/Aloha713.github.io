@@ -669,6 +669,31 @@ html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
   background-color: rgba(37, 81, 154, 0.07);
 }
 
+/* Publications */
+.publication-entry {
+  margin: 0.9rem 0 1.6rem;
+}
+
+.publication-entry__title {
+  color: var(--global-text-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+
+.publication-entry__authors,
+.publication-entry__status {
+  color: #6f7680;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.publication-entry__authors strong {
+  color: var(--global-text-color);
+  font-weight: 700;
+}
+
 .talk-detail__conference {
   color: var(--global-text-color);
   font-size: 0.95rem;
