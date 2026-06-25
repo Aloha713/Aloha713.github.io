@@ -282,9 +282,29 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 }
 
 .portfolio-field--compact {
-  column-gap: 0.28rem;
+  align-items: baseline;
+  column-gap: 0.2rem;
   grid-template-columns: var(--portfolio-research-field-label-column) minmax(0, 1fr);
   line-height: 1.3;
+}
+
+.portfolio-field--compact > span {
+  padding-top: 0.03rem;
+}
+
+.portfolio-content li:has(> .portfolio-field--compact) {
+  list-style: none;
+  position: relative;
+}
+
+.portfolio-content li:has(> .portfolio-field--compact)::before {
+  color: var(--global-text-color);
+  content: "\25AA";
+  font-size: 0.78em;
+  left: -0.78em;
+  line-height: 1;
+  position: absolute;
+  top: 0.38em;
 }
 
 .portfolio-research-topic {
