@@ -225,7 +225,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 }
 
 .portfolio-entry-date {
-  color: var(--global-text-color);
+  color: #3d4144;
   flex: 0 0 auto;
   font-size: 1rem;
   font-weight: 400;
@@ -326,7 +326,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 /* Keep the theme toggle pinned to the far right of the masthead. */
 .greedy-nav {
-  padding-right: 3.25rem;
+  padding-right: 0;
   text-align: center;
 }
 
@@ -358,6 +358,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   height: 2.5rem;
   margin: 0;
   padding: 0.5rem 1.05rem;
+  text-align: center;
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
