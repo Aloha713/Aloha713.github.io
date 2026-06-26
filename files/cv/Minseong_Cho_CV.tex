@@ -78,6 +78,9 @@
 \newcommand{\cvsubline}[1]{\textcolor{muted}{#1}}
 \newcommand{\cvawardline}[1]{\parbox[t]{\linewidth}{#1}\par\vspace{1.4pt}}
 \newcommand{\cvdetailfont}{\fontsize{9.4pt}{11.2pt}\selectfont}
+\newenvironment{cvstatement}
+  {\par\vspace{1.5pt}\begingroup\fontsize{9.7pt}{11.5pt}\selectfont\color{textmain}\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}}
+  {\par\endgroup}
 \newcommand{\smallgap}{\vspace{2pt}}
 \newcommand{\contacticon}[1]{\makebox[1.15em][c]{\textcolor{textmain}{#1}}}
 \newcommand{\contactlink}[2]{\href{#1}{\textcolor{textmain}{#2}\,\textcolor{accent}{\scriptsize\faLink}}}
@@ -164,7 +167,13 @@ Active matter dynamics\interestsep Elastic Leidenfrost effect\interestsep Mechan
 
 % =========================
 \section*{Personal Statement}
-Currently a graduate researcher at Ajou University. My research interests include active matter dynamics, the Elastic Leidenfrost effect, and the mechanics of moisture-driven hair frizz.
+\begin{cvstatement}
+I am an M.S. student in Mechanical Engineering and a graduate researcher at Ajou University. My research focuses on understanding how soft and deformable systems move, adapt, and self-organize under nonequilibrium conditions, driven by energy input, environmental changes, and interactions with their surroundings.
+
+Since my undergraduate years, I have developed a hands-on research approach by designing experiments, building quantitative image-analysis methods, and interpreting complex behaviors through mechanics and physics. I enjoy starting from subtle experimental observations, developing the analytical tools needed to characterize them, and uncovering the physical principles that govern their behavior.
+
+As a researcher, I am particularly drawn to unfamiliar problems that require patience, technical flexibility, and careful interpretation. Rather than being defined by a single material or research topic, I aim to develop a versatile way of thinking that integrates experiments, quantitative analysis, and physical reasoning to reveal the physics behind complex phenomena across a wide range of systems.
+\end{cvstatement}
 
 % =========================
 \section*{Education}
