@@ -714,6 +714,16 @@ html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
   margin-bottom: 0.2rem;
 }
 
+.publication-list__title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.publication-list__title a:hover {
+  color: #25519a;
+  text-decoration: none;
+}
+
 .publication-list__authors {
   color: #5f6872;
   font-size: 0.92rem;
@@ -814,6 +824,10 @@ html[data-theme="dark"] .cv-present-title{
 }
 
 html[data-theme="dark"] .talk-list__title a:hover {
+  color: var(--global-link-color);
+}
+
+html[data-theme="dark"] .publication-list__title a:hover {
   color: var(--global-link-color);
 }
 
