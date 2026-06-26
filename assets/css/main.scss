@@ -702,8 +702,17 @@ html[data-theme="dark"] .cv-item-sep { color: var(--global-fig-caption-color); }
 }
 
 /* Publications */
+.publication-section__title {
+  border-bottom: 2px solid var(--site-accent-line);
+  color: var(--global-text-color);
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin: 1.55rem 0 0.85rem;
+  padding-bottom: 0.35rem;
+}
+
 .publication-list__entry {
-  margin: 0.45rem 0 1.8rem;
+  margin: 0 0 1.8rem;
 }
 
 .publication-list__title {
