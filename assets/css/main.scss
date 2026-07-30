@@ -99,6 +99,30 @@ html[data-theme="dark"] .section-block::before {
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .portfolio-row {
+    align-items: stretch;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .portfolio-row .portfolio-img.slide,
+  .portfolio-row .portfolio-img.photo {
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .portfolio-row .portfolio-img.auto {
+    align-self: center;
+    height: auto;
+    max-height: 26rem;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
 
 
 /* Conference presentation layout */
@@ -501,8 +525,28 @@ html[data-theme="dark"] .greedy-nav .visible-links > .masthead__menu-item.is-act
 }
 
 @media (max-width: 720px) {
+  .greedy-nav {
+    padding-right: 5rem;
+    text-align: left;
+  }
+
   .greedy-nav .visible-links {
     justify-content: flex-start;
+  }
+
+  .greedy-nav button:not(.hidden),
+  .greedy-nav .hidden-links:not(.hidden) {
+    display: block !important;
+  }
+
+  .greedy-nav button {
+    right: 2.5rem;
+  }
+
+  .greedy-nav .hidden-links {
+    max-width: calc(100vw - 2rem);
+    right: 2.5rem;
+    z-index: 200;
   }
 
   .greedy-nav .visible-links > .masthead__menu-item--lg {

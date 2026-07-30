@@ -2,6 +2,25 @@
 
 <!-- start custom head snippets -->
 
+<script>
+  (function () {
+    var theme = "light";
+
+    try {
+      var storedTheme = localStorage.getItem("theme");
+      if (storedTheme === "dark" || storedTheme === "light") {
+        theme = storedTheme;
+      } else {
+        localStorage.setItem("theme", theme);
+      }
+    } catch (error) {
+      // Keep the light default when browser storage is unavailable.
+    }
+
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
