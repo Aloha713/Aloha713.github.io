@@ -334,12 +334,11 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 @media (max-width: 640px) {
   .portfolio-content li:has(> .portfolio-field--compact)::before {
     background: var(--global-text-color);
-    border-radius: 50%;
     content: "";
-    height: 0.28rem;
+    height: 0.3rem;
     left: -0.65rem;
-    top: 0.55em;
-    width: 0.28rem;
+    top: 0.52em;
+    width: 0.3rem;
   }
 }
 
