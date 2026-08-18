@@ -18,11 +18,11 @@ share: false
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Graduate Research Student</span><span class="portfolio-entry-date">Sep 2025 – Present</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
-  - <span class="portfolio-research-topic">Boundary-driven active matter in soft hydrogels</span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect</span></span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
   - <span class="portfolio-research-topic">Mechanics of moisture-driven hair frizz</span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Hair mechanics, Moisture-driven frizz</span></span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
+  - <span class="portfolio-research-topic">Boundary-driven active matter in soft hydrogels</span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect</span></span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
 &nbsp;
 
@@ -42,7 +42,7 @@ share: false
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Capstone Design Competition</span><span class="portfolio-entry-date">June 2025</span></span>
   **<span class="talk-title">2nd Place · KRW 1,000,000 prize</span>**
-    - <span class="portfolio-field"><strong>Organized by:</strong><span>Ajou University</span></span>
+    - <span class="portfolio-field"><strong>Awarded by:</strong><span>Ajou University</span></span>
     - <span class="portfolio-field"><strong>Project:</strong><span>Compliant-mechanism-based knee assistive device for degenerative osteoarthritis prevention</span></span>
     - <span class="portfolio-field"><strong>Role:</strong><span>Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling</span></span>
     - **Materials**:
@@ -51,7 +51,7 @@ share: false
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gyeonggi-do Assistive Device Idea Competition</span><span class="portfolio-entry-date">Nov 2025</span></span>
   **<span class="talk-title">3rd Place · KRW 300,000 prize</span>**
-    - <span class="portfolio-field"><strong>Organized by:</strong><span>Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)</span></span>
+    - <span class="portfolio-field"><strong>Awarded by:</strong><span>Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)</span></span>
     - <span class="portfolio-field"><strong>Project:</strong><span>Compliant-mechanism-based knee assistive device for older adults</span></span>
     - <span class="portfolio-field"><strong>Role:</strong><span>Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling</span></span>
     - **Materials**:
@@ -74,7 +74,7 @@ share: false
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gallery of Fluid Motion</span><span class="portfolio-entry-date">Apr 2026</span></span>
   **<span class="talk-title">Haecheon Choi GFM Award · KRW 400,000 prize</span>**
-    - <span class="portfolio-field"><strong>Organized by:</strong><span>The Korean Society of Mechanical Engineers, Fluid Engineering Division</span></span>
+    - <span class="portfolio-field"><strong>Awarded by:</strong><span>The Korean Society of Mechanical Engineers, Fluid Engineering Division</span></span>
     - <span class="portfolio-field"><strong>Title:</strong><span>Explosive motion of spherical hydrogel via the Leidenfrost effect</span></span>
     - <span class="portfolio-field"><strong>Authors:</strong><span><strong>Minseong Cho</strong>, Yeonsu Jung, Jonghyun Ha</span></span>
     - **Video**:
