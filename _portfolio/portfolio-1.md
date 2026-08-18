@@ -37,7 +37,7 @@ share: false
 ## 🏆 Awards & Honors
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><a href="https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do#a1">Dean’s List</a></span><span class="portfolio-entry-date">Spring 2024, Spring 2025</span></span>
-    - Recognized for outstanding academic performance (top 5% of the department).
+  **<span class="talk-title">Recognized for outstanding academic performance (top 5% of the department).</span>**
 &nbsp;
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Capstone Design Competition</span><span class="portfolio-entry-date">June 2025</span></span>
