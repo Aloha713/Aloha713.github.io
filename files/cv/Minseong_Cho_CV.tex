@@ -71,14 +71,23 @@
 \newcommand{\sep}{\hspace{6pt}\textcolor{muted}{\textbar}\hspace{6pt}}
 \newcommand{\cvdate}[1]{\hfill \textcolor{textmain}{#1}}
 \newcommand{\cvorg}[1]{\parbox[t]{\linewidth}{\textcolor{muted}{#1}}\par\vspace{0.5pt}}
-\newcommand{\cvline}[1]{\parbox[t]{\linewidth}{#1}\par\vspace{0.5pt}}
+\newcommand{\cvline}[1]{\parbox[t]{\linewidth}{{\cvsecondaryfont\textcolor{muted}{#1}}}\par\vspace{0.5pt}}
 \newcommand{\cvaward}[1]{#1}
-\newcommand{\cvfield}[2]{\textbf{#1:} #2}
+\newcommand{\cvfield}[2]{{\cvdetailfont\textcolor{muted}{\textbf{#1:} #2}}}
 \newcommand{\cvitemtitle}[2]{\textbf{\textcolor{textmain}{#1}}\cvdate{#2}}
 \newcommand{\cvsubline}[1]{\textcolor{muted}{#1}}
-\newcommand{\cvpreparation}{\cvsubline{\raisebox{-0.04ex}{\scalebox{0.82}{\faHourglassHalf}}\hspace{0.4em}In preparation}}
-\newcommand{\cvawardline}[1]{\parbox[t]{\linewidth}{#1}\par\vspace{1.4pt}}
-\newcommand{\cvdetailfont}{\fontsize{9.4pt}{11.2pt}\selectfont}
+\newcommand{\cvprimaryfont}{\fontsize{10.2pt}{12.4pt}\selectfont}
+\newcommand{\cvsecondaryfont}{\fontsize{9.4pt}{11.4pt}\selectfont}
+\newcommand{\cvmetafont}{\fontsize{9.2pt}{11.1pt}\selectfont}
+\newcommand{\cvdetailfont}{\fontsize{9.15pt}{11.1pt}\selectfont}
+\newcommand{\cvpublicationtitlefont}{\fontsize{10.8pt}{13pt}\selectfont}
+\newcommand{\cvpublicationauthorsfont}{\fontsize{9.4pt}{11.4pt}\selectfont}
+\newcommand{\cvpublicationstatusfont}{\fontsize{9.1pt}{11pt}\selectfont}
+\newcommand{\cvconferencemetafont}{\fontsize{8.7pt}{10.5pt}\selectfont}
+\newcommand{\cvdetailbullet}{\raisebox{0.15ex}{\scriptsize$\circ$}}
+\newcommand{\cvhighlightname}[1]{\textbf{\textcolor{textmain}{#1}}}
+\newcommand{\cvpreparation}{{\cvpublicationstatusfont\textcolor{muted}{\raisebox{-0.04ex}{\scalebox{0.82}{\faHourglassHalf}}\hspace{0.4em}In preparation}}}
+\newcommand{\cvawardline}[1]{\parbox[t]{\linewidth}{{\cvsecondaryfont\textcolor{textmain}{\textbf{#1}}}}\par\vspace{1.4pt}}
 \newcommand{\smallgap}{\vspace{2pt}}
 \newcommand{\contacticon}[1]{\makebox[1.15em][c]{\textcolor{textmain}{#1}}}
 \newcommand{\contactlink}[2]{\href{#1}{\textcolor{textmain}{#2}\,\textcolor{accent}{\scriptsize\faLink}}}
@@ -87,9 +96,9 @@
 \newlength{\cvdatewidth}
 \setlength{\cvdatewidth}{1.72in}
 \newlength{\cvfieldlabelwidth}
-\setlength{\cvfieldlabelwidth}{0.78in}
+\setlength{\cvfieldlabelwidth}{0.72in}
 \newlength{\cvawardfieldlabelwidth}
-\setlength{\cvawardfieldlabelwidth}{0.98in}
+\setlength{\cvawardfieldlabelwidth}{0.91in}
 \newlength{\cvfieldgap}
 \setlength{\cvfieldgap}{0.08in}
 \newlength{\cvawarddetailindent}
@@ -98,12 +107,13 @@
 \setlength{\cvdetailwidth}{\dimexpr\textwidth-\cvdatewidth-0.28in\relax}
 \newcommand{\cventryhead}[3]{%
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
-    \textbf{\textcolor{textmain}{#1}} \textcolor{muted}{--} #3 & \textcolor{textmain}{#2}
+    {\cvprimaryfont\bfseries\textcolor{textmain}{#1}} & {\cvmetafont\textcolor{muted}{#2}}
   \end{tabularx}\par\vspace{2pt}
+  {\cvsecondaryfont\textcolor{muted}{#3}}\par\vspace{1.2pt}
 }
 \renewcommand{\cvitemtitle}[2]{%
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
-    \textbf{\textcolor{textmain}{#1}} & \textcolor{textmain}{#2}
+    {\cvprimaryfont\bfseries\textcolor{textmain}{#1}} & {\cvmetafont\textcolor{muted}{#2}}
   \end{tabularx}\par\vspace{0.5pt}
 }
 \newenvironment{cvdetailblock}
@@ -113,13 +123,13 @@
   {\par\vspace{0.4pt}\begingroup}
   {\par\endgroup}
 \newcommand{\researchfield}[2]{%
-  \item
+  \item\llap{\cvdetailbullet\hspace{0.4em}}%
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{\cvfieldlabelwidth}@{\hspace{\cvfieldgap}}>{\raggedright\arraybackslash}X@{}}
     {\cvdetailfont\bfseries\textcolor{muted}{#1:}} & {\cvdetailfont\textcolor{muted}{#2}}
   \end{tabularx}
 }
 \newcommand{\cvawarddetailfield}[2]{%
-  \noindent\hspace*{\cvawarddetailindent}%
+  \noindent\hspace*{\cvawarddetailindent}\llap{\cvdetailbullet\hspace{0.4em}}%
   \begin{tabularx}{\dimexpr\linewidth-\cvawarddetailindent\relax}{@{}>{\raggedright\arraybackslash}p{\cvawardfieldlabelwidth}@{\hspace{\cvfieldgap}}>{\raggedright\arraybackslash}X@{}}
     {\cvdetailfont\bfseries\textcolor{muted}{#1:}} & {\cvdetailfont\textcolor{muted}{#2}}
   \end{tabularx}\par\vspace{0.3pt}
@@ -132,6 +142,17 @@
   \begin{itemize}
     #2
   \end{itemize}\vspace{-1.8pt}
+}
+\newcommand{\cvconferenceentry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
+    {\cvprimaryfont\bfseries\textcolor{textmain}{#1} {\cvconferencemetafont\mdseries\textcolor{muted}{(#2)}}} & {\cvmetafont\textcolor{muted}{#3}}
+  \end{tabularx}\par\vspace{0.7pt}
+  {\cvsecondaryfont\textcolor{textmain}{#4}}\par\vspace{5.4pt}
+}
+\newcommand{\cvpublicationentry}[2]{%
+  {\cvpublicationtitlefont\bfseries\textcolor{textmain}{#1}}\par
+  {\cvpublicationauthorsfont\textcolor{muted}{#2}}\par
+  \cvpreparation\par\vspace{5.8pt}
 }
 
 % =========================
@@ -206,22 +227,9 @@ Active matter dynamics\interestsep Elastic Leidenfrost effect\interestsep Mechan
 % =========================
 \Needspace{18\baselineskip}
 \section*{Conferences and Presentations}
-\begin{itemize}
-  \item \cvitemtitle{APS Division of Fluid Dynamics Meeting (Houston, TX, USA)}{Nov 2025}
-  \begin{cvdetailblock}
-    \item Leidenfrost-induced active matter dynamics of spherical hydrogels
-  \end{cvdetailblock}
-
-  \item \cvitemtitle{Asian Congress of Fluid Mechanics (Seoul, South Korea)}{Sep 2025}
-  \begin{cvdetailblock}
-    \item Leidenfrost-induced active matter dynamics of spherical hydrogels
-  \end{cvdetailblock}
-
-  \item \cvitemtitle{KSME Annual Conference (Jeju, South Korea)}{Nov 2024}
-  \begin{cvdetailblock}
-    \item Explosive motion of spherical hydrogel via the Leidenfrost effect
-  \end{cvdetailblock}
-\end{itemize}
+\cvconferenceentry{APS Division of Fluid Dynamics Meeting}{Houston, TX, USA}{Nov 2025}{Leidenfrost-induced active matter dynamics of spherical hydrogels}
+\cvconferenceentry{Asian Congress of Fluid Mechanics}{Seoul, South Korea}{Sep 2025}{Leidenfrost-induced active matter dynamics of spherical hydrogels}
+\cvconferenceentry{KSME Annual Conference}{Jeju, South Korea}{Nov 2024}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
 
 % =========================
 \Needspace{9\baselineskip}
@@ -255,24 +263,17 @@ Active matter dynamics\interestsep Elastic Leidenfrost effect\interestsep Mechan
   \item \cvitemtitle{Gallery of Fluid Motion}{Apr 2026}
   \cvawardline{Haecheon Choi GFM Award \awardsep{} KRW 400,000 prize}
   \begin{cvawarddetails}
-    \cvawarddetailfield{Organized by}{The Korean Society of Mechanical Engineers, Fluid Engineering Division}
-    \cvawarddetailfield{Title}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
-    \cvawarddetailfield{Authors}{Minseong Cho, Yeonsu Jung, Jonghyun Ha}
+  \cvawarddetailfield{Organized by}{The Korean Society of Mechanical Engineers, Fluid Engineering Division}
+  \cvawarddetailfield{Title}{Explosive motion of spherical hydrogel via the Leidenfrost effect}
+  \cvawarddetailfield{Authors}{\cvhighlightname{Minseong Cho}, Yeonsu Jung, Jonghyun Ha}
   \end{cvawarddetails}
 \end{itemize}
 
 % =========================
 \Needspace{6\baselineskip}
 \section*{Publications}
-\begin{itemize}
-  \item \textbf{Boundary-driven active matter and stochastic rectification via Leidenfrost impulses}\\
-  \textbf{Minseong Cho}, Yeonsu Jung, and Jonghyun Ha\\
-  \cvpreparation
-
-  \item \textbf{Poroelastic swelling time as a quantitative marker of hair damage and treatment}\\
-  Jaehyuk Cho, \textbf{Minseong Cho}, Selin Cho, Haesoo Park, Hyun-Na Kim, and Jonghyun Ha\\
-  \cvpreparation
-\end{itemize}
+\cvpublicationentry{Boundary-driven active matter and stochastic rectification via Leidenfrost impulses}{\cvhighlightname{Minseong Cho}, Yeonsu Jung, and Jonghyun Ha}
+\cvpublicationentry{Poroelastic swelling time as a quantitative marker of hair damage and treatment}{Jaehyuk Cho, \cvhighlightname{Minseong Cho}, Selin Cho, Haesoo Park, Hyun-Na Kim, and Jonghyun Ha}
 
 % =========================
 \iffalse
