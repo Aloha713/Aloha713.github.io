@@ -421,6 +421,14 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   text-align: center;
 }
 
+@media (min-width: 925px) {
+  /* Align the selectable desktop links with the main content column. */
+  .greedy-nav {
+    box-sizing: border-box;
+    padding-left: 16.5%;
+  }
+}
+
 .greedy-nav .visible-links {
   align-items: center;
   display: inline-flex;
