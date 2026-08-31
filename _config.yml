@@ -186,7 +186,6 @@ exclude:
   - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
-  - LICENSE
   - local
   - log
   - node_modules
@@ -216,6 +215,7 @@ exclude:
   - files/bibtex1.bib
   - _pages/_config_docker.yml
   - _pages/docker-compose.yaml
+  - _pages/portfolio.html
   - tmp
   - vendor
 keep_files: []

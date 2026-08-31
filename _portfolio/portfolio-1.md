@@ -3,6 +3,7 @@ title: "Portfolio / CV"
 permalink: /portfolio/
 author_profile: true
 portfolio_header_actions: true
+show_date: false
 share: false
 ---
 ## 🎓 Education
