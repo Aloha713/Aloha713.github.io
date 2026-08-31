@@ -16,10 +16,10 @@ I enjoy starting from subtle observations, developing the tools needed to invest
 Rather than being defined by a single material or research topic, I aim to develop a flexible research approach that integrates experiments, quantitative analysis, and physical reasoning across different soft-matter systems.
 
 
-<h2 id="my-research">My research</h2>
+<h2 id="my-research" class="home-research-title">My research</h2>
 
 
-**Elastic Leidenfrost effect**  
+<h3 class="home-research-topic">Elastic Leidenfrost effect</h3>
 
 
-**Mechanics of moisture-driven hair frizz**
+<h3 class="home-research-topic">Mechanics of moisture-driven hair frizz</h3>
