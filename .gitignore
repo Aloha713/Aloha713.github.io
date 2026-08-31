@@ -21,3 +21,19 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Authoring sources and review outputs are not public website assets.
+/drafts/
+/_drafts/
+/markdown_generator/
+/scripts/
+/tmp/
+/audits/
+*.tex
+*.ipynb
+/talkmap.py
+/files/Minseong_Cho_old.pdf
+/files/paper*.pdf
+/files/slides*.pdf
+/files/bibtex*.bib
+/_posts/2199-01-01-future-post.md

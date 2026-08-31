@@ -365,7 +365,8 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   width: 100% !important;
 }
 
-.page__inner-wrap > header > .page__title {
+.page__inner-wrap > header > .page__title,
+.archive > .page__title--talks {
   border-bottom: 2px solid var(--site-accent-line);
   margin-bottom: 1.6rem;
   padding-bottom: 0.7rem;

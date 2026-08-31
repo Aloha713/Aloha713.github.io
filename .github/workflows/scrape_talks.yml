@@ -1,35 +1,31 @@
-name: Scrape Talk Locations
+name: Validate Talk Map
 
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write           # This workflow pushes to the repository
-
+  validate:
+    runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          sparse-checkout: talkmap
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'   # Specify the Python version you need
+      - name: Check the existing map without generating content
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
 
-    - name: Install dependencies
-      run: |
-        pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
-        pip install getorg --upgrade
-
-    - name: Run Jupyter Notebook
-      run: |
-        jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
-
-    - name: Commit changes
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add .
-        git commit -m "Automated update of talk locations" || echo "No changes to commit"
-        git push
+          page = Path("talkmap/map.html").read_text()
+          assert "L.tileLayer('https://" in page
+          assert "L.tileLayer('http://" not in page
+          assert "leaflet@1.9.4" in page
+          assert page.count("integrity=") == 2
+          assert Path("talkmap/org-locations.js").is_file()
+          assert Path("talkmap/leaflet_dist/leaflet.markercluster-src.js").is_file()
+          print("Existing talk map validated; no scraping, staging, or publishing.")
+          PY

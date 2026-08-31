@@ -12,7 +12,7 @@ redirect_from:
 {% include cv-template.html %}
 
 <div class="cv-download-links">
-  <a href="{{ base_path }}/files/Minseong_Cho.pdf"
+  <a href="{{ base_path }}/files/cv/Minseong_Cho_CV.pdf"
      class="btn btn--primary"
      target="_blank"
      rel="noopener">

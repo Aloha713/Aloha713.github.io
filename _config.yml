@@ -95,7 +95,8 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
+show_drafts              : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
@@ -177,10 +178,12 @@ exclude:
   - assets/js/plugins
   - assets/js/vendor
   - CHANGELOG
+  - CONTRIBUTING.md
   - Capfile
   - config
   - Dockerfile
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
@@ -190,11 +193,32 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - audits
+  - drafts
+  - _drafts
+  - markdown_generator
+  - scripts
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - CV_main.tex
+  - "*.tex"
+  - "**/*.tex"
+  - "*.ipynb"
+  - "**/*.ipynb"
+  - files/Minseong_Cho_old.pdf
+  - files/paper1.pdf
+  - files/paper2.pdf
+  - files/paper3.pdf
+  - files/slides1.pdf
+  - files/slides2.pdf
+  - files/slides3.pdf
+  - files/bibtex1.bib
+  - _pages/_config_docker.yml
+  - _pages/docker-compose.yaml
   - tmp
   - vendor
-keep_files:
-  - .git
-  - .svn
+keep_files: []
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
