@@ -947,6 +947,11 @@ html[data-theme="dark"] .publication-list__title a:hover {
   color: var(--global-link-color);
 }
 
+html[data-theme="dark"] .publication-list__status,
+html[data-theme="dark"] .publication-list__status i {
+  color: var(--global-text-color);
+}
+
 html[data-theme="dark"] .talk-list__button {
   border-color: var(--global-border-color);
   color: var(--global-text-color);
