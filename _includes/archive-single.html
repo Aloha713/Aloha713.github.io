@@ -14,7 +14,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if post.collection == 'publications' and post.status == 'in_preparation' %}
+    {% if post.collection == 'publications' and post.status == 'in_preparation' or post.collection == 'publications' and post.status == 'under_review' %}
       <div class="publication-list__entry">
         <h2 class="archive__item-title publication-list__title" itemprop="headline">
           <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
@@ -23,7 +23,8 @@
           <p class="archive__item-excerpt publication-list__authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</p>
         {% endif %}
         <p class="page__meta publication-list__status">
-          <i class="fa fa-hourglass-half" aria-hidden="true"></i> In preparation
+          <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+          {% if post.status == 'under_review' %}Under review{% else %}In preparation{% endif %}
         </p>
       </div>
     {% else %}
