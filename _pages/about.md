@@ -19,6 +19,7 @@ Rather than being defined by a single material or research topic, I aim to devel
 <h2 id="my-research" class="home-research-title">My research</h2>
 
 
+<section class="home-research-section home-research-section--leidenfrost">
 <h3 class="home-research-topic">Elastic Leidenfrost effect</h3>
 
 <div id="elastic-leidenfrost-video" class="portfolio-video-wrap home-research-video">
@@ -27,5 +28,9 @@ Rather than being defined by a single material or research topic, I aim to devel
   </video>
 </div>
 
+<p class="home-research-caption">Dropping a spherical hydrogel onto a heated surface generates rapid vapor formation and vigorous bouncing through the Leidenfrost effect. When confined within a cylindrical enclosure whose bottom and walls are both heated, the hydrogel undergoes repeated Leidenfrost impulses from multiple surfaces, producing explosive stochastic motion. High-speed trajectory tracking reveals that this motion is not purely random, but exhibits underlying structures ranging from linear paths to star-shaped patterns. At each boundary collision, the impulse acts primarily normal to the wall, with little tangential bias, repeatedly redirecting the hydrogel toward the interior of the container. This effect is clearly reflected in spatial occupancy mapping, which shows that the hydrogel traverses the central region more frequently than the periphery. With multiple hydrogels, these boundary-driven impulses can be converted into directed work using a pawl-ratchet mechanism. Although individual impacts remain random, the ratchet rectifies them into unidirectional rotation. Unlike simulations, in which particles cease simultaneously, experiments show sequential cessation of motion, reflecting thermal competition among hydrogels sharing a finite heat source. The resulting dynamics combine visual complexity with emergent order, making the system both scientifically rich and aesthetically compelling.</p>
+</section>
 
+<section class="home-research-section home-research-section--hair">
 <h3 class="home-research-topic">Mechanics of moisture-driven hair frizz</h3>
+</section>

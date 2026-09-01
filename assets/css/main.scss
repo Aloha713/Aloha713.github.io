@@ -366,12 +366,25 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 }
 
 .home-research-video {
-  margin: 0.35rem 0 1.3rem;
+  margin: 0.35rem 0 0.9rem;
   max-width: none;
 }
 
 .home-research-video .portfolio-video {
   max-height: none;
+}
+
+.home-research-section + .home-research-section {
+  border-top: 1px solid var(--site-accent-line);
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+}
+
+.home-research-caption {
+  color: var(--global-text-color);
+  font-size: $type-size-5;
+  line-height: 1.65;
+  margin: 0;
 }
 
 .page__inner-wrap > header > .page__title,
@@ -392,9 +405,16 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   margin: 2.5rem 0 0.625rem;
 }
 
-.page__content > .home-research-topic {
+.page__content .home-research-topic {
   font-size: $type-size-4;
   margin: 0 0 1.3rem;
+}
+
+@media (max-width: 640px) {
+  .home-research-section + .home-research-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
 }
 
 .archive__subtitle {
