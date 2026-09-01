@@ -21,5 +21,11 @@ Rather than being defined by a single material or research topic, I aim to devel
 
 <h3 class="home-research-topic">Elastic Leidenfrost effect</h3>
 
+<div class="portfolio-video-wrap home-research-video">
+  <video class="portfolio-video" controls preload="metadata" playsinline poster="/images/gfm/gfm-poster.jpg">
+    <source src="/files/%5BKSME%20GFM26%5D%20Leidenfrost-powered%20explosive%20motion%20of%20a%20bouncing%20hydrogel.mp4" type="video/mp4">
+  </video>
+</div>
+
 
 <h3 class="home-research-topic">Mechanics of moisture-driven hair frizz</h3>

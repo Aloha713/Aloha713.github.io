@@ -77,13 +77,7 @@ share: false
   **<span class="talk-title">Haecheon Choi GFM Award · KRW 400,000 prize</span>**
     - <span class="portfolio-field"><strong>Awarded by:</strong><span>The Korean Society of Mechanical Engineers, Fluid Engineering Division</span></span>
     - <span class="portfolio-field"><strong>Title:</strong><span>Explosive motion of spherical hydrogel via the Leidenfrost effect</span></span>
-    - <span class="portfolio-field"><strong>Authors:</strong><span><strong>Minseong Cho</strong>, Yeonsu Jung, Jonghyun Ha</span></span>
-    - **Video**:
-      <div class="portfolio-video-wrap">
-        <video class="portfolio-video" controls preload="metadata" playsinline poster="/images/gfm/gfm-poster.jpg">
-          <source src="/files/%5BKSME%20GFM26%5D%20Leidenfrost-powered%20explosive%20motion%20of%20a%20bouncing%20hydrogel.mp4" type="video/mp4">
-        </video>
-      </div>
+    - <span class="portfolio-field"><strong>Authors:</strong><span><strong>Minseong Cho</strong>, Yeonsu Jung, and Jonghyun Ha</span></span>
     
 ---
 

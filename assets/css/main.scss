@@ -365,6 +365,15 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   width: 100% !important;
 }
 
+.home-research-video {
+  margin: 0.35rem 0 1.3rem;
+  max-width: none;
+}
+
+.home-research-video .portfolio-video {
+  max-height: none;
+}
+
 .page__inner-wrap > header > .page__title,
 .archive > .page__title--talks {
   border-bottom: 2px solid var(--site-accent-line);
