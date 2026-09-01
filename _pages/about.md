@@ -33,4 +33,12 @@ Rather than being defined by a single material or research topic, I aim to devel
 
 <section class="home-research-section home-research-section--hair">
 <h3 class="home-research-topic">Mechanics of moisture-driven hair frizz</h3>
+
+<div id="moisture-driven-hair-frizz-video" class="portfolio-video-wrap home-research-video">
+  <video class="portfolio-video" controls preload="metadata" playsinline>
+    <source src="/files/hair-frizz/AJWTF_Supple.mp4" type="video/mp4">
+  </video>
+</div>
+
+<p class="home-research-caption">Human hair is a hygroscopic, hierarchically structured filament composed of a cortex surrounded by a cuticle layer. The cortex contains microfibrils embedded in a hygroscopic matrix, and the asymmetric distribution of these components gives rise to intrinsic curvature characteristics. Thermally straightened hair recovers its original curvature when humid environments induce moisture swelling in the matrix, a process underlying the familiar phenomenon of hair frizz. To capture this mechanism, we formulate an energy equation that accounts for the elastic energy of individual fibers, gravity, and inter-fiber interactions. The findings pave the way for evidence-based strategies in beauty science, including the rational design of frizz-control and humidity-resistant hair styling products.</p>
 </section>
