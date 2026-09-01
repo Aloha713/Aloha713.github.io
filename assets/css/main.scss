@@ -366,7 +366,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 }
 
 .home-research-video {
-  margin: 0.35rem 0 0.9rem;
+  margin: 0 0 0.9rem;
   max-width: none;
 }
 
@@ -378,6 +378,10 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   border-top: 1px solid var(--site-accent-line);
   margin-top: 2.5rem;
   padding-top: 1.75rem;
+}
+
+.home-research-section--leidenfrost {
+  padding-top: 0.25rem;
 }
 
 .home-research-caption {
@@ -407,7 +411,7 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
 
 .page__content .home-research-topic {
   font-size: $type-size-4;
-  margin: 0 0 1.3rem;
+  margin: 0 0 0.5rem;
 }
 
 @media (max-width: 640px) {
