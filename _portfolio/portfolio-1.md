@@ -78,8 +78,7 @@ share: false
     - <span class="portfolio-field"><strong>Awarded by:</strong><span>The Korean Society of Mechanical Engineers, Fluid Engineering Division</span></span>
     - <span class="portfolio-field"><strong>Title:</strong><span>Explosive motion of spherical hydrogel via the Leidenfrost effect</span></span>
     - <span class="portfolio-field"><strong>Authors:</strong><span><strong>Minseong Cho</strong>, Yeonsu Jung, and Jonghyun Ha</span></span>
-    
----
+    - <span class="portfolio-field"><strong>Video:</strong><span><a href="/#elastic-leidenfrost-video">View research video</a></span></span>
 
 ## 🎤 Conference Presentations
 
