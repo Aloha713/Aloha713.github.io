@@ -21,17 +21,17 @@ share: false
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
   - <span class="portfolio-research-topic">Mechanics of moisture-driven hair frizz</span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Hygroscopic swelling, Hair frizz, Image processing, Simulation</span></span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Advisors:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
   - <span class="portfolio-research-topic">Boundary-driven active matter in soft hydrogels</span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect, Image processing</span></span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Advisors:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
 &nbsp;
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Undergraduate Research Student</span><span class="portfolio-entry-date">Mar 2023 – Aug 2025</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
   - <span class="portfolio-research-topic">Boundary-driven active matter in soft hydrogels</span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect, Image processing</span></span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Advisors:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
 
 
 

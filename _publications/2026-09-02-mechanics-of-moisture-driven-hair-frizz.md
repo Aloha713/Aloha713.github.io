@@ -2,7 +2,7 @@
 title: "Mechanics of moisture-driven hair frizz"
 collection: publications
 category: manuscripts
-authors: "**Minseong Cho**, Yeonsu Jung, Jaehyuk Cho, Hyunna Kim, and Jonghyun Ha"
+authors: "**Minseong Cho**, Jaehyuk Cho, Hyunna Kim, Yeonsu Jung, and Jonghyun Ha"
 status: in_preparation
 date: 2026-09-02
 ---
