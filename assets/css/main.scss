@@ -123,6 +123,50 @@ html[data-theme="dark"] .section-block::before {
   }
 }
 
+.portfolio-project-toggle {
+  margin: 0;
+}
+
+.portfolio-project-toggle > .talk-action {
+  margin-bottom: 0;
+}
+
+.portfolio-project-toggle[open] > .talk-action {
+  margin-bottom: 0.45rem;
+}
+
+.portfolio-row--project {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(8rem, 0.8fr) minmax(0, 1.4fr);
+  margin: 0;
+  max-width: 36rem;
+}
+
+.portfolio-row--project .portfolio-img.auto,
+.portfolio-row--project .portfolio-img.photo {
+  border-radius: 6px;
+  display: block;
+  height: 13.75rem;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .portfolio-row--project {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+  }
+
+  .portfolio-row--project .portfolio-img.auto,
+  .portfolio-row--project .portfolio-img.photo {
+    height: auto;
+    max-height: 18rem;
+  }
+}
+
 
 
 /* Conference presentation layout */

@@ -20,17 +20,17 @@ share: false
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Graduate Research Student</span><span class="portfolio-entry-date">Sep 2025 – Present</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
   - <span class="portfolio-research-topic">Mechanics of moisture-driven hair frizz</span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Hair mechanics, Moisture-driven frizz</span></span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Hygroscopic swelling, Hair frizz, Image processing, Simulation</span></span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
   - <span class="portfolio-research-topic">Boundary-driven active matter in soft hydrogels</span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect</span></span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect, Image processing</span></span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
 &nbsp;
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Undergraduate Research Student</span><span class="portfolio-entry-date">Mar 2023 – Aug 2025</span></span>
   [Softlab](https://www.softlab.ajou.ac.kr), Ajou University  
   - <span class="portfolio-research-topic">Boundary-driven active matter in soft hydrogels</span>
-    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect</span></span>
+    - <span class="portfolio-field portfolio-field--compact"><strong>Keywords:</strong><span>Active matter, Elastic Leidenfrost effect, Image processing</span></span>
     - <span class="portfolio-field portfolio-field--compact"><strong>Advisor:</strong><span>Prof. <a href="https://www.ajou.ac.kr/me/people/faculty.do?mode=view&empl_no=$cms$EwBmwRhAWZqA&mngt_no=$cms$EwBmwRhAWZqA&uniCd=h&deptCd=$cms$CIZQDAzGYIxgTDIA&cate=2">Jonghyun Ha</a>, Dr. <a href="https://yeonsu-jung.github.io">Yeonsu Jung</a></span></span>
 
 
@@ -59,26 +59,25 @@ share: false
         - [Project Poster](/images/ass_devi/gyeonggi-assistive-device-competition-2025-poster.pdf)
         - [Award Ceremony Photo](https://at3d.or.kr/board/notice/view?idx=761)
         - [Project Overview Video](https://www.youtube.com/watch?v=9nMlDRh-M7E)
-        - <details class="talk-toggle">
+        - <details class="talk-toggle portfolio-project-toggle">
             <summary class="talk-action">View project photos</summary>
-            <div class="portfolio-row">
+            <div class="portfolio-row portfolio-row--project">
                 <img src="/images/ass_devi/ass_devi2.png" class="portfolio-img auto">
                 <img src="/images/ass_devi/ass_devi.png" class="portfolio-img photo">
             </div>
             </details>
-&nbsp;
 
-- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">APS DFD Travel/Enabling Grant</span><span class="portfolio-entry-date">2025</span></span>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">APS DFD Travel/Enabling Grant</span><span class="portfolio-entry-date">Apr 2026</span></span>
   **<span class="talk-title">US$750 travel cost reimbursement</span>**
     - <span class="portfolio-field"><strong>Awarded by:</strong><span>APS Division of Fluid Dynamics, American Physical Society</span></span>
-    - <span class="portfolio-field"><strong>Purpose:</strong><span>Travel support for participation in the APS Division of Fluid Dynamics Meeting</span></span>
+    - <span class="portfolio-field"><strong>Purpose:</strong><span>Travel support for participation in the 2025 APS DFD Annual Meeting</span></span>
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gallery of Fluid Motion</span><span class="portfolio-entry-date">Apr 2026</span></span>
   **<span class="talk-title">Haecheon Choi GFM Award · KRW 400,000 prize</span>**
     - <span class="portfolio-field"><strong>Awarded by:</strong><span>The Korean Society of Mechanical Engineers, Fluid Engineering Division</span></span>
     - <span class="portfolio-field"><strong>Title:</strong><span>Explosive motion of spherical hydrogel via the Leidenfrost effect</span></span>
     - <span class="portfolio-field"><strong>Authors:</strong><span><strong>Minseong Cho</strong>, Yeonsu Jung, and Jonghyun Ha</span></span>
-    - <span class="portfolio-field"><strong>Video:</strong><span><a href="/#elastic-leidenfrost-video">View research video</a></span></span>
+    - <span class="portfolio-field"><strong>Video:</strong><span><a href="/#elastic-leidenfrost-video">Watch the GFM video</a></span></span>
 
 ## 🎤 Conference Presentations
 

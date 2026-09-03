@@ -12,19 +12,32 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign is_unpublished_manuscript = false %}
+{% if post.collection == 'publications' %}
+  {% if post.status == 'in_preparation' or post.status == 'submitted' or post.status == 'under_review' %}
+    {% assign is_unpublished_manuscript = true %}
+  {% endif %}
+{% endif %}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if post.collection == 'publications' and post.status == 'in_preparation' or post.collection == 'publications' and post.status == 'under_review' %}
+    {% if is_unpublished_manuscript %}
       <div class="publication-list__entry">
         <h2 class="archive__item-title publication-list__title" itemprop="headline">
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+          {{ title }}
         </h2>
         {% if post.authors %}
           <p class="archive__item-excerpt publication-list__authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</p>
         {% endif %}
         <p class="page__meta publication-list__status">
           <i class="fa fa-hourglass-half" aria-hidden="true"></i>
-          {% if post.status == 'under_review' %}Under review{% else %}In preparation{% endif %}
+          {% if post.status == 'under_review' %}
+            Under review
+          {% elsif post.status == 'submitted' %}
+            Submitted
+          {% else %}
+            In preparation
+          {% endif %}
         </p>
       </div>
     {% else %}
