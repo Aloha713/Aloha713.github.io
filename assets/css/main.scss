@@ -312,6 +312,10 @@ html[data-theme="dark"] .portfolio-title-button--share:hover {
   white-space: nowrap;
 }
 
+.portfolio-entry-heading--conference .portfolio-entry-date {
+  flex-basis: auto;
+}
+
 @media (max-width: 640px) {
   .portfolio-content {
     --portfolio-date-column: 0;
