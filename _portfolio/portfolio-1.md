@@ -85,7 +85,7 @@ share: false
 
 ## 🎤 Conference Presentations
 
-- <span class="portfolio-entry-heading portfolio-entry-heading--conference"><span class="portfolio-entry-title"><strong>11th Asian Joint Workshop on Thermophysics and Fluid Science</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Sep 2026</span></span>
+- <span class="portfolio-entry-heading portfolio-entry-heading--conference"><span class="portfolio-entry-title"><strong>Asian Joint Workshop on Thermophysics and Fluid Science</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Sep 2026</span></span>
   **<span class="talk-title">Mechanics of moisture-driven hair frizz <span class="talk-meta">(Poster presentation)</span></span>**
   <details class="talk-toggle">
     <summary class="talk-action">View poster</summary>

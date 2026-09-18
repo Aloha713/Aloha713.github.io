@@ -2,7 +2,7 @@
 title: "Mechanics of moisture-driven hair frizz (AJWTF 2026)"
 collection: talks
 type: "Poster presentation"
-venue: "11th Asian Joint Workshop on Thermophysics and Fluid Science"
+venue: "Asian Joint Workshop on Thermophysics and Fluid Science"
 date: 2026-09-15
 location: "Jeju, South Korea"
 share: false
