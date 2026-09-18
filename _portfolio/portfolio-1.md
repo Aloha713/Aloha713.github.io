@@ -48,7 +48,7 @@ share: false
     - <span class="portfolio-field"><strong>Role:</strong><span>Mechanical system design and prototyping, CAD-based modeling, machine learning, and theoretical modeling</span></span>
     - **Materials**:
         - [Project Poster](https://linc.ajou.ac.kr/acot/?m=30002&mode=view&idx=2557)
-        - [Award Certificate (PDF)](/images/ass_devi/capstone-design-competition-2025-award.pdf)
+        - [Award Certificate](/images/ass_devi/capstone-design-competition-2025-award.pdf)
         - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
 
 - <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gyeonggi-do Assistive Device Idea Competition</span><span class="portfolio-entry-date">Nov 2025</span></span>
@@ -59,7 +59,7 @@ share: false
     - **Materials**:
         - [Project Poster](/images/ass_devi/gyeonggi-assistive-device-competition-2025-poster.pdf)
         - [Project Overview Video](https://www.youtube.com/watch?v=9nMlDRh-M7E)
-        - [Award Certificate (PDF)](/images/ass_devi/gyeonggi-assistive-device-competition-2025-award.pdf)
+        - [Award Certificate](/images/ass_devi/gyeonggi-assistive-device-competition-2025-award.pdf)
         - [Award Ceremony Photo](https://at3d.or.kr/board/notice/view?idx=761)
         - <details class="talk-toggle portfolio-project-toggle">
             <summary class="talk-action">View project photos</summary>
@@ -81,15 +81,12 @@ share: false
     - <span class="portfolio-field"><strong>Authors:</strong><span><strong>Minseong Cho</strong>, Yeonsu Jung, and Jonghyun Ha</span></span>
     - **Materials**:
         - [Watch the GFM Video](/#elastic-leidenfrost-video)
-        - [Award Certificate (Image)](/images/gfm/award-certificate.jpeg)
+        - [Award Certificate](/images/gfm/award-certificate.jpeg)
 
 ## 🎤 Conference Presentations
 
-- <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><strong>11th Asian Joint Workshop on Thermophysics and Fluid Science</strong> <span class="talk-meta">(Jeju, Republic of Korea)</span></span><span class="portfolio-entry-date">Sep 2026</span></span>
-  **<span class="talk-title">Mechanics of moisture-driven hair frizz</span>**
-  <span class="talk-meta">Poster presentation · September 15, 2026</span><br>
-  <strong>Minseong Cho</strong>, Jaehyuk Cho, Hyunna Kim, Yeonsu Jung, and Jonghyun Ha<br>
-  <a href="/talks/2026-09-15-ajwtf-poster">Presentation details</a> · <a href="/files/ajwtf2026/poster.pdf">Poster PDF</a> · <a href="https://www.ajwtf2026.org/index.php?GP=int%2Fov">Official conference website</a>
+- <span class="portfolio-entry-heading"><span class="portfolio-entry-title"><strong>11th Asian Joint Workshop on Thermophysics and Fluid Science</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Sep 2026</span></span>
+  **<span class="talk-title">Mechanics of moisture-driven hair frizz <span class="talk-meta">(Poster presentation)</span></span>**
   <details class="talk-toggle">
     <summary class="talk-action">View poster</summary>
     <div class="portfolio-row">
