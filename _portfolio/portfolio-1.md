@@ -5,6 +5,9 @@ author_profile: true
 portfolio_header_actions: true
 show_date: false
 share: false
+og_title: "Minseong Cho | Research Portfolio"
+og_description: "Research, publications, and academic achievements."
+og_image: "https://aloha713.github.io/images/gfm/gfm-poster.jpg"
 ---
 ## 🎓 Education
 
