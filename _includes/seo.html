@@ -115,7 +115,11 @@
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}"> 
-<meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+{% if page.og_title %}
+  <meta property="og:title" content="{{ page.og_title | strip_html | strip_newlines | escape_once }}">
+{% else %}
+  <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+{% endif %}
 {% if page.date %}
   <meta property="og:type" content="article">
 {% endif %}
