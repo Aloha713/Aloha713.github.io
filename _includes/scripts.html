@@ -1,4 +1,7 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
+{% if site.author.avatar_secondary %}
+  <script src="{{ base_path }}/assets/js/profile-rotation.js" defer></script>
+{% endif %}
 
 <script>
   (function () {

@@ -23,7 +23,8 @@ repository: "Aloha713/Aloha713.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Minseong.JPG"
+  avatar           : "profile/portrait.jpg"
+  avatar_secondary : "profile/outdoor.jpg"
   name             : "Minseong Cho"
   bio              : "Graduate researcher in soft matter and fluid–structure interactions"
   location         : "South Korea"

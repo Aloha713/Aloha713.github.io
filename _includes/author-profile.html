@@ -10,11 +10,21 @@
 
   <!-- Avatar -->
   <div class="author__avatar">
+    {% if author.avatar_secondary %}
+      <div class="author__photo-rotation" data-profile-rotation>
+        <img class="author__photo-primary" src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" width="295" height="391" fetchpriority="high" />
+        <img class="author__photo-secondary" data-src="{{ author.avatar_secondary | prepend: "/images/" | prepend: base_path }}" alt="" aria-hidden="true" width="1330" height="2364" hidden />
+        <button class="author__photo-toggle" type="button" aria-label="Pause profile photo rotation" title="Pause profile photo rotation" hidden>
+          <i class="fas fa-pause" aria-hidden="true"></i>
+        </button>
+      </div>
+    {% else %}
     {% if author.avatar contains "://" %}
       <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
     {% else %}
       <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}"
            alt="{{ author.name }}" fetchpriority="high" />
+    {% endif %}
     {% endif %}
   </div>
 
