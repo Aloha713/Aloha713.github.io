@@ -5,8 +5,6 @@
   if (!frame) return;
   var primary = frame.querySelector(".author__photo-primary");
   var secondary = frame.querySelector(".author__photo-secondary");
-  var button = frame.querySelector(".author__photo-toggle");
-  var icon = button.querySelector("i");
   var interval = 60000;
   var motion = window.matchMedia("(prefers-reduced-motion: reduce)");
   var key = "profile-rotation:" + primary.getAttribute("src") + ":" + secondary.dataset.src;
@@ -21,6 +19,10 @@
         saved.remaining >= 0 && saved.remaining <= interval) state = saved;
   } catch (error) { /* Storage is optional in private or restricted browsing. */ }
 
+  if (state.paused) {
+    state.paused = false;
+    state.due = Date.now() + state.remaining;
+  }
   if (motion.matches) {
     state.index = 0;
     state.paused = true;
@@ -33,9 +35,6 @@
 
   function paint() {
     frame.classList.toggle("is-outdoor", state.index === 1);
-    button.setAttribute("aria-label", (state.paused ? "Resume" : "Pause") + " profile photo rotation");
-    button.title = button.getAttribute("aria-label");
-    icon.className = "fas " + (state.paused ? "fa-play" : "fa-pause");
   }
 
   // Retain the tab's 60-second schedule across normal page navigation.
@@ -64,17 +63,22 @@
     schedule();
   }
 
-  button.addEventListener("click", function () {
-    if (state.paused) {
+  function updatePause() {
+    var shouldPause = motion.matches || frame.matches(":hover") || frame.contains(document.activeElement);
+    if (shouldPause === state.paused) return;
+    if (shouldPause) pause();
+    else {
       state.paused = false;
       state.due = Date.now() + state.remaining;
       schedule();
-    } else pause();
-  });
+    }
+  }
 
-  motion.addEventListener("change", function (event) {
-    if (event.matches) pause();
-  });
+  frame.addEventListener("mouseenter", updatePause);
+  frame.addEventListener("mouseleave", updatePause);
+  frame.addEventListener("focusin", updatePause);
+  frame.addEventListener("focusout", updatePause);
+  motion.addEventListener("change", updatePause);
   document.addEventListener("visibilitychange", schedule);
   window.addEventListener("pagehide", function () { window.clearTimeout(timer); save(); });
   window.addEventListener("pageshow", schedule);
@@ -94,13 +98,15 @@
   Promise.all([loaded(primary), loaded(secondary)]).then(function () {
     ready = true;
     secondary.hidden = false;
-    button.hidden = false;
+    frame.tabIndex = 0;
+    frame.setAttribute("role", "img");
+    frame.setAttribute("aria-label", primary.alt + ". Photo rotation pauses while focused.");
     schedule();
+    updatePause();
     window.requestAnimationFrame(function () { frame.classList.add("is-ready"); });
   }).catch(function () {
     window.clearTimeout(timer);
     frame.classList.remove("is-outdoor");
     secondary.hidden = true;
-    button.hidden = true;
   });
 })();
