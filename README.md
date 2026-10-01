@@ -3,6 +3,12 @@
 
 ![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
 
+## Licensing
+
+The website code, including site-specific additions and modifications, is available under the [MIT License](LICENSE). This site is based on [Academic Pages](https://academicpages.github.io/) and [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/); original copyright and license notices are retained. Third-party components remain subject to their own licenses.
+
+Personal and research content is not covered by the code license unless separately stated, and copyright remains with the respective rights holders. Ordinary viewing, linking to this site, and downloading the CV for review are welcome. Existing permissions and licenses, including those for earlier releases, are unaffected. See [Licensing](https://aloha713.github.io/licensing/) for the content-use terms and permission inquiries.
+
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
