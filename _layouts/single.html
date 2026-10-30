@@ -14,7 +14,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<div id="main" role="main"{% if page.portfolio_header_actions %} class="portfolio-print-layout"{% endif %}>
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
@@ -28,6 +28,7 @@ layout: default
         <header>
           {% if page.title %}
             {% if page.portfolio_header_actions %}
+              {% include portfolio-print-header.html %}
               <div class="page__title-row">
                 <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
                 <div class="page__title-actions" aria-label="Portfolio actions">

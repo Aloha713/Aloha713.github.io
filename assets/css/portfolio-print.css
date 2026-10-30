@@ -1,0 +1,226 @@
+/* Loaded only by Portfolio / CV, and only for printing. */
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 16mm 17mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #252b33 !important;
+    font-size: 10.25pt !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    --global-text-color: #252b33;
+    --global-bg-color: #fff;
+    --global-link-color: #25519a;
+    --global-fig-caption-color: #414b58;
+  }
+
+  #main.portfolio-print-layout {
+    animation: none;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .portfolio-print-layout .sidebar,
+  .portfolio-print-layout .page__title-actions,
+  .portfolio-print-layout .page__meta,
+  .portfolio-print-layout .page__share,
+  .portfolio-print-layout .page__related,
+  .portfolio-print-layout .pagination,
+  .portfolio-print-layout .talk-toggle {
+    display: none !important;
+  }
+
+  .portfolio-print-layout .page,
+  .portfolio-print-layout .page__inner-wrap,
+  .portfolio-print-layout .page__content {
+    box-sizing: border-box;
+    float: none;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .portfolio-print-layout,
+  .portfolio-print-layout * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+  }
+
+  .portfolio-print-layout a,
+  .portfolio-print-layout a:visited {
+    color: #25519a !important;
+    text-decoration: none;
+  }
+
+  .portfolio-print-header[hidden] {
+    align-items: start;
+    display: grid;
+    gap: 8mm;
+    grid-template-columns: 1fr auto;
+    margin: 0 0 4mm;
+    break-inside: avoid;
+  }
+
+  .portfolio-print-header p {
+    margin: 0;
+  }
+
+  .portfolio-print-header .portfolio-print-name {
+    color: #182d4c;
+    font-size: 23pt;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2mm;
+  }
+
+  .portfolio-print-header .portfolio-print-bio {
+    color: #414b58;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    margin-bottom: 2mm;
+    max-width: 135mm;
+  }
+
+  .portfolio-print-header .portfolio-print-contact {
+    font-size: 9pt;
+    line-height: 1.5;
+  }
+
+  .portfolio-print-photo {
+    border-radius: 2mm;
+    display: block;
+    height: 27mm;
+    object-fit: cover;
+    width: 20.4mm;
+  }
+
+  .portfolio-print-layout .page__title-row {
+    border-bottom: 1pt solid #25519a;
+    display: block;
+    margin: 0 0 5mm;
+    padding: 0 0 2mm;
+    break-after: avoid;
+  }
+
+  .portfolio-print-layout .page__title {
+    color: #414b58;
+    font-size: 11pt;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .portfolio-print-layout .portfolio-content {
+    color: #252b33;
+    font-size: 10.25pt;
+    line-height: 1.33;
+    --portfolio-field-label-column: 64pt;
+    --portfolio-research-field-label-column: 54pt;
+  }
+
+  .portfolio-print-layout .portfolio-content h2 {
+    border-bottom: 0.5pt solid #b8c5d7;
+    color: #182d4c;
+    font-size: 12pt;
+    line-height: 1.3;
+    margin: 4mm 0 2mm;
+    padding: 0 0 1.5mm;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .portfolio-print-layout .portfolio-content > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .portfolio-print-layout .portfolio-content > ul > li {
+    margin: 0 0 2.5mm;
+    padding: 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .portfolio-print-layout .portfolio-content p {
+    margin: 0 0 1.5mm;
+  }
+
+  .portfolio-print-layout .portfolio-content ul ul {
+    list-style: disc;
+    margin: 1.5mm 0 0;
+    padding-left: 4mm;
+  }
+
+  .portfolio-print-layout .portfolio-content ul ul li {
+    margin-bottom: 1mm;
+  }
+
+  /* Materials links stay clickable without using a whole line per link. */
+  .portfolio-print-layout .portfolio-content li > strong:not(:has(*)) + ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 3mm;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .portfolio-print-layout .portfolio-content li > strong:not(:has(*)) + ul > li:has(> .talk-toggle) {
+    display: none;
+  }
+
+  .portfolio-print-layout .portfolio-content li,
+  .portfolio-print-layout .portfolio-content p {
+    font-size: inherit;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .portfolio-print-layout .portfolio-entry-heading {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    gap: 4mm;
+    justify-content: space-between;
+  }
+
+  .portfolio-print-layout .portfolio-entry-title {
+    color: #252b33;
+    flex: 1 1 auto;
+    font-size: 10.25pt;
+    line-height: 1.35;
+  }
+
+  .portfolio-print-layout .portfolio-entry-date {
+    color: #414b58;
+    flex: 0 0 auto;
+    font-size: 9.5pt;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .portfolio-print-layout .talk-title,
+  .portfolio-print-layout .talk-meta,
+  .portfolio-print-layout .portfolio-research-topic {
+    color: #252b33;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .portfolio-print-layout .portfolio-field {
+    color: #252b33;
+    line-height: 1.35;
+  }
+}

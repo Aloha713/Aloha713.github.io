@@ -1,0 +1,23 @@
+{% assign print_author = site.author %}
+{% if page.author and site.data.authors[page.author] %}
+  {% assign print_author = site.data.authors[page.author] %}
+{% endif %}
+<div class="portfolio-print-header" hidden>
+  <div>
+    <p class="portfolio-print-name">{{ print_author.name | escape }}</p>
+    {% if print_author.bio %}<p class="portfolio-print-bio">{{ print_author.bio | escape }}</p>{% endif %}
+    <p class="portfolio-print-contact">
+      {% if print_author.email %}<a href="mailto:{{ print_author.email | escape }}">{{ print_author.email | escape }}</a><br>{% endif %}
+      <a href="{{ base_path }}{{ page.url }}">{{ base_path | remove: 'https://' | remove: 'http://' }}{{ page.url }}</a>
+      {% if print_author.googlescholar %}<span aria-hidden="true"> · </span><a href="{{ print_author.googlescholar | escape }}">Google Scholar</a>{% endif %}
+    </p>
+  </div>
+  {% if print_author.avatar %}
+    {% if print_author.avatar contains '://' %}
+      {% assign print_avatar_url = print_author.avatar %}
+    {% else %}
+      {% assign print_avatar_url = print_author.avatar | prepend: '/images/' | prepend: base_path %}
+    {% endif %}
+    <img class="portfolio-print-photo" src="{{ print_avatar_url }}" alt="" width="295" height="391">
+  {% endif %}
+</div>
