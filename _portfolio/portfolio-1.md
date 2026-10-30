@@ -54,7 +54,7 @@ og_image: "https://aloha713.github.io/images/gfm/gfm-poster.jpg"
         - [Award Certificate](/images/ass_devi/capstone-design-competition-2025-award.pdf)
         - [Award Ceremony Photo](https://www.ajou.ac.kr/kr/ajou/news.do?mode=view&articleNo=350539)
 
-- <span class="portfolio-entry-heading"><span class="portfolio-entry-title">Gyeonggi-do Assistive Device Idea Competition</span><span class="portfolio-entry-date">Nov 2025</span></span>
+- <span class="portfolio-entry-heading portfolio-print-awards-continuation"><span class="portfolio-entry-title">Gyeonggi-do Assistive Device Idea Competition</span><span class="portfolio-entry-date">Nov 2025</span></span>
   **<span class="talk-title">3rd Place · KRW 300,000 prize</span>**
     - <span class="portfolio-field"><strong>Awarded by:</strong><span>Gyeonggi Province Rehabilitation Engineering Service Support Center (South Korea)</span></span>
     - <span class="portfolio-field"><strong>Project:</strong><span>Compliant-mechanism-based knee assistive device for older adults</span></span>

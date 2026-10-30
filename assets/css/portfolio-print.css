@@ -2,14 +2,14 @@
 @media print {
   @page {
     size: A4;
-    margin: 16mm 16mm 17mm;
+    margin: 17mm 17mm 18mm;
   }
 
   html,
   body {
     background: #fff !important;
     color: #252b33 !important;
-    font-size: 10.25pt !important;
+    font-size: 10pt !important;
     height: auto !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -68,7 +68,7 @@
     display: grid;
     gap: 8mm;
     grid-template-columns: 1fr auto;
-    margin: 0 0 4mm;
+    margin: 0 0 3mm;
     break-inside: avoid;
   }
 
@@ -78,7 +78,7 @@
 
   .portfolio-print-header .portfolio-print-name {
     color: #182d4c;
-    font-size: 23pt;
+    font-size: 24pt;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 2mm;
@@ -86,7 +86,7 @@
 
   .portfolio-print-header .portfolio-print-bio {
     color: #414b58;
-    font-size: 10.5pt;
+    font-size: 10pt;
     line-height: 1.35;
     margin-bottom: 2mm;
     max-width: 135mm;
@@ -100,22 +100,24 @@
   .portfolio-print-photo {
     border-radius: 2mm;
     display: block;
-    height: 27mm;
+    height: 24mm;
     object-fit: cover;
-    width: 20.4mm;
+    width: 18.1mm;
   }
 
   .portfolio-print-layout .page__title-row {
     border-bottom: 1pt solid #25519a;
     display: block;
-    margin: 0 0 5mm;
+    margin: 0 0 4mm;
     padding: 0 0 2mm;
     break-after: avoid;
   }
 
   .portfolio-print-layout .page__title {
     color: #414b58;
-    font-size: 11pt;
+    font-size: 9pt;
+    letter-spacing: 1.2pt;
+    text-transform: uppercase;
     font-weight: 600;
     line-height: 1.3;
     margin: 0;
@@ -123,18 +125,18 @@
 
   .portfolio-print-layout .portfolio-content {
     color: #252b33;
-    font-size: 10.25pt;
+    font-size: 10pt;
     line-height: 1.33;
-    --portfolio-field-label-column: 64pt;
-    --portfolio-research-field-label-column: 54pt;
+    --portfolio-field-label-column: 60pt;
+    --portfolio-research-field-label-column: 50pt;
   }
 
   .portfolio-print-layout .portfolio-content h2 {
     border-bottom: 0.5pt solid #b8c5d7;
     color: #182d4c;
-    font-size: 12pt;
+    font-size: 11.5pt;
     line-height: 1.3;
-    margin: 4mm 0 2mm;
+    margin: 4mm 0 2.5mm;
     padding: 0 0 1.5mm;
     break-after: avoid;
     page-break-after: avoid;
@@ -147,7 +149,7 @@
   }
 
   .portfolio-print-layout .portfolio-content > ul > li {
-    margin: 0 0 2.5mm;
+    margin: 0 0 3mm;
     padding: 0;
     break-inside: avoid;
     page-break-inside: avoid;
@@ -199,14 +201,14 @@
   .portfolio-print-layout .portfolio-entry-title {
     color: #252b33;
     flex: 1 1 auto;
-    font-size: 10.25pt;
+    font-size: 10pt;
     line-height: 1.35;
   }
 
   .portfolio-print-layout .portfolio-entry-date {
     color: #414b58;
     flex: 0 0 auto;
-    font-size: 9.5pt;
+    font-size: 9pt;
     text-align: right;
     white-space: nowrap;
   }
@@ -222,5 +224,109 @@
   .portfolio-print-layout .portfolio-field {
     color: #252b33;
     line-height: 1.35;
+  }
+
+  /* Keep dense field labels subordinate to the entry and research titles. */
+  .portfolio-print-layout .portfolio-content ul ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .portfolio-print-layout .portfolio-content li:has(> .portfolio-research-topic) {
+    border-left: 1pt solid #d9e2ee;
+    margin: 2mm 0;
+    padding-left: 3mm;
+  }
+
+  .portfolio-print-layout .portfolio-content li:has(> .portfolio-field) {
+    font-size: 0; /* Ignore source-only spacer text after the field. */
+    margin-bottom: 0.8mm;
+  }
+
+  .portfolio-print-layout .portfolio-content li:has(> .portfolio-field)::before {
+    display: none;
+  }
+
+  .portfolio-print-layout .portfolio-field {
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  .portfolio-print-layout .portfolio-field > strong {
+    color: #596575;
+    font-size: 9pt;
+    font-weight: 500;
+  }
+
+  .portfolio-print-layout .portfolio-content > ul > li > ul > li:has(> strong + ul) {
+    font-size: 0;
+  }
+
+  .portfolio-print-layout .portfolio-content > ul > li > ul > li:has(> strong + ul) > strong {
+    color: #596575;
+    display: inline-block;
+    font-size: 9pt;
+    font-weight: 500;
+    vertical-align: top;
+    width: calc(60pt + 0.35rem);
+  }
+
+  .portfolio-print-layout .portfolio-content > ul > li > ul > li:has(> strong + ul) > strong::after {
+    content: ":";
+  }
+
+  .portfolio-print-layout .portfolio-content li > strong:not(:has(*)) + ul {
+    display: inline-flex;
+    font-size: 9pt;
+    line-height: 1.4;
+    vertical-align: top;
+    width: calc(100% - 60pt - 0.35rem);
+  }
+
+  .portfolio-print-layout .talk-title {
+    font-size: 9.5pt;
+    font-weight: 400;
+    margin-top: 0.5mm;
+  }
+
+  .portfolio-print-layout .talk-meta {
+    color: #596575;
+    font-size: 9pt;
+    font-weight: 400;
+  }
+
+  .portfolio-print-layout .portfolio-entry-heading--conference .talk-meta {
+    display: block;
+    margin-top: 0.5mm;
+  }
+
+  /* A deliberate break keeps the two detailed design awards intact. */
+  .portfolio-print-layout .portfolio-content > ul > li:has(> strong > .talk-title) {
+    font-size: 0; /* Ignore the legacy blank-line spacer after the title. */
+  }
+
+  .portfolio-print-layout #\-awards--honors + ul > li {
+    margin-bottom: 4mm;
+  }
+
+  .portfolio-print-layout .portfolio-content li:has(> .portfolio-print-awards-continuation) {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .portfolio-print-layout .portfolio-content li:has(> .portfolio-print-awards-continuation)::before {
+    border-bottom: 0.5pt solid #b8c5d7;
+    color: #182d4c;
+    content: "Awards & Honors / continued";
+    display: block;
+    font-size: 11.5pt;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 3mm;
+    padding-bottom: 1.5mm;
+  }
+
+  .portfolio-print-layout #\-conference-presentations + ul > li {
+    margin-bottom: 5mm;
   }
 }
