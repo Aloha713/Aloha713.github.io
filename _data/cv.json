@@ -87,6 +87,20 @@
 
   "presentations": [
     {
+      "name": "Moisture-driven frizz in hair bundles",
+      "event": "KSME Annual Meeting 2026",
+      "location": "Jeju, South Korea",
+      "date": "Nov 2026",
+      "description": ""
+    },
+    {
+      "name": "Mechanics of moisture-driven hair frizz (Poster presentation)",
+      "event": "Asian Joint Workshop on Thermophysics and Fluid Science",
+      "location": "Jeju, South Korea",
+      "date": "Sep 2026",
+      "description": ""
+    },
+    {
       "name": "Leidenfrost-induced active matter dynamics of spherical hydrogels",
       "event": "APS Division of Fluid Dynamics Meeting",
       "location": "Houston, TX, USA",
@@ -102,7 +116,7 @@
     },
     {
       "name": "Explosive motion of spherical hydrogel via the Leidenfrost effect",
-      "event": "KSME Annual Conference",
+      "event": "KSME Annual Meeting 2024",
       "location": "Jeju, South Korea",
       "date": "Nov 2024",
       "description": ""

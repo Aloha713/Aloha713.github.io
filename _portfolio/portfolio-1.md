@@ -88,6 +88,9 @@ og_image: "https://aloha713.github.io/images/gfm/gfm-poster.jpg"
 
 ## 🎤 Conference Presentations
 
+- <span class="portfolio-entry-heading portfolio-entry-heading--conference"><span class="portfolio-entry-title"><strong>KSME Annual Meeting 2026</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Nov 2026</span></span>
+  **<span class="talk-title">Moisture-driven frizz in hair bundles</span>**
+
 - <span class="portfolio-entry-heading portfolio-entry-heading--conference"><span class="portfolio-entry-title"><strong>Asian Joint Workshop on Thermophysics and Fluid Science</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Sep 2026</span></span>
   **<span class="talk-title">Mechanics of moisture-driven hair frizz <span class="talk-meta">(Poster presentation)</span></span>**
   <details class="talk-toggle">
@@ -117,7 +120,7 @@ og_image: "https://aloha713.github.io/images/gfm/gfm-poster.jpg"
     </div>
   </details>
 
-- <span class="portfolio-entry-heading portfolio-entry-heading--conference"><span class="portfolio-entry-title"><strong>KSME Annual Conference</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Nov 2024</span></span>
+- <span class="portfolio-entry-heading portfolio-entry-heading--conference"><span class="portfolio-entry-title"><strong>KSME Annual Meeting 2024</strong> <span class="talk-meta">(Jeju, South Korea)</span></span><span class="portfolio-entry-date">Nov 2024</span></span>
   **<span class="talk-title">Explosive motion of spherical hydrogel via Leidenfrost effect</span>**
   <details class="talk-toggle">
     <summary class="talk-action">View presentation photos</summary>
